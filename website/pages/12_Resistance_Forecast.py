@@ -25,6 +25,14 @@ if not path.exists():
 
 results = json.loads(path.read_text())
 
+
+def hex_to_rgba(hex_color: str, alpha: float = 0.15) -> str:
+    """Convert '#rrggbb' to 'rgba(r,g,b,alpha)'."""
+    h = hex_color.lstrip("#")
+    r, g, b = int(h[0:2], 16), int(h[2:4], 16), int(h[4:6], 16)
+    return f"rgba({r},{g},{b},{alpha})"
+
+
 COLORS = {
     "ciprofloxacin":                "#e94560",
     "meropenem":                    "#50fa7b",
@@ -111,7 +119,7 @@ for r in results:
         x=[f["year"] for f in fc] + [f["year"] for f in fc][::-1],
         y=[f["upper_80"] for f in fc] + [f["lower_80"] for f in fc][::-1],
         fill="toself",
-        fillcolor=color.replace("#", "rgba(").replace(")", ", 0.12)") if color.startswith("#") else "rgba(128,128,128,0.12)",
+        fillcolor=hex_to_rgba(color, 0.12) if color.startswith("#") else "rgba(128,128,128,0.12)",
         line=dict(width=0),
         showlegend=False, legendgroup=ab,
         hoverinfo="skip",
