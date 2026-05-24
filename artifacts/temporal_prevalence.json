@@ -1,0 +1,1001 @@
+{
+  "ciprofloxacin": [
+    {
+      "year": 2001,
+      "n_resistant": 0,
+      "n_susceptible": 14,
+      "total": 14,
+      "pct_resistant": 0.0
+    },
+    {
+      "year": 2002,
+      "n_resistant": 0,
+      "n_susceptible": 10,
+      "total": 10,
+      "pct_resistant": 0.0
+    },
+    {
+      "year": 2003,
+      "n_resistant": 3,
+      "n_susceptible": 9,
+      "total": 12,
+      "pct_resistant": 25.0
+    },
+    {
+      "year": 2004,
+      "n_resistant": 2,
+      "n_susceptible": 9,
+      "total": 11,
+      "pct_resistant": 18.2
+    },
+    {
+      "year": 2005,
+      "n_resistant": 5,
+      "n_susceptible": 27,
+      "total": 32,
+      "pct_resistant": 15.6
+    },
+    {
+      "year": 2006,
+      "n_resistant": 6,
+      "n_susceptible": 17,
+      "total": 23,
+      "pct_resistant": 26.1
+    },
+    {
+      "year": 2007,
+      "n_resistant": 7,
+      "n_susceptible": 12,
+      "total": 19,
+      "pct_resistant": 36.8
+    },
+    {
+      "year": 2008,
+      "n_resistant": 7,
+      "n_susceptible": 9,
+      "total": 16,
+      "pct_resistant": 43.8
+    },
+    {
+      "year": 2009,
+      "n_resistant": 16,
+      "n_susceptible": 32,
+      "total": 48,
+      "pct_resistant": 33.3
+    },
+    {
+      "year": 2010,
+      "n_resistant": 11,
+      "n_susceptible": 15,
+      "total": 26,
+      "pct_resistant": 42.3
+    },
+    {
+      "year": 2011,
+      "n_resistant": 32,
+      "n_susceptible": 30,
+      "total": 62,
+      "pct_resistant": 51.6
+    },
+    {
+      "year": 2012,
+      "n_resistant": 114,
+      "n_susceptible": 35,
+      "total": 149,
+      "pct_resistant": 76.5
+    },
+    {
+      "year": 2013,
+      "n_resistant": 163,
+      "n_susceptible": 88,
+      "total": 251,
+      "pct_resistant": 64.9
+    },
+    {
+      "year": 2014,
+      "n_resistant": 208,
+      "n_susceptible": 154,
+      "total": 362,
+      "pct_resistant": 57.5
+    },
+    {
+      "year": 2015,
+      "n_resistant": 115,
+      "n_susceptible": 145,
+      "total": 260,
+      "pct_resistant": 44.2
+    },
+    {
+      "year": 2016,
+      "n_resistant": 103,
+      "n_susceptible": 93,
+      "total": 196,
+      "pct_resistant": 52.6
+    },
+    {
+      "year": 2017,
+      "n_resistant": 129,
+      "n_susceptible": 128,
+      "total": 257,
+      "pct_resistant": 50.2
+    },
+    {
+      "year": 2018,
+      "n_resistant": 118,
+      "n_susceptible": 189,
+      "total": 307,
+      "pct_resistant": 38.4
+    },
+    {
+      "year": 2019,
+      "n_resistant": 130,
+      "n_susceptible": 153,
+      "total": 283,
+      "pct_resistant": 45.9
+    },
+    {
+      "year": 2020,
+      "n_resistant": 105,
+      "n_susceptible": 137,
+      "total": 242,
+      "pct_resistant": 43.4
+    },
+    {
+      "year": 2021,
+      "n_resistant": 111,
+      "n_susceptible": 102,
+      "total": 213,
+      "pct_resistant": 52.1
+    },
+    {
+      "year": 2022,
+      "n_resistant": 72,
+      "n_susceptible": 66,
+      "total": 138,
+      "pct_resistant": 52.2
+    },
+    {
+      "year": 2023,
+      "n_resistant": 48,
+      "n_susceptible": 38,
+      "total": 86,
+      "pct_resistant": 55.8
+    },
+    {
+      "year": 2024,
+      "n_resistant": 14,
+      "n_susceptible": 7,
+      "total": 21,
+      "pct_resistant": 66.7
+    }
+  ],
+  "meropenem": [
+    {
+      "year": 2001,
+      "n_resistant": 1,
+      "n_susceptible": 11,
+      "total": 12,
+      "pct_resistant": 8.3
+    },
+    {
+      "year": 2002,
+      "n_resistant": 0,
+      "n_susceptible": 6,
+      "total": 6,
+      "pct_resistant": 0.0
+    },
+    {
+      "year": 2004,
+      "n_resistant": 1,
+      "n_susceptible": 9,
+      "total": 10,
+      "pct_resistant": 10.0
+    },
+    {
+      "year": 2005,
+      "n_resistant": 2,
+      "n_susceptible": 17,
+      "total": 19,
+      "pct_resistant": 10.5
+    },
+    {
+      "year": 2006,
+      "n_resistant": 3,
+      "n_susceptible": 15,
+      "total": 18,
+      "pct_resistant": 16.7
+    },
+    {
+      "year": 2007,
+      "n_resistant": 2,
+      "n_susceptible": 6,
+      "total": 8,
+      "pct_resistant": 25.0
+    },
+    {
+      "year": 2008,
+      "n_resistant": 4,
+      "n_susceptible": 13,
+      "total": 17,
+      "pct_resistant": 23.5
+    },
+    {
+      "year": 2009,
+      "n_resistant": 7,
+      "n_susceptible": 28,
+      "total": 35,
+      "pct_resistant": 20.0
+    },
+    {
+      "year": 2010,
+      "n_resistant": 15,
+      "n_susceptible": 11,
+      "total": 26,
+      "pct_resistant": 57.7
+    },
+    {
+      "year": 2011,
+      "n_resistant": 20,
+      "n_susceptible": 26,
+      "total": 46,
+      "pct_resistant": 43.5
+    },
+    {
+      "year": 2012,
+      "n_resistant": 85,
+      "n_susceptible": 69,
+      "total": 154,
+      "pct_resistant": 55.2
+    },
+    {
+      "year": 2013,
+      "n_resistant": 151,
+      "n_susceptible": 119,
+      "total": 270,
+      "pct_resistant": 55.9
+    },
+    {
+      "year": 2014,
+      "n_resistant": 143,
+      "n_susceptible": 179,
+      "total": 322,
+      "pct_resistant": 44.4
+    },
+    {
+      "year": 2015,
+      "n_resistant": 123,
+      "n_susceptible": 136,
+      "total": 259,
+      "pct_resistant": 47.5
+    },
+    {
+      "year": 2016,
+      "n_resistant": 72,
+      "n_susceptible": 102,
+      "total": 174,
+      "pct_resistant": 41.4
+    },
+    {
+      "year": 2017,
+      "n_resistant": 125,
+      "n_susceptible": 140,
+      "total": 265,
+      "pct_resistant": 47.2
+    },
+    {
+      "year": 2018,
+      "n_resistant": 190,
+      "n_susceptible": 137,
+      "total": 327,
+      "pct_resistant": 58.1
+    },
+    {
+      "year": 2019,
+      "n_resistant": 152,
+      "n_susceptible": 144,
+      "total": 296,
+      "pct_resistant": 51.4
+    },
+    {
+      "year": 2020,
+      "n_resistant": 160,
+      "n_susceptible": 100,
+      "total": 260,
+      "pct_resistant": 61.5
+    },
+    {
+      "year": 2021,
+      "n_resistant": 88,
+      "n_susceptible": 123,
+      "total": 211,
+      "pct_resistant": 41.7
+    },
+    {
+      "year": 2022,
+      "n_resistant": 72,
+      "n_susceptible": 69,
+      "total": 141,
+      "pct_resistant": 51.1
+    },
+    {
+      "year": 2023,
+      "n_resistant": 34,
+      "n_susceptible": 39,
+      "total": 73,
+      "pct_resistant": 46.6
+    },
+    {
+      "year": 2024,
+      "n_resistant": 15,
+      "n_susceptible": 13,
+      "total": 28,
+      "pct_resistant": 53.6
+    }
+  ],
+  "gentamicin": [
+    {
+      "year": 2001,
+      "n_resistant": 0,
+      "n_susceptible": 14,
+      "total": 14,
+      "pct_resistant": 0.0
+    },
+    {
+      "year": 2002,
+      "n_resistant": 1,
+      "n_susceptible": 4,
+      "total": 5,
+      "pct_resistant": 20.0
+    },
+    {
+      "year": 2003,
+      "n_resistant": 2,
+      "n_susceptible": 3,
+      "total": 5,
+      "pct_resistant": 40.0
+    },
+    {
+      "year": 2004,
+      "n_resistant": 7,
+      "n_susceptible": 5,
+      "total": 12,
+      "pct_resistant": 58.3
+    },
+    {
+      "year": 2005,
+      "n_resistant": 6,
+      "n_susceptible": 21,
+      "total": 27,
+      "pct_resistant": 22.2
+    },
+    {
+      "year": 2006,
+      "n_resistant": 16,
+      "n_susceptible": 3,
+      "total": 19,
+      "pct_resistant": 84.2
+    },
+    {
+      "year": 2007,
+      "n_resistant": 12,
+      "n_susceptible": 8,
+      "total": 20,
+      "pct_resistant": 60.0
+    },
+    {
+      "year": 2008,
+      "n_resistant": 11,
+      "n_susceptible": 5,
+      "total": 16,
+      "pct_resistant": 68.8
+    },
+    {
+      "year": 2009,
+      "n_resistant": 17,
+      "n_susceptible": 19,
+      "total": 36,
+      "pct_resistant": 47.2
+    },
+    {
+      "year": 2010,
+      "n_resistant": 18,
+      "n_susceptible": 15,
+      "total": 33,
+      "pct_resistant": 54.5
+    },
+    {
+      "year": 2011,
+      "n_resistant": 23,
+      "n_susceptible": 32,
+      "total": 55,
+      "pct_resistant": 41.8
+    },
+    {
+      "year": 2012,
+      "n_resistant": 88,
+      "n_susceptible": 66,
+      "total": 154,
+      "pct_resistant": 57.1
+    },
+    {
+      "year": 2013,
+      "n_resistant": 177,
+      "n_susceptible": 105,
+      "total": 282,
+      "pct_resistant": 62.8
+    },
+    {
+      "year": 2014,
+      "n_resistant": 178,
+      "n_susceptible": 161,
+      "total": 339,
+      "pct_resistant": 52.5
+    },
+    {
+      "year": 2015,
+      "n_resistant": 100,
+      "n_susceptible": 123,
+      "total": 223,
+      "pct_resistant": 44.8
+    },
+    {
+      "year": 2016,
+      "n_resistant": 123,
+      "n_susceptible": 103,
+      "total": 226,
+      "pct_resistant": 54.4
+    },
+    {
+      "year": 2017,
+      "n_resistant": 120,
+      "n_susceptible": 131,
+      "total": 251,
+      "pct_resistant": 47.8
+    },
+    {
+      "year": 2018,
+      "n_resistant": 132,
+      "n_susceptible": 174,
+      "total": 306,
+      "pct_resistant": 43.1
+    },
+    {
+      "year": 2019,
+      "n_resistant": 129,
+      "n_susceptible": 150,
+      "total": 279,
+      "pct_resistant": 46.2
+    },
+    {
+      "year": 2020,
+      "n_resistant": 93,
+      "n_susceptible": 130,
+      "total": 223,
+      "pct_resistant": 41.7
+    },
+    {
+      "year": 2021,
+      "n_resistant": 89,
+      "n_susceptible": 114,
+      "total": 203,
+      "pct_resistant": 43.8
+    },
+    {
+      "year": 2022,
+      "n_resistant": 68,
+      "n_susceptible": 74,
+      "total": 142,
+      "pct_resistant": 47.9
+    },
+    {
+      "year": 2023,
+      "n_resistant": 28,
+      "n_susceptible": 41,
+      "total": 69,
+      "pct_resistant": 40.6
+    },
+    {
+      "year": 2024,
+      "n_resistant": 5,
+      "n_susceptible": 17,
+      "total": 22,
+      "pct_resistant": 22.7
+    }
+  ],
+  "tetracycline": [
+    {
+      "year": 2001,
+      "n_resistant": 3,
+      "n_susceptible": 2,
+      "total": 5,
+      "pct_resistant": 60.0
+    },
+    {
+      "year": 2002,
+      "n_resistant": 3,
+      "n_susceptible": 3,
+      "total": 6,
+      "pct_resistant": 50.0
+    },
+    {
+      "year": 2003,
+      "n_resistant": 5,
+      "n_susceptible": 4,
+      "total": 9,
+      "pct_resistant": 55.6
+    },
+    {
+      "year": 2004,
+      "n_resistant": 9,
+      "n_susceptible": 2,
+      "total": 11,
+      "pct_resistant": 81.8
+    },
+    {
+      "year": 2005,
+      "n_resistant": 11,
+      "n_susceptible": 10,
+      "total": 21,
+      "pct_resistant": 52.4
+    },
+    {
+      "year": 2006,
+      "n_resistant": 12,
+      "n_susceptible": 8,
+      "total": 20,
+      "pct_resistant": 60.0
+    },
+    {
+      "year": 2007,
+      "n_resistant": 7,
+      "n_susceptible": 9,
+      "total": 16,
+      "pct_resistant": 43.8
+    },
+    {
+      "year": 2008,
+      "n_resistant": 7,
+      "n_susceptible": 6,
+      "total": 13,
+      "pct_resistant": 53.8
+    },
+    {
+      "year": 2009,
+      "n_resistant": 14,
+      "n_susceptible": 26,
+      "total": 40,
+      "pct_resistant": 35.0
+    },
+    {
+      "year": 2010,
+      "n_resistant": 8,
+      "n_susceptible": 12,
+      "total": 20,
+      "pct_resistant": 40.0
+    },
+    {
+      "year": 2011,
+      "n_resistant": 34,
+      "n_susceptible": 23,
+      "total": 57,
+      "pct_resistant": 59.6
+    },
+    {
+      "year": 2012,
+      "n_resistant": 58,
+      "n_susceptible": 72,
+      "total": 130,
+      "pct_resistant": 44.6
+    },
+    {
+      "year": 2013,
+      "n_resistant": 104,
+      "n_susceptible": 154,
+      "total": 258,
+      "pct_resistant": 40.3
+    },
+    {
+      "year": 2014,
+      "n_resistant": 173,
+      "n_susceptible": 180,
+      "total": 353,
+      "pct_resistant": 49.0
+    },
+    {
+      "year": 2015,
+      "n_resistant": 123,
+      "n_susceptible": 113,
+      "total": 236,
+      "pct_resistant": 52.1
+    },
+    {
+      "year": 2016,
+      "n_resistant": 114,
+      "n_susceptible": 100,
+      "total": 214,
+      "pct_resistant": 53.3
+    },
+    {
+      "year": 2017,
+      "n_resistant": 150,
+      "n_susceptible": 127,
+      "total": 277,
+      "pct_resistant": 54.2
+    },
+    {
+      "year": 2018,
+      "n_resistant": 187,
+      "n_susceptible": 144,
+      "total": 331,
+      "pct_resistant": 56.5
+    },
+    {
+      "year": 2019,
+      "n_resistant": 146,
+      "n_susceptible": 128,
+      "total": 274,
+      "pct_resistant": 53.3
+    },
+    {
+      "year": 2020,
+      "n_resistant": 122,
+      "n_susceptible": 152,
+      "total": 274,
+      "pct_resistant": 44.5
+    },
+    {
+      "year": 2021,
+      "n_resistant": 128,
+      "n_susceptible": 133,
+      "total": 261,
+      "pct_resistant": 49.0
+    },
+    {
+      "year": 2022,
+      "n_resistant": 83,
+      "n_susceptible": 54,
+      "total": 137,
+      "pct_resistant": 60.6
+    },
+    {
+      "year": 2023,
+      "n_resistant": 41,
+      "n_susceptible": 43,
+      "total": 84,
+      "pct_resistant": 48.8
+    },
+    {
+      "year": 2024,
+      "n_resistant": 21,
+      "n_susceptible": 6,
+      "total": 27,
+      "pct_resistant": 77.8
+    }
+  ],
+  "trimethoprim/sulfamethoxazole": [
+    {
+      "year": 2000,
+      "n_resistant": 3,
+      "n_susceptible": 4,
+      "total": 7,
+      "pct_resistant": 42.9
+    },
+    {
+      "year": 2001,
+      "n_resistant": 3,
+      "n_susceptible": 23,
+      "total": 26,
+      "pct_resistant": 11.5
+    },
+    {
+      "year": 2003,
+      "n_resistant": 2,
+      "n_susceptible": 5,
+      "total": 7,
+      "pct_resistant": 28.6
+    },
+    {
+      "year": 2004,
+      "n_resistant": 9,
+      "n_susceptible": 2,
+      "total": 11,
+      "pct_resistant": 81.8
+    },
+    {
+      "year": 2005,
+      "n_resistant": 5,
+      "n_susceptible": 18,
+      "total": 23,
+      "pct_resistant": 21.7
+    },
+    {
+      "year": 2006,
+      "n_resistant": 11,
+      "n_susceptible": 5,
+      "total": 16,
+      "pct_resistant": 68.8
+    },
+    {
+      "year": 2007,
+      "n_resistant": 6,
+      "n_susceptible": 4,
+      "total": 10,
+      "pct_resistant": 60.0
+    },
+    {
+      "year": 2008,
+      "n_resistant": 4,
+      "n_susceptible": 7,
+      "total": 11,
+      "pct_resistant": 36.4
+    },
+    {
+      "year": 2009,
+      "n_resistant": 15,
+      "n_susceptible": 44,
+      "total": 59,
+      "pct_resistant": 25.4
+    },
+    {
+      "year": 2010,
+      "n_resistant": 9,
+      "n_susceptible": 10,
+      "total": 19,
+      "pct_resistant": 47.4
+    },
+    {
+      "year": 2011,
+      "n_resistant": 23,
+      "n_susceptible": 34,
+      "total": 57,
+      "pct_resistant": 40.4
+    },
+    {
+      "year": 2012,
+      "n_resistant": 101,
+      "n_susceptible": 48,
+      "total": 149,
+      "pct_resistant": 67.8
+    },
+    {
+      "year": 2013,
+      "n_resistant": 183,
+      "n_susceptible": 119,
+      "total": 302,
+      "pct_resistant": 60.6
+    },
+    {
+      "year": 2014,
+      "n_resistant": 191,
+      "n_susceptible": 191,
+      "total": 382,
+      "pct_resistant": 50.0
+    },
+    {
+      "year": 2015,
+      "n_resistant": 104,
+      "n_susceptible": 122,
+      "total": 226,
+      "pct_resistant": 46.0
+    },
+    {
+      "year": 2016,
+      "n_resistant": 118,
+      "n_susceptible": 98,
+      "total": 216,
+      "pct_resistant": 54.6
+    },
+    {
+      "year": 2017,
+      "n_resistant": 138,
+      "n_susceptible": 141,
+      "total": 279,
+      "pct_resistant": 49.5
+    },
+    {
+      "year": 2018,
+      "n_resistant": 146,
+      "n_susceptible": 173,
+      "total": 319,
+      "pct_resistant": 45.8
+    },
+    {
+      "year": 2019,
+      "n_resistant": 126,
+      "n_susceptible": 145,
+      "total": 271,
+      "pct_resistant": 46.5
+    },
+    {
+      "year": 2020,
+      "n_resistant": 112,
+      "n_susceptible": 99,
+      "total": 211,
+      "pct_resistant": 53.1
+    },
+    {
+      "year": 2021,
+      "n_resistant": 85,
+      "n_susceptible": 102,
+      "total": 187,
+      "pct_resistant": 45.5
+    },
+    {
+      "year": 2022,
+      "n_resistant": 43,
+      "n_susceptible": 56,
+      "total": 99,
+      "pct_resistant": 43.4
+    },
+    {
+      "year": 2023,
+      "n_resistant": 18,
+      "n_susceptible": 24,
+      "total": 42,
+      "pct_resistant": 42.9
+    }
+  ],
+  "cefepime": [
+    {
+      "year": 2001,
+      "n_resistant": 0,
+      "n_susceptible": 14,
+      "total": 14,
+      "pct_resistant": 0.0
+    },
+    {
+      "year": 2002,
+      "n_resistant": 2,
+      "n_susceptible": 8,
+      "total": 10,
+      "pct_resistant": 20.0
+    },
+    {
+      "year": 2003,
+      "n_resistant": 4,
+      "n_susceptible": 1,
+      "total": 5,
+      "pct_resistant": 80.0
+    },
+    {
+      "year": 2005,
+      "n_resistant": 2,
+      "n_susceptible": 12,
+      "total": 14,
+      "pct_resistant": 14.3
+    },
+    {
+      "year": 2006,
+      "n_resistant": 12,
+      "n_susceptible": 12,
+      "total": 24,
+      "pct_resistant": 50.0
+    },
+    {
+      "year": 2007,
+      "n_resistant": 7,
+      "n_susceptible": 6,
+      "total": 13,
+      "pct_resistant": 53.8
+    },
+    {
+      "year": 2008,
+      "n_resistant": 7,
+      "n_susceptible": 8,
+      "total": 15,
+      "pct_resistant": 46.7
+    },
+    {
+      "year": 2009,
+      "n_resistant": 9,
+      "n_susceptible": 21,
+      "total": 30,
+      "pct_resistant": 30.0
+    },
+    {
+      "year": 2010,
+      "n_resistant": 14,
+      "n_susceptible": 12,
+      "total": 26,
+      "pct_resistant": 53.8
+    },
+    {
+      "year": 2011,
+      "n_resistant": 33,
+      "n_susceptible": 34,
+      "total": 67,
+      "pct_resistant": 49.3
+    },
+    {
+      "year": 2012,
+      "n_resistant": 84,
+      "n_susceptible": 55,
+      "total": 139,
+      "pct_resistant": 60.4
+    },
+    {
+      "year": 2013,
+      "n_resistant": 148,
+      "n_susceptible": 95,
+      "total": 243,
+      "pct_resistant": 60.9
+    },
+    {
+      "year": 2014,
+      "n_resistant": 225,
+      "n_susceptible": 166,
+      "total": 391,
+      "pct_resistant": 57.5
+    },
+    {
+      "year": 2015,
+      "n_resistant": 111,
+      "n_susceptible": 111,
+      "total": 222,
+      "pct_resistant": 50.0
+    },
+    {
+      "year": 2016,
+      "n_resistant": 129,
+      "n_susceptible": 84,
+      "total": 213,
+      "pct_resistant": 60.6
+    },
+    {
+      "year": 2017,
+      "n_resistant": 106,
+      "n_susceptible": 155,
+      "total": 261,
+      "pct_resistant": 40.6
+    },
+    {
+      "year": 2018,
+      "n_resistant": 135,
+      "n_susceptible": 178,
+      "total": 313,
+      "pct_resistant": 43.1
+    },
+    {
+      "year": 2019,
+      "n_resistant": 122,
+      "n_susceptible": 174,
+      "total": 296,
+      "pct_resistant": 41.2
+    },
+    {
+      "year": 2020,
+      "n_resistant": 100,
+      "n_susceptible": 130,
+      "total": 230,
+      "pct_resistant": 43.5
+    },
+    {
+      "year": 2021,
+      "n_resistant": 110,
+      "n_susceptible": 98,
+      "total": 208,
+      "pct_resistant": 52.9
+    },
+    {
+      "year": 2022,
+      "n_resistant": 75,
+      "n_susceptible": 92,
+      "total": 167,
+      "pct_resistant": 44.9
+    },
+    {
+      "year": 2023,
+      "n_resistant": 45,
+      "n_susceptible": 35,
+      "total": 80,
+      "pct_resistant": 56.2
+    },
+    {
+      "year": 2024,
+      "n_resistant": 14,
+      "n_susceptible": 8,
+      "total": 22,
+      "pct_resistant": 63.6
+    }
+  ]
+}

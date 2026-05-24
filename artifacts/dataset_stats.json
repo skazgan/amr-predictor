@@ -1,0 +1,44 @@
+[
+  {
+    "antibiotic": "ciprofloxacin",
+    "drug_class": "Fluoroquinolone",
+    "n_resistant": 2000,
+    "n_susceptible": 2000,
+    "total": 4000
+  },
+  {
+    "antibiotic": "meropenem",
+    "drug_class": "Carbapenem",
+    "n_resistant": 2000,
+    "n_susceptible": 2000,
+    "total": 4000
+  },
+  {
+    "antibiotic": "gentamicin",
+    "drug_class": "Aminoglycoside",
+    "n_resistant": 1998,
+    "n_susceptible": 1999,
+    "total": 3997
+  },
+  {
+    "antibiotic": "tetracycline",
+    "drug_class": "Tetracycline",
+    "n_resistant": 2000,
+    "n_susceptible": 2000,
+    "total": 4000
+  },
+  {
+    "antibiotic": "trimethoprim/sulfamethoxazole",
+    "drug_class": "Folate inhibitor",
+    "n_resistant": 2000,
+    "n_susceptible": 2000,
+    "total": 4000
+  },
+  {
+    "antibiotic": "cefepime",
+    "drug_class": "Cephalosporin",
+    "n_resistant": 2000,
+    "n_susceptible": 2000,
+    "total": 4000
+  }
+]

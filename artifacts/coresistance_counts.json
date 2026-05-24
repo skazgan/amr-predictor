@@ -1,0 +1,137 @@
+[
+  {
+    "ab1": "ciprofloxacin",
+    "ab2": "meropenem",
+    "both_resistant": 216,
+    "only_ab1_resistant": 136,
+    "only_ab2_resistant": 62,
+    "both_susceptible": 170,
+    "total": 584
+  },
+  {
+    "ab1": "ciprofloxacin",
+    "ab2": "gentamicin",
+    "both_resistant": 221,
+    "only_ab1_resistant": 108,
+    "only_ab2_resistant": 64,
+    "both_susceptible": 188,
+    "total": 581
+  },
+  {
+    "ab1": "ciprofloxacin",
+    "ab2": "tetracycline",
+    "both_resistant": 156,
+    "only_ab1_resistant": 129,
+    "only_ab2_resistant": 110,
+    "both_susceptible": 167,
+    "total": 562
+  },
+  {
+    "ab1": "ciprofloxacin",
+    "ab2": "trimethoprim/sulfamethoxazole",
+    "both_resistant": 220,
+    "only_ab1_resistant": 72,
+    "only_ab2_resistant": 76,
+    "both_susceptible": 217,
+    "total": 585
+  },
+  {
+    "ab1": "ciprofloxacin",
+    "ab2": "cefepime",
+    "both_resistant": 223,
+    "only_ab1_resistant": 78,
+    "only_ab2_resistant": 68,
+    "both_susceptible": 216,
+    "total": 585
+  },
+  {
+    "ab1": "meropenem",
+    "ab2": "gentamicin",
+    "both_resistant": 169,
+    "only_ab1_resistant": 136,
+    "only_ab2_resistant": 150,
+    "both_susceptible": 166,
+    "total": 621
+  },
+  {
+    "ab1": "meropenem",
+    "ab2": "tetracycline",
+    "both_resistant": 109,
+    "only_ab1_resistant": 160,
+    "only_ab2_resistant": 140,
+    "both_susceptible": 151,
+    "total": 560
+  },
+  {
+    "ab1": "meropenem",
+    "ab2": "trimethoprim/sulfamethoxazole",
+    "both_resistant": 188,
+    "only_ab1_resistant": 104,
+    "only_ab2_resistant": 131,
+    "both_susceptible": 147,
+    "total": 570
+  },
+  {
+    "ab1": "meropenem",
+    "ab2": "cefepime",
+    "both_resistant": 140,
+    "only_ab1_resistant": 141,
+    "only_ab2_resistant": 146,
+    "both_susceptible": 148,
+    "total": 575
+  },
+  {
+    "ab1": "gentamicin",
+    "ab2": "tetracycline",
+    "both_resistant": 170,
+    "only_ab1_resistant": 118,
+    "only_ab2_resistant": 121,
+    "both_susceptible": 159,
+    "total": 568
+  },
+  {
+    "ab1": "gentamicin",
+    "ab2": "trimethoprim/sulfamethoxazole",
+    "both_resistant": 229,
+    "only_ab1_resistant": 44,
+    "only_ab2_resistant": 84,
+    "both_susceptible": 196,
+    "total": 553
+  },
+  {
+    "ab1": "gentamicin",
+    "ab2": "cefepime",
+    "both_resistant": 215,
+    "only_ab1_resistant": 63,
+    "only_ab2_resistant": 106,
+    "both_susceptible": 196,
+    "total": 580
+  },
+  {
+    "ab1": "tetracycline",
+    "ab2": "trimethoprim/sulfamethoxazole",
+    "both_resistant": 150,
+    "only_ab1_resistant": 121,
+    "only_ab2_resistant": 124,
+    "both_susceptible": 166,
+    "total": 561
+  },
+  {
+    "ab1": "tetracycline",
+    "ab2": "cefepime",
+    "both_resistant": 138,
+    "only_ab1_resistant": 134,
+    "only_ab2_resistant": 144,
+    "both_susceptible": 149,
+    "total": 565
+  },
+  {
+    "ab1": "trimethoprim/sulfamethoxazole",
+    "ab2": "cefepime",
+    "both_resistant": 209,
+    "only_ab1_resistant": 73,
+    "only_ab2_resistant": 80,
+    "both_susceptible": 217,
+    "total": 579
+  }
+]

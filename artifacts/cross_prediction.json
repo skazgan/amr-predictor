@@ -1,0 +1,38 @@
+[
+  {
+    "antibiotic": "ciprofloxacin",
+    "baseline_auc": 0.524,
+    "label_only_auc": 0.739,
+    "boost": 0.239
+  },
+  {
+    "antibiotic": "meropenem",
+    "baseline_auc": 0.512,
+    "label_only_auc": 0.578,
+    "boost": 0.078
+  },
+  {
+    "antibiotic": "gentamicin",
+    "baseline_auc": 0.501,
+    "label_only_auc": 0.713,
+    "boost": 0.213
+  },
+  {
+    "antibiotic": "tetracycline",
+    "baseline_auc": 0.52,
+    "label_only_auc": 0.576,
+    "boost": 0.076
+  },
+  {
+    "antibiotic": "trimethoprim/sulfamethoxazole",
+    "baseline_auc": 0.517,
+    "label_only_auc": 0.751,
+    "boost": 0.251
+  },
+  {
+    "antibiotic": "cefepime",
+    "baseline_auc": 0.504,
+    "label_only_auc": 0.709,
+    "boost": 0.209
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "gene": "Class A beta-lactamase (EC 3.5.2.6) => CTX-M family, extended-spectrum",
+    "rate_mdr": 0.249,
+    "rate_nmdr": 0.132,
+    "enrichment": 0.117
+  },
+  {
+    "gene": "Dihydropteroate synthase type-2 (EC 2.5.1.15) @ Sulfonamide resistance protein",
+    "rate_mdr": 0.237,
+    "rate_nmdr": 0.128,
+    "enrichment": 0.109
+  },
+  {
+    "gene": "hypothetical protein",
+    "rate_mdr": 0.257,
+    "rate_nmdr": 0.154,
+    "enrichment": 0.103
+  },
+  {
+    "gene": "EmrAB-TolC",
+    "rate_mdr": 0.372,
+    "rate_nmdr": 0.472,
+    "enrichment": -0.1
+  },
+  {
+    "gene": "Aminoglycoside N(3)-acetyltransferase (EC 2.3.1.81) => AAC(3)-II,III,IV,VI,VIII,IX,X",
+    "rate_mdr": 0.162,
+    "rate_nmdr": 0.062,
+    "enrichment": 0.1
+  },
+  {
+    "gene": "Multidrug efflux pump MdfA/Cmr (of MFS type), broad spectrum",
+    "rate_mdr": 0.281,
+    "rate_nmdr": 0.18,
+    "enrichment": 0.1
+  },
+  {
+    "gene": "MdtABC-TolC",
+    "rate_mdr": 0.372,
+    "rate_nmdr": 0.467,
+    "enrichment": -0.096
+  },
+  {
+    "gene": "gyrA",
+    "rate_mdr": 0.308,
+    "rate_nmdr": 0.403,
+    "enrichment": -0.094
+  },
+  {
+    "gene": "Transcriptional regulator, MarR family",
+    "rate_mdr": 0.174,
+    "rate_nmdr": 0.08,
+    "enrichment": 0.094
+  },
+  {
+    "gene": "Ddl",
+    "rate_mdr": 0.257,
+    "rate_nmdr": 0.35,
+    "enrichment": -0.093
+  },
+  {
+    "gene": "Multidrug resistance regulator EmrR (MprA)",
+    "rate_mdr": 0.265,
+    "rate_nmdr": 0.177,
+    "enrichment": 0.088
+  },
+  {
+    "gene": "Multidrug efflux system MdtABC-TolC, inner-membrane proton/drug antiporter MdtC (RND type)",
+    "rate_mdr": 0.257,
+    "rate_nmdr": 0.17,
+    "enrichment": 0.087
+  },
+  {
+    "gene": "folP",
+    "rate_mdr": 0.273,
+    "rate_nmdr": 0.354,
+    "enrichment": -0.081
+  },
+  {
+    "gene": "TEM family",
+    "rate_mdr": 0.19,
+    "rate_nmdr": 0.109,
+    "enrichment": 0.081
+  },
+  {
+    "gene": "Multidrug efflux system AcrAB-TolC, membrane fusion component AcrA",
+    "rate_mdr": 0.265,
+    "rate_nmdr": 0.185,
+    "enrichment": 0.08
+  },
+  {
+    "gene": "DNA gyrase subunit B (EC 5.99.1.3)",
+    "rate_mdr": 0.142,
+    "rate_nmdr": 0.063,
+    "enrichment": 0.08
+  },
+  {
+    "gene": "Multidrug resistance protein MdtH",
+    "rate_mdr": 0.154,
+    "rate_nmdr": 0.075,
+    "enrichment": 0.079
+  },
+  {
+    "gene": "mdtH",
+    "rate_mdr": 0.142,
+    "rate_nmdr": 0.221,
+    "enrichment": -0.079
+  },
+  {
+    "gene": "Multidrug efflux system AcrEF-TolC, membrane fusion component AcrE",
+    "rate_mdr": 0.162,
+    "rate_nmdr": 0.083,
+    "enrichment": 0.079
+  },
+  {
+    "gene": "Aminoglycoside 3''-nucleotidyltransferase (EC 2.7.7.-) => ANT(3'')-Ia (AadA family)",
+    "rate_mdr": 0.217,
+    "rate_nmdr": 0.139,
+    "enrichment": 0.078
+  },
+  {
+    "gene": "DNA-directed RNA polymerase beta subunit (EC 2.7.7.6)",
+    "rate_mdr": 0.166,
+    "rate_nmdr": 0.088,
+    "enrichment": 0.078
+  },
+  {
+    "gene": "Aminoglycoside 6-phosphotransferase (EC 2.7.1.72) => APH(6)-Ic/APH(6)-Id",
+    "rate_mdr": 0.15,
+    "rate_nmdr": 0.072,
+    "enrichment": 0.078
+  },
+  {
+    "gene": "murA",
+    "rate_mdr": 0.138,
+    "rate_nmdr": 0.216,
+    "enrichment": -0.077
+  },
+  {
+    "gene": "MdfA/Cmr",
+    "rate_mdr": 0.13,
+    "rate_nmdr": 0.206,
+    "enrichment": -0.075
+  },
+  {
+    "gene": "Class A beta-lactamase (EC 3.5.2.6) => TEM family",
+    "rate_mdr": 0.206,
+    "rate_nmdr": 0.131,
+    "enrichment": 0.075
+  },
+  {
+    "gene": "Multidrug efflux system AcrAB-TolC, inner-membrane proton/drug antiporter AcrB (RND type)",
+    "rate_mdr": 0.265,
+    "rate_nmdr": 0.19,
+    "enrichment": 0.075
+  },
+  {
+    "gene": "AAC(6')-Ib-cr",
+    "rate_mdr": 0.13,
+    "rate_nmdr": 0.056,
+    "enrichment": 0.074
+  },
+  {
+    "gene": "Macrolide export ATP-binding/permease protein MacB",
+    "rate_mdr": 0.17,
+    "rate_nmdr": 0.096,
+    "enrichment": 0.074
+  },
+  {
+    "gene": "Undecaprenyl phosphate-aminoarabinose flippase subunit ArnF",
+    "rate_mdr": 0.13,
+    "rate_nmdr": 0.056,
+    "enrichment": 0.074
+  },
+  {
+    "gene": "inhA, fabI",
+    "rate_mdr": 0.126,
+    "rate_nmdr": 0.199,
+    "enrichment": -0.073
+  }
+]

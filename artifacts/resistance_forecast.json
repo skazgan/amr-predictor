@@ -1,0 +1,1352 @@
+[
+  {
+    "antibiotic": "ciprofloxacin",
+    "short_name": "Cipro",
+    "historical": [
+      {
+        "year": 2001,
+        "pct_resistant": 0.0
+      },
+      {
+        "year": 2002,
+        "pct_resistant": 0.0
+      },
+      {
+        "year": 2003,
+        "pct_resistant": 25.0
+      },
+      {
+        "year": 2004,
+        "pct_resistant": 18.2
+      },
+      {
+        "year": 2005,
+        "pct_resistant": 15.6
+      },
+      {
+        "year": 2006,
+        "pct_resistant": 26.1
+      },
+      {
+        "year": 2007,
+        "pct_resistant": 36.8
+      },
+      {
+        "year": 2008,
+        "pct_resistant": 43.8
+      },
+      {
+        "year": 2009,
+        "pct_resistant": 33.3
+      },
+      {
+        "year": 2010,
+        "pct_resistant": 42.3
+      },
+      {
+        "year": 2011,
+        "pct_resistant": 51.6
+      },
+      {
+        "year": 2012,
+        "pct_resistant": 76.5
+      },
+      {
+        "year": 2013,
+        "pct_resistant": 64.9
+      },
+      {
+        "year": 2014,
+        "pct_resistant": 57.5
+      },
+      {
+        "year": 2015,
+        "pct_resistant": 44.2
+      },
+      {
+        "year": 2016,
+        "pct_resistant": 52.6
+      },
+      {
+        "year": 2017,
+        "pct_resistant": 50.2
+      },
+      {
+        "year": 2018,
+        "pct_resistant": 38.4
+      },
+      {
+        "year": 2019,
+        "pct_resistant": 45.9
+      },
+      {
+        "year": 2020,
+        "pct_resistant": 43.4
+      },
+      {
+        "year": 2021,
+        "pct_resistant": 52.1
+      },
+      {
+        "year": 2022,
+        "pct_resistant": 52.2
+      },
+      {
+        "year": 2023,
+        "pct_resistant": 55.8
+      },
+      {
+        "year": 2024,
+        "pct_resistant": 66.7
+      }
+    ],
+    "forecast": [
+      {
+        "year": 2025,
+        "predicted": 53.3,
+        "lower_80": 50.5,
+        "upper_80": 57.6
+      },
+      {
+        "year": 2026,
+        "predicted": 53.3,
+        "lower_80": 50.5,
+        "upper_80": 57.7
+      },
+      {
+        "year": 2027,
+        "predicted": 53.3,
+        "lower_80": 50.5,
+        "upper_80": 57.7
+      },
+      {
+        "year": 2028,
+        "predicted": 53.3,
+        "lower_80": 50.5,
+        "upper_80": 57.7
+      },
+      {
+        "year": 2029,
+        "predicted": 53.3,
+        "lower_80": 50.5,
+        "upper_80": 57.7
+      },
+      {
+        "year": 2030,
+        "predicted": 53.3,
+        "lower_80": 50.5,
+        "upper_80": 57.7
+      }
+    ],
+    "linear_forecast": [
+      {
+        "year": 2025,
+        "predicted": 66.9,
+        "lower_80": 47.8,
+        "upper_80": 86.0
+      },
+      {
+        "year": 2026,
+        "predicted": 69.0,
+        "lower_80": 49.7,
+        "upper_80": 88.2
+      },
+      {
+        "year": 2027,
+        "predicted": 71.0,
+        "lower_80": 51.5,
+        "upper_80": 90.5
+      },
+      {
+        "year": 2028,
+        "predicted": 73.0,
+        "lower_80": 53.4,
+        "upper_80": 92.7
+      },
+      {
+        "year": 2029,
+        "predicted": 75.1,
+        "lower_80": 55.2,
+        "upper_80": 95.0
+      },
+      {
+        "year": 2030,
+        "predicted": 77.1,
+        "lower_80": 57.0,
+        "upper_80": 97.2
+      }
+    ],
+    "logistic_forecast": [
+      {
+        "year": 2025,
+        "predicted": 53.3,
+        "lower_80": 50.5,
+        "upper_80": 57.6
+      },
+      {
+        "year": 2026,
+        "predicted": 53.3,
+        "lower_80": 50.5,
+        "upper_80": 57.7
+      },
+      {
+        "year": 2027,
+        "predicted": 53.3,
+        "lower_80": 50.5,
+        "upper_80": 57.7
+      },
+      {
+        "year": 2028,
+        "predicted": 53.3,
+        "lower_80": 50.5,
+        "upper_80": 57.7
+      },
+      {
+        "year": 2029,
+        "predicted": 53.3,
+        "lower_80": 50.5,
+        "upper_80": 57.7
+      },
+      {
+        "year": 2030,
+        "predicted": 53.3,
+        "lower_80": 50.5,
+        "upper_80": 57.7
+      }
+    ],
+    "model_info": {
+      "model": "logistic",
+      "L": 53.3,
+      "k": 0.5175,
+      "x0": 2005.8,
+      "r2": 0.773,
+      "rmse": 9.08
+    },
+    "threshold_50_year": 2025,
+    "current_pct": 66.7,
+    "current_year": 2024
+  },
+  {
+    "antibiotic": "meropenem",
+    "short_name": "Mero",
+    "historical": [
+      {
+        "year": 2001,
+        "pct_resistant": 8.3
+      },
+      {
+        "year": 2002,
+        "pct_resistant": 0.0
+      },
+      {
+        "year": 2004,
+        "pct_resistant": 10.0
+      },
+      {
+        "year": 2005,
+        "pct_resistant": 10.5
+      },
+      {
+        "year": 2006,
+        "pct_resistant": 16.7
+      },
+      {
+        "year": 2007,
+        "pct_resistant": 25.0
+      },
+      {
+        "year": 2008,
+        "pct_resistant": 23.5
+      },
+      {
+        "year": 2009,
+        "pct_resistant": 20.0
+      },
+      {
+        "year": 2010,
+        "pct_resistant": 57.7
+      },
+      {
+        "year": 2011,
+        "pct_resistant": 43.5
+      },
+      {
+        "year": 2012,
+        "pct_resistant": 55.2
+      },
+      {
+        "year": 2013,
+        "pct_resistant": 55.9
+      },
+      {
+        "year": 2014,
+        "pct_resistant": 44.4
+      },
+      {
+        "year": 2015,
+        "pct_resistant": 47.5
+      },
+      {
+        "year": 2016,
+        "pct_resistant": 41.4
+      },
+      {
+        "year": 2017,
+        "pct_resistant": 47.2
+      },
+      {
+        "year": 2018,
+        "pct_resistant": 58.1
+      },
+      {
+        "year": 2019,
+        "pct_resistant": 51.4
+      },
+      {
+        "year": 2020,
+        "pct_resistant": 61.5
+      },
+      {
+        "year": 2021,
+        "pct_resistant": 41.7
+      },
+      {
+        "year": 2022,
+        "pct_resistant": 51.1
+      },
+      {
+        "year": 2023,
+        "pct_resistant": 46.6
+      },
+      {
+        "year": 2024,
+        "pct_resistant": 53.6
+      }
+    ],
+    "forecast": [
+      {
+        "year": 2025,
+        "predicted": 51.1,
+        "lower_80": 48.9,
+        "upper_80": 53.7
+      },
+      {
+        "year": 2026,
+        "predicted": 51.1,
+        "lower_80": 48.9,
+        "upper_80": 53.7
+      },
+      {
+        "year": 2027,
+        "predicted": 51.1,
+        "lower_80": 48.9,
+        "upper_80": 53.7
+      },
+      {
+        "year": 2028,
+        "predicted": 51.1,
+        "lower_80": 48.9,
+        "upper_80": 53.7
+      },
+      {
+        "year": 2029,
+        "predicted": 51.1,
+        "lower_80": 48.9,
+        "upper_80": 53.7
+      },
+      {
+        "year": 2030,
+        "predicted": 51.1,
+        "lower_80": 48.9,
+        "upper_80": 53.7
+      }
+    ],
+    "linear_forecast": [
+      {
+        "year": 2025,
+        "predicted": 64.8,
+        "lower_80": 48.6,
+        "upper_80": 81.0
+      },
+      {
+        "year": 2026,
+        "predicted": 67.0,
+        "lower_80": 50.6,
+        "upper_80": 83.4
+      },
+      {
+        "year": 2027,
+        "predicted": 69.3,
+        "lower_80": 52.7,
+        "upper_80": 85.8
+      },
+      {
+        "year": 2028,
+        "predicted": 71.5,
+        "lower_80": 54.7,
+        "upper_80": 88.3
+      },
+      {
+        "year": 2029,
+        "predicted": 73.7,
+        "lower_80": 56.8,
+        "upper_80": 90.7
+      },
+      {
+        "year": 2030,
+        "predicted": 75.9,
+        "lower_80": 58.8,
+        "upper_80": 93.1
+      }
+    ],
+    "logistic_forecast": [
+      {
+        "year": 2025,
+        "predicted": 51.1,
+        "lower_80": 48.9,
+        "upper_80": 53.7
+      },
+      {
+        "year": 2026,
+        "predicted": 51.1,
+        "lower_80": 48.9,
+        "upper_80": 53.7
+      },
+      {
+        "year": 2027,
+        "predicted": 51.1,
+        "lower_80": 48.9,
+        "upper_80": 53.7
+      },
+      {
+        "year": 2028,
+        "predicted": 51.1,
+        "lower_80": 48.9,
+        "upper_80": 53.7
+      },
+      {
+        "year": 2029,
+        "predicted": 51.1,
+        "lower_80": 48.9,
+        "upper_80": 53.7
+      },
+      {
+        "year": 2030,
+        "predicted": 51.1,
+        "lower_80": 48.9,
+        "upper_80": 53.7
+      }
+    ],
+    "model_info": {
+      "model": "logistic",
+      "L": 51.1,
+      "k": 0.5573,
+      "x0": 2007.5,
+      "r2": 0.854,
+      "rmse": 7.1
+    },
+    "threshold_50_year": 2025,
+    "current_pct": 53.6,
+    "current_year": 2024
+  },
+  {
+    "antibiotic": "gentamicin",
+    "short_name": "Gent",
+    "historical": [
+      {
+        "year": 2001,
+        "pct_resistant": 0.0
+      },
+      {
+        "year": 2002,
+        "pct_resistant": 20.0
+      },
+      {
+        "year": 2003,
+        "pct_resistant": 40.0
+      },
+      {
+        "year": 2004,
+        "pct_resistant": 58.3
+      },
+      {
+        "year": 2005,
+        "pct_resistant": 22.2
+      },
+      {
+        "year": 2006,
+        "pct_resistant": 84.2
+      },
+      {
+        "year": 2007,
+        "pct_resistant": 60.0
+      },
+      {
+        "year": 2008,
+        "pct_resistant": 68.8
+      },
+      {
+        "year": 2009,
+        "pct_resistant": 47.2
+      },
+      {
+        "year": 2010,
+        "pct_resistant": 54.5
+      },
+      {
+        "year": 2011,
+        "pct_resistant": 41.8
+      },
+      {
+        "year": 2012,
+        "pct_resistant": 57.1
+      },
+      {
+        "year": 2013,
+        "pct_resistant": 62.8
+      },
+      {
+        "year": 2014,
+        "pct_resistant": 52.5
+      },
+      {
+        "year": 2015,
+        "pct_resistant": 44.8
+      },
+      {
+        "year": 2016,
+        "pct_resistant": 54.4
+      },
+      {
+        "year": 2017,
+        "pct_resistant": 47.8
+      },
+      {
+        "year": 2018,
+        "pct_resistant": 43.1
+      },
+      {
+        "year": 2019,
+        "pct_resistant": 46.2
+      },
+      {
+        "year": 2020,
+        "pct_resistant": 41.7
+      },
+      {
+        "year": 2021,
+        "pct_resistant": 43.8
+      },
+      {
+        "year": 2022,
+        "pct_resistant": 47.9
+      },
+      {
+        "year": 2023,
+        "pct_resistant": 40.6
+      },
+      {
+        "year": 2024,
+        "pct_resistant": 22.7
+      }
+    ],
+    "forecast": [
+      {
+        "year": 2025,
+        "predicted": 47.7,
+        "lower_80": 22.3,
+        "upper_80": 73.1
+      },
+      {
+        "year": 2026,
+        "predicted": 47.8,
+        "lower_80": 22.2,
+        "upper_80": 73.5
+      },
+      {
+        "year": 2027,
+        "predicted": 48.0,
+        "lower_80": 22.0,
+        "upper_80": 73.9
+      },
+      {
+        "year": 2028,
+        "predicted": 48.1,
+        "lower_80": 21.9,
+        "upper_80": 74.3
+      },
+      {
+        "year": 2029,
+        "predicted": 48.2,
+        "lower_80": 21.7,
+        "upper_80": 74.7
+      },
+      {
+        "year": 2030,
+        "predicted": 48.4,
+        "lower_80": 21.6,
+        "upper_80": 75.2
+      }
+    ],
+    "linear_forecast": [
+      {
+        "year": 2025,
+        "predicted": 47.7,
+        "lower_80": 22.3,
+        "upper_80": 73.1
+      },
+      {
+        "year": 2026,
+        "predicted": 47.8,
+        "lower_80": 22.2,
+        "upper_80": 73.5
+      },
+      {
+        "year": 2027,
+        "predicted": 48.0,
+        "lower_80": 22.0,
+        "upper_80": 73.9
+      },
+      {
+        "year": 2028,
+        "predicted": 48.1,
+        "lower_80": 21.9,
+        "upper_80": 74.3
+      },
+      {
+        "year": 2029,
+        "predicted": 48.2,
+        "lower_80": 21.7,
+        "upper_80": 74.7
+      },
+      {
+        "year": 2030,
+        "predicted": 48.4,
+        "lower_80": 21.6,
+        "upper_80": 75.2
+      }
+    ],
+    "logistic_forecast": [
+      {
+        "year": 2025,
+        "predicted": 48.5,
+        "lower_80": 46.2,
+        "upper_80": 53.5
+      },
+      {
+        "year": 2026,
+        "predicted": 48.7,
+        "lower_80": 46.3,
+        "upper_80": 53.7
+      },
+      {
+        "year": 2027,
+        "predicted": 48.9,
+        "lower_80": 46.5,
+        "upper_80": 53.8
+      },
+      {
+        "year": 2028,
+        "predicted": 49.1,
+        "lower_80": 46.6,
+        "upper_80": 53.8
+      },
+      {
+        "year": 2029,
+        "predicted": 49.3,
+        "lower_80": 46.7,
+        "upper_80": 54.0
+      },
+      {
+        "year": 2030,
+        "predicted": 49.5,
+        "lower_80": 46.9,
+        "upper_80": 54.2
+      }
+    ],
+    "model_info": {
+      "model": "linear",
+      "slope": 0.14,
+      "intercept": -235.467,
+      "r2": 0.003,
+      "p_value": 0.7917,
+      "rmse": 17.74
+    },
+    "threshold_50_year": null,
+    "current_pct": 22.7,
+    "current_year": 2024
+  },
+  {
+    "antibiotic": "tetracycline",
+    "short_name": "Tet",
+    "historical": [
+      {
+        "year": 2001,
+        "pct_resistant": 60.0
+      },
+      {
+        "year": 2002,
+        "pct_resistant": 50.0
+      },
+      {
+        "year": 2003,
+        "pct_resistant": 55.6
+      },
+      {
+        "year": 2004,
+        "pct_resistant": 81.8
+      },
+      {
+        "year": 2005,
+        "pct_resistant": 52.4
+      },
+      {
+        "year": 2006,
+        "pct_resistant": 60.0
+      },
+      {
+        "year": 2007,
+        "pct_resistant": 43.8
+      },
+      {
+        "year": 2008,
+        "pct_resistant": 53.8
+      },
+      {
+        "year": 2009,
+        "pct_resistant": 35.0
+      },
+      {
+        "year": 2010,
+        "pct_resistant": 40.0
+      },
+      {
+        "year": 2011,
+        "pct_resistant": 59.6
+      },
+      {
+        "year": 2012,
+        "pct_resistant": 44.6
+      },
+      {
+        "year": 2013,
+        "pct_resistant": 40.3
+      },
+      {
+        "year": 2014,
+        "pct_resistant": 49.0
+      },
+      {
+        "year": 2015,
+        "pct_resistant": 52.1
+      },
+      {
+        "year": 2016,
+        "pct_resistant": 53.3
+      },
+      {
+        "year": 2017,
+        "pct_resistant": 54.2
+      },
+      {
+        "year": 2018,
+        "pct_resistant": 56.5
+      },
+      {
+        "year": 2019,
+        "pct_resistant": 53.3
+      },
+      {
+        "year": 2020,
+        "pct_resistant": 44.5
+      },
+      {
+        "year": 2021,
+        "pct_resistant": 49.0
+      },
+      {
+        "year": 2022,
+        "pct_resistant": 60.6
+      },
+      {
+        "year": 2023,
+        "pct_resistant": 48.8
+      },
+      {
+        "year": 2024,
+        "pct_resistant": 77.8
+      }
+    ],
+    "forecast": [
+      {
+        "year": 2025,
+        "predicted": 53.2,
+        "lower_80": 37.6,
+        "upper_80": 68.8
+      },
+      {
+        "year": 2026,
+        "predicted": 53.2,
+        "lower_80": 37.5,
+        "upper_80": 69.0
+      },
+      {
+        "year": 2027,
+        "predicted": 53.2,
+        "lower_80": 37.3,
+        "upper_80": 69.2
+      },
+      {
+        "year": 2028,
+        "predicted": 53.2,
+        "lower_80": 37.2,
+        "upper_80": 69.3
+      },
+      {
+        "year": 2029,
+        "predicted": 53.3,
+        "lower_80": 37.0,
+        "upper_80": 69.5
+      },
+      {
+        "year": 2030,
+        "predicted": 53.3,
+        "lower_80": 36.8,
+        "upper_80": 69.7
+      }
+    ],
+    "linear_forecast": [
+      {
+        "year": 2025,
+        "predicted": 53.2,
+        "lower_80": 37.6,
+        "upper_80": 68.8
+      },
+      {
+        "year": 2026,
+        "predicted": 53.2,
+        "lower_80": 37.5,
+        "upper_80": 69.0
+      },
+      {
+        "year": 2027,
+        "predicted": 53.2,
+        "lower_80": 37.3,
+        "upper_80": 69.2
+      },
+      {
+        "year": 2028,
+        "predicted": 53.2,
+        "lower_80": 37.2,
+        "upper_80": 69.3
+      },
+      {
+        "year": 2029,
+        "predicted": 53.3,
+        "lower_80": 37.0,
+        "upper_80": 69.5
+      },
+      {
+        "year": 2030,
+        "predicted": 53.3,
+        "lower_80": 36.8,
+        "upper_80": 69.7
+      }
+    ],
+    "logistic_forecast": [
+      {
+        "year": 2025,
+        "predicted": 56.0,
+        "lower_80": 53.9,
+        "upper_80": 60.6
+      },
+      {
+        "year": 2026,
+        "predicted": 56.3,
+        "lower_80": 54.1,
+        "upper_80": 60.9
+      },
+      {
+        "year": 2027,
+        "predicted": 56.5,
+        "lower_80": 54.3,
+        "upper_80": 61.2
+      },
+      {
+        "year": 2028,
+        "predicted": 56.7,
+        "lower_80": 54.6,
+        "upper_80": 61.5
+      },
+      {
+        "year": 2029,
+        "predicted": 57.0,
+        "lower_80": 54.8,
+        "upper_80": 61.8
+      },
+      {
+        "year": 2030,
+        "predicted": 57.2,
+        "lower_80": 55.0,
+        "upper_80": 62.1
+      }
+    ],
+    "model_info": {
+      "model": "linear",
+      "slope": 0.005,
+      "intercept": 42.842,
+      "r2": 0.0,
+      "p_value": 0.9874,
+      "rmse": 10.88
+    },
+    "threshold_50_year": 2025,
+    "current_pct": 77.8,
+    "current_year": 2024
+  },
+  {
+    "antibiotic": "trimethoprim/sulfamethoxazole",
+    "short_name": "TMP/SMX",
+    "historical": [
+      {
+        "year": 2000,
+        "pct_resistant": 42.9
+      },
+      {
+        "year": 2001,
+        "pct_resistant": 11.5
+      },
+      {
+        "year": 2003,
+        "pct_resistant": 28.6
+      },
+      {
+        "year": 2004,
+        "pct_resistant": 81.8
+      },
+      {
+        "year": 2005,
+        "pct_resistant": 21.7
+      },
+      {
+        "year": 2006,
+        "pct_resistant": 68.8
+      },
+      {
+        "year": 2007,
+        "pct_resistant": 60.0
+      },
+      {
+        "year": 2008,
+        "pct_resistant": 36.4
+      },
+      {
+        "year": 2009,
+        "pct_resistant": 25.4
+      },
+      {
+        "year": 2010,
+        "pct_resistant": 47.4
+      },
+      {
+        "year": 2011,
+        "pct_resistant": 40.4
+      },
+      {
+        "year": 2012,
+        "pct_resistant": 67.8
+      },
+      {
+        "year": 2013,
+        "pct_resistant": 60.6
+      },
+      {
+        "year": 2014,
+        "pct_resistant": 50.0
+      },
+      {
+        "year": 2015,
+        "pct_resistant": 46.0
+      },
+      {
+        "year": 2016,
+        "pct_resistant": 54.6
+      },
+      {
+        "year": 2017,
+        "pct_resistant": 49.5
+      },
+      {
+        "year": 2018,
+        "pct_resistant": 45.8
+      },
+      {
+        "year": 2019,
+        "pct_resistant": 46.5
+      },
+      {
+        "year": 2020,
+        "pct_resistant": 53.1
+      },
+      {
+        "year": 2021,
+        "pct_resistant": 45.5
+      },
+      {
+        "year": 2022,
+        "pct_resistant": 43.4
+      },
+      {
+        "year": 2023,
+        "pct_resistant": 42.9
+      }
+    ],
+    "forecast": [
+      {
+        "year": 2025,
+        "predicted": 49.0,
+        "lower_80": 47.6,
+        "upper_80": 53.3
+      },
+      {
+        "year": 2026,
+        "predicted": 49.0,
+        "lower_80": 47.6,
+        "upper_80": 53.3
+      },
+      {
+        "year": 2027,
+        "predicted": 49.0,
+        "lower_80": 47.6,
+        "upper_80": 53.5
+      },
+      {
+        "year": 2028,
+        "predicted": 49.0,
+        "lower_80": 47.6,
+        "upper_80": 53.8
+      },
+      {
+        "year": 2029,
+        "predicted": 49.0,
+        "lower_80": 47.6,
+        "upper_80": 53.8
+      },
+      {
+        "year": 2030,
+        "predicted": 49.0,
+        "lower_80": 47.6,
+        "upper_80": 53.8
+      }
+    ],
+    "linear_forecast": [
+      {
+        "year": 2025,
+        "predicted": 51.8,
+        "lower_80": 28.7,
+        "upper_80": 74.9
+      },
+      {
+        "year": 2026,
+        "predicted": 52.2,
+        "lower_80": 28.8,
+        "upper_80": 75.6
+      },
+      {
+        "year": 2027,
+        "predicted": 52.6,
+        "lower_80": 29.0,
+        "upper_80": 76.2
+      },
+      {
+        "year": 2028,
+        "predicted": 53.0,
+        "lower_80": 29.1,
+        "upper_80": 76.9
+      },
+      {
+        "year": 2029,
+        "predicted": 53.4,
+        "lower_80": 29.2,
+        "upper_80": 77.6
+      },
+      {
+        "year": 2030,
+        "predicted": 53.8,
+        "lower_80": 29.3,
+        "upper_80": 78.3
+      }
+    ],
+    "logistic_forecast": [
+      {
+        "year": 2025,
+        "predicted": 49.0,
+        "lower_80": 47.6,
+        "upper_80": 53.3
+      },
+      {
+        "year": 2026,
+        "predicted": 49.0,
+        "lower_80": 47.6,
+        "upper_80": 53.3
+      },
+      {
+        "year": 2027,
+        "predicted": 49.0,
+        "lower_80": 47.6,
+        "upper_80": 53.5
+      },
+      {
+        "year": 2028,
+        "predicted": 49.0,
+        "lower_80": 47.6,
+        "upper_80": 53.8
+      },
+      {
+        "year": 2029,
+        "predicted": 49.0,
+        "lower_80": 47.6,
+        "upper_80": 53.8
+      },
+      {
+        "year": 2030,
+        "predicted": 49.0,
+        "lower_80": 47.6,
+        "upper_80": 53.8
+      }
+    ],
+    "model_info": {
+      "model": "logistic",
+      "L": 49.0,
+      "k": 0.5075,
+      "x0": 1999.5,
+      "r2": 0.108,
+      "rmse": 14.59
+    },
+    "threshold_50_year": null,
+    "current_pct": 42.9,
+    "current_year": 2023
+  },
+  {
+    "antibiotic": "cefepime",
+    "short_name": "Cef",
+    "historical": [
+      {
+        "year": 2001,
+        "pct_resistant": 0.0
+      },
+      {
+        "year": 2002,
+        "pct_resistant": 20.0
+      },
+      {
+        "year": 2003,
+        "pct_resistant": 80.0
+      },
+      {
+        "year": 2005,
+        "pct_resistant": 14.3
+      },
+      {
+        "year": 2006,
+        "pct_resistant": 50.0
+      },
+      {
+        "year": 2007,
+        "pct_resistant": 53.8
+      },
+      {
+        "year": 2008,
+        "pct_resistant": 46.7
+      },
+      {
+        "year": 2009,
+        "pct_resistant": 30.0
+      },
+      {
+        "year": 2010,
+        "pct_resistant": 53.8
+      },
+      {
+        "year": 2011,
+        "pct_resistant": 49.3
+      },
+      {
+        "year": 2012,
+        "pct_resistant": 60.4
+      },
+      {
+        "year": 2013,
+        "pct_resistant": 60.9
+      },
+      {
+        "year": 2014,
+        "pct_resistant": 57.5
+      },
+      {
+        "year": 2015,
+        "pct_resistant": 50.0
+      },
+      {
+        "year": 2016,
+        "pct_resistant": 60.6
+      },
+      {
+        "year": 2017,
+        "pct_resistant": 40.6
+      },
+      {
+        "year": 2018,
+        "pct_resistant": 43.1
+      },
+      {
+        "year": 2019,
+        "pct_resistant": 41.2
+      },
+      {
+        "year": 2020,
+        "pct_resistant": 43.5
+      },
+      {
+        "year": 2021,
+        "pct_resistant": 52.9
+      },
+      {
+        "year": 2022,
+        "pct_resistant": 44.9
+      },
+      {
+        "year": 2023,
+        "pct_resistant": 56.2
+      },
+      {
+        "year": 2024,
+        "pct_resistant": 63.6
+      }
+    ],
+    "forecast": [
+      {
+        "year": 2025,
+        "predicted": 50.0,
+        "lower_80": 46.8,
+        "upper_80": 54.4
+      },
+      {
+        "year": 2026,
+        "predicted": 50.0,
+        "lower_80": 46.8,
+        "upper_80": 54.4
+      },
+      {
+        "year": 2027,
+        "predicted": 50.0,
+        "lower_80": 46.8,
+        "upper_80": 54.4
+      },
+      {
+        "year": 2028,
+        "predicted": 50.0,
+        "lower_80": 46.8,
+        "upper_80": 54.4
+      },
+      {
+        "year": 2029,
+        "predicted": 50.0,
+        "lower_80": 46.8,
+        "upper_80": 54.4
+      },
+      {
+        "year": 2030,
+        "predicted": 50.0,
+        "lower_80": 46.8,
+        "upper_80": 54.4
+      }
+    ],
+    "linear_forecast": [
+      {
+        "year": 2025,
+        "predicted": 58.1,
+        "lower_80": 34.4,
+        "upper_80": 81.8
+      },
+      {
+        "year": 2026,
+        "predicted": 59.1,
+        "lower_80": 35.2,
+        "upper_80": 83.0
+      },
+      {
+        "year": 2027,
+        "predicted": 60.0,
+        "lower_80": 35.9,
+        "upper_80": 84.2
+      },
+      {
+        "year": 2028,
+        "predicted": 61.0,
+        "lower_80": 36.5,
+        "upper_80": 85.4
+      },
+      {
+        "year": 2029,
+        "predicted": 61.9,
+        "lower_80": 37.2,
+        "upper_80": 86.7
+      },
+      {
+        "year": 2030,
+        "predicted": 62.9,
+        "lower_80": 37.8,
+        "upper_80": 87.9
+      }
+    ],
+    "logistic_forecast": [
+      {
+        "year": 2025,
+        "predicted": 50.0,
+        "lower_80": 46.8,
+        "upper_80": 54.4
+      },
+      {
+        "year": 2026,
+        "predicted": 50.0,
+        "lower_80": 46.8,
+        "upper_80": 54.4
+      },
+      {
+        "year": 2027,
+        "predicted": 50.0,
+        "lower_80": 46.8,
+        "upper_80": 54.4
+      },
+      {
+        "year": 2028,
+        "predicted": 50.0,
+        "lower_80": 46.8,
+        "upper_80": 54.4
+      },
+      {
+        "year": 2029,
+        "predicted": 50.0,
+        "lower_80": 46.8,
+        "upper_80": 54.4
+      },
+      {
+        "year": 2030,
+        "predicted": 50.0,
+        "lower_80": 46.8,
+        "upper_80": 54.4
+      }
+    ],
+    "model_info": {
+      "model": "logistic",
+      "L": 50.0,
+      "k": 2.0,
+      "x0": 2001.9,
+      "r2": 0.408,
+      "rmse": 13.1
+    },
+    "threshold_50_year": 2025,
+    "current_pct": 63.6,
+    "current_year": 2024
+  }
+]

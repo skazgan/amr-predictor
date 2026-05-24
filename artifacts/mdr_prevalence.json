@@ -1,0 +1,19 @@
+{
+  "total_genomes": 5737,
+  "susceptible_all": 1699,
+  "single_resistant": 1948,
+  "double_resistant": 1811,
+  "mdr_3plus": 279,
+  "mdr_4plus": 35,
+  "mdr_5plus": 0,
+  "pan_resistant": 0,
+  "pct_mdr": 4.9,
+  "mean_resistances": 1.12,
+  "distribution": {
+    "0.0": 1699,
+    "1.0": 1948,
+    "2.0": 1811,
+    "3.0": 244,
+    "4.0": 35
+  }
+}

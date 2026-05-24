@@ -1,0 +1,802 @@
+[
+  {
+    "gene": "Class A beta-lactamase (EC 3.5.2.6) => CTX-M family, extended-spectrum",
+    "trend": [
+      {
+        "year": 2010,
+        "frequency": 8.0,
+        "n": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 10.9,
+        "n": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 30.3,
+        "n": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 18.6,
+        "n": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 17.6,
+        "n": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 13.5,
+        "n": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 9.2,
+        "n": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 12.2,
+        "n": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 8.1,
+        "n": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 10.0,
+        "n": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 8.4,
+        "n": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 11.0,
+        "n": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 10.7,
+        "n": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 8.7,
+        "n": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 4.2,
+        "n": 95
+      }
+    ]
+  },
+  {
+    "gene": "Dihydropteroate synthase type-2 (EC 2.5.1.15) @ Sulfonamide resistance protein",
+    "trend": [
+      {
+        "year": 2010,
+        "frequency": 10.7,
+        "n": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 18.1,
+        "n": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 29.9,
+        "n": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 22.0,
+        "n": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 17.7,
+        "n": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 13.6,
+        "n": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 7.9,
+        "n": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 8.4,
+        "n": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 6.9,
+        "n": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 5.7,
+        "n": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 4.4,
+        "n": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 5.2,
+        "n": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 5.1,
+        "n": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 2.7,
+        "n": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 0.0,
+        "n": 95
+      }
+    ]
+  },
+  {
+    "gene": "hypothetical protein",
+    "trend": [
+      {
+        "year": 2010,
+        "frequency": 10.7,
+        "n": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 14.7,
+        "n": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 29.9,
+        "n": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 22.3,
+        "n": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 19.8,
+        "n": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 17.1,
+        "n": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 13.6,
+        "n": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 11.5,
+        "n": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 9.4,
+        "n": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 12.7,
+        "n": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 11.0,
+        "n": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 10.8,
+        "n": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 7.6,
+        "n": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 9.6,
+        "n": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 3.2,
+        "n": 95
+      }
+    ]
+  },
+  {
+    "gene": "EmrAB-TolC",
+    "trend": [
+      {
+        "year": 2010,
+        "frequency": 37.5,
+        "n": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 41.6,
+        "n": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 22.4,
+        "n": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 32.9,
+        "n": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 36.5,
+        "n": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 40.4,
+        "n": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 48.5,
+        "n": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 50.0,
+        "n": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 60.8,
+        "n": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 61.7,
+        "n": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 63.8,
+        "n": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 57.5,
+        "n": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 58.5,
+        "n": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 64.4,
+        "n": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 69.5,
+        "n": 95
+      }
+    ]
+  },
+  {
+    "gene": "Aminoglycoside N(3)-acetyltransferase (EC 2.3.1.81) => AAC(3)-II,III,IV,VI,VIII,IX,X",
+    "trend": [
+      {
+        "year": 2010,
+        "frequency": 9.8,
+        "n": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 5.9,
+        "n": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 19.3,
+        "n": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 13.8,
+        "n": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 11.9,
+        "n": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 7.0,
+        "n": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 3.6,
+        "n": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 2.8,
+        "n": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 2.1,
+        "n": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 1.4,
+        "n": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 0.4,
+        "n": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 1.4,
+        "n": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 0.8,
+        "n": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 0.3,
+        "n": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 0.0,
+        "n": 95
+      }
+    ]
+  },
+  {
+    "gene": "Multidrug efflux pump MdfA/Cmr (of MFS type), broad spectrum",
+    "trend": [
+      {
+        "year": 2010,
+        "frequency": 14.3,
+        "n": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 21.0,
+        "n": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 45.5,
+        "n": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 31.7,
+        "n": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 28.9,
+        "n": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 22.4,
+        "n": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 10.5,
+        "n": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 15.1,
+        "n": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 5.1,
+        "n": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 4.0,
+        "n": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 3.7,
+        "n": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 5.2,
+        "n": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 2.5,
+        "n": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 2.4,
+        "n": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 0.0,
+        "n": 95
+      }
+    ]
+  },
+  {
+    "gene": "MdtABC-TolC",
+    "trend": [
+      {
+        "year": 2010,
+        "frequency": 41.1,
+        "n": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 44.1,
+        "n": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 23.3,
+        "n": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 34.1,
+        "n": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 35.4,
+        "n": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 37.3,
+        "n": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 51.2,
+        "n": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 48.4,
+        "n": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 58.7,
+        "n": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 60.6,
+        "n": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 59.5,
+        "n": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 58.9,
+        "n": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 57.3,
+        "n": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 62.0,
+        "n": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 73.7,
+        "n": 95
+      }
+    ]
+  },
+  {
+    "gene": "gyrA",
+    "trend": [
+      {
+        "year": 2010,
+        "frequency": 41.1,
+        "n": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 34.0,
+        "n": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 21.2,
+        "n": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 28.0,
+        "n": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 30.0,
+        "n": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 34.2,
+        "n": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 44.3,
+        "n": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 43.5,
+        "n": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 50.6,
+        "n": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 51.6,
+        "n": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 49.9,
+        "n": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 49.2,
+        "n": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 47.9,
+        "n": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 55.4,
+        "n": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 61.1,
+        "n": 95
+      }
+    ]
+  },
+  {
+    "gene": "Transcriptional regulator, MarR family",
+    "trend": [
+      {
+        "year": 2010,
+        "frequency": 2.7,
+        "n": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 4.2,
+        "n": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 31.7,
+        "n": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 21.8,
+        "n": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 21.7,
+        "n": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 11.1,
+        "n": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 0.9,
+        "n": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 0.2,
+        "n": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 0.0,
+        "n": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 0.0,
+        "n": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 0.0,
+        "n": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 0.0,
+        "n": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 0.0,
+        "n": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 0.0,
+        "n": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 0.0,
+        "n": 95
+      }
+    ]
+  },
+  {
+    "gene": "Ddl",
+    "trend": [
+      {
+        "year": 2010,
+        "frequency": 41.1,
+        "n": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 36.6,
+        "n": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 15.8,
+        "n": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 24.1,
+        "n": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 27.5,
+        "n": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 28.0,
+        "n": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 39.3,
+        "n": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 36.5,
+        "n": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 44.5,
+        "n": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 47.6,
+        "n": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 43.6,
+        "n": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 44.0,
+        "n": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 45.3,
+        "n": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 52.1,
+        "n": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 53.7,
+        "n": 95
+      }
+    ]
+  }
+]

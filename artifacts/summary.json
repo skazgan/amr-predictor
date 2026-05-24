@@ -1,0 +1,68 @@
+[
+  {
+    "antibiotic": "ciprofloxacin",
+    "drug_class": "Fluoroquinolone",
+    "n_genomes": 3668,
+    "cv_auc": 0.804,
+    "test_auc": 0.79,
+    "accuracy": 0.725,
+    "precision_r": 0.722,
+    "recall_r": 0.726,
+    "f1_r": 0.724
+  },
+  {
+    "antibiotic": "meropenem",
+    "drug_class": "Carbapenem",
+    "n_genomes": 3678,
+    "cv_auc": 0.875,
+    "test_auc": 0.869,
+    "accuracy": 0.791,
+    "precision_r": 0.831,
+    "recall_r": 0.732,
+    "f1_r": 0.779
+  },
+  {
+    "antibiotic": "gentamicin",
+    "drug_class": "Aminoglycoside",
+    "n_genomes": 3664,
+    "cv_auc": 0.79,
+    "test_auc": 0.821,
+    "accuracy": 0.727,
+    "precision_r": 0.777,
+    "recall_r": 0.642,
+    "f1_r": 0.703
+  },
+  {
+    "antibiotic": "tetracycline",
+    "drug_class": "Tetracycline",
+    "n_genomes": 3680,
+    "cv_auc": 0.745,
+    "test_auc": 0.773,
+    "accuracy": 0.7,
+    "precision_r": 0.809,
+    "recall_r": 0.519,
+    "f1_r": 0.632
+  },
+  {
+    "antibiotic": "trimethoprim/sulfamethoxazole",
+    "drug_class": "Folate inhibitor",
+    "n_genomes": 3610,
+    "cv_auc": 0.827,
+    "test_auc": 0.842,
+    "accuracy": 0.77,
+    "precision_r": 0.763,
+    "recall_r": 0.788,
+    "f1_r": 0.776
+  },
+  {
+    "antibiotic": "cefepime",
+    "drug_class": "Cephalosporin",
+    "n_genomes": 3620,
+    "cv_auc": 0.803,
+    "test_auc": 0.802,
+    "accuracy": 0.732,
+    "precision_r": 0.751,
+    "recall_r": 0.697,
+    "f1_r": 0.723
+  }
+]

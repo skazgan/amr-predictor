@@ -1,0 +1,5806 @@
+[
+  {
+    "gene": "MdtABC-TolC",
+    "emergence_year": 2000,
+    "peak_year": 2024,
+    "peak_frequency": 73.7,
+    "current_frequency": 73.7,
+    "current_year": 2024,
+    "overall_prevalence": 48.7,
+    "growth_model": {
+      "model": "logistic",
+      "slope": 0.548,
+      "r2": 0.108,
+      "plateau": 100.0,
+      "emergence_speed": "moderate",
+      "p_value": 0.1095,
+      "midpoint": 2013.3,
+      "growth_k": 0.022
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 52.9,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 57.9,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 46.7,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 71.4,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 35.0,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 37.9,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 43.7,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 39.7,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 50.0,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 53.0,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 41.1,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 44.1,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 23.3,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 34.1,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 35.4,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 37.3,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 51.2,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 48.4,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 58.7,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 60.6,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 59.5,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 58.9,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 57.3,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 62.0,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 73.7,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "gyrA",
+    "emergence_year": 2000,
+    "peak_year": 2024,
+    "peak_frequency": 61.1,
+    "current_frequency": 61.1,
+    "current_year": 2024,
+    "overall_prevalence": 41.8,
+    "growth_model": {
+      "model": "logistic",
+      "slope": 0.536,
+      "r2": 0.143,
+      "plateau": 100.0,
+      "emergence_speed": "moderate",
+      "p_value": 0.0673,
+      "midpoint": 2026.5,
+      "growth_k": 0.023
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 35.3,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 59.6,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 33.3,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 57.1,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 32.5,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 37.9,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 33.8,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 34.5,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 35.5,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 44.0,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 41.1,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 34.0,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 21.2,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 28.0,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 30.0,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 34.2,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 44.3,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 43.5,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 50.6,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 51.6,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 49.9,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 49.2,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 47.9,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 55.4,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 61.1,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "Ddl",
+    "emergence_year": 2000,
+    "peak_year": 2024,
+    "peak_frequency": 53.7,
+    "current_frequency": 53.7,
+    "current_year": 2024,
+    "overall_prevalence": 36.9,
+    "growth_model": {
+      "model": "logistic",
+      "slope": 0.653,
+      "r2": 0.238,
+      "plateau": 99.4,
+      "emergence_speed": "moderate",
+      "p_value": 0.0165,
+      "midpoint": 2030.0,
+      "growth_k": 0.031
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 29.4,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 49.1,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 40.0,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 35.7,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 20.0,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 33.7,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 23.9,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 25.9,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 40.3,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 34.9,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 41.1,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 36.6,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 15.8,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 24.1,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 27.5,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 28.0,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 39.3,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 36.5,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 44.5,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 47.6,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 43.6,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 44.0,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 45.3,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 52.1,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 53.7,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "msbA",
+    "emergence_year": 2000,
+    "peak_year": 2023,
+    "peak_frequency": 40.1,
+    "current_frequency": 34.7,
+    "current_year": 2024,
+    "overall_prevalence": 27.8,
+    "growth_model": {
+      "model": "logistic",
+      "slope": 0.603,
+      "r2": 0.404,
+      "plateau": 77.7,
+      "emergence_speed": "moderate",
+      "p_value": 0.0009,
+      "midpoint": 2030.0,
+      "growth_k": 0.037
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 11.8,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 28.1,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 26.7,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 28.6,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 22.5,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 27.4,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 26.8,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 22.4,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 22.6,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 21.1,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 23.2,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 27.3,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 13.1,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 17.0,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 18.9,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 24.7,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 29.1,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 30.8,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 30.7,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 32.6,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 35.6,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 34.5,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 36.4,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 40.1,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 34.7,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "TEM family",
+    "emergence_year": 2002,
+    "peak_year": 2024,
+    "peak_frequency": 24.2,
+    "current_frequency": 24.2,
+    "current_year": 2024,
+    "overall_prevalence": 11.5,
+    "growth_model": {
+      "model": "logistic",
+      "slope": 0.557,
+      "r2": 0.526,
+      "plateau": 45.3,
+      "emergence_speed": "moderate",
+      "p_value": 0.0,
+      "midpoint": 2030.0,
+      "growth_k": 0.075
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 0.0,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 0.0,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 3.3,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 7.1,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 17.5,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 3.2,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 8.5,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 10.3,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 11.3,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 2.4,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 8.9,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 8.8,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 7.2,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 8.2,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 8.2,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 8.2,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 15.2,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 11.6,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 14.5,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 15.2,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 11.9,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 14.4,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 15.3,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 12.3,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 24.2,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "H-NS",
+    "emergence_year": 2000,
+    "peak_year": 2000,
+    "peak_frequency": 76.5,
+    "current_frequency": 73.7,
+    "current_year": 2024,
+    "overall_prevalence": 42.2,
+    "growth_model": {
+      "model": "logistic",
+      "slope": 0.21,
+      "r2": 0.015,
+      "plateau": 97.0,
+      "emergence_speed": "slow",
+      "p_value": 0.5694,
+      "midpoint": 2030.0,
+      "growth_k": 0.009
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 76.5,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 49.1,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 46.7,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 57.1,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 35.0,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 44.2,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 23.9,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 36.2,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 43.5,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 42.8,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 42.0,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 34.9,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 21.4,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 30.5,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 30.7,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 33.7,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 44.1,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 44.8,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 49.2,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 49.1,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 52.5,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 47.8,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 55.4,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 47.9,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 73.7,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "AcrAB-TolC",
+    "emergence_year": 2000,
+    "peak_year": 2024,
+    "peak_frequency": 70.5,
+    "current_frequency": 70.5,
+    "current_year": 2024,
+    "overall_prevalence": 49.7,
+    "growth_model": {
+      "model": "linear",
+      "slope": 0.489,
+      "r2": 0.089,
+      "plateau": null,
+      "emergence_speed": "slow",
+      "p_value": 0.147
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 64.7,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 56.1,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 63.3,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 46.4,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 37.5,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 37.9,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 47.9,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 48.3,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 53.2,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 54.8,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 38.4,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 42.0,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 24.3,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 32.2,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 37.4,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 38.9,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 52.7,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 49.2,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 61.4,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 60.9,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 60.3,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 58.5,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 61.3,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 66.2,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 70.5,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "EmrAB-TolC",
+    "emergence_year": 2000,
+    "peak_year": 2024,
+    "peak_frequency": 69.5,
+    "current_frequency": 69.5,
+    "current_year": 2024,
+    "overall_prevalence": 49.5,
+    "growth_model": {
+      "model": "linear",
+      "slope": 0.362,
+      "r2": 0.049,
+      "plateau": null,
+      "emergence_speed": "slow",
+      "p_value": 0.2889
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 58.8,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 59.6,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 60.0,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 60.7,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 52.5,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 48.4,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 31.0,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 50.0,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 45.2,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 50.6,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 37.5,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 41.6,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 22.4,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 32.9,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 36.5,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 40.4,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 48.5,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 50.0,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 60.8,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 61.7,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 63.8,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 57.5,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 58.5,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 64.4,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 69.5,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "kasA",
+    "emergence_year": 2000,
+    "peak_year": 2000,
+    "peak_frequency": 64.7,
+    "current_frequency": 51.6,
+    "current_year": 2024,
+    "overall_prevalence": 37.4,
+    "growth_model": {
+      "model": "logistic",
+      "slope": 0.222,
+      "r2": 0.023,
+      "plateau": 84.9,
+      "emergence_speed": "slow",
+      "p_value": 0.4755,
+      "midpoint": 2030.0,
+      "growth_k": 0.011
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 64.7,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 52.6,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 36.7,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 39.3,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 27.5,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 35.8,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 29.6,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 36.2,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 24.2,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 41.0,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 29.5,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 34.0,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 15.4,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 23.7,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 29.0,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 31.6,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 39.4,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 36.3,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 42.8,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 48.0,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 44.7,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 45.9,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 45.1,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 50.6,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 51.6,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "AcrEF-TolC",
+    "emergence_year": 2000,
+    "peak_year": 2024,
+    "peak_frequency": 61.1,
+    "current_frequency": 61.1,
+    "current_year": 2024,
+    "overall_prevalence": 36.4,
+    "growth_model": {
+      "model": "logistic",
+      "slope": 0.319,
+      "r2": 0.049,
+      "plateau": 87.8,
+      "emergence_speed": "slow",
+      "p_value": 0.2992,
+      "midpoint": 2030.0,
+      "growth_k": 0.016
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 58.8,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 47.4,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 40.0,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 35.7,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 20.0,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 33.7,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 35.2,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 44.8,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 32.3,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 34.9,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 27.7,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 32.4,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 15.1,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 24.6,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 26.3,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 29.8,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 39.0,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 34.9,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 44.2,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 42.8,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 45.6,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 44.7,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 46.3,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 44.6,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 61.1,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "folP",
+    "emergence_year": 2000,
+    "peak_year": 2024,
+    "peak_frequency": 58.9,
+    "current_frequency": 58.9,
+    "current_year": 2024,
+    "overall_prevalence": 38.2,
+    "growth_model": {
+      "model": "logistic",
+      "slope": 0.36,
+      "r2": 0.092,
+      "plateau": 92.0,
+      "emergence_speed": "slow",
+      "p_value": 0.1443,
+      "midpoint": 2030.0,
+      "growth_k": 0.017
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 35.3,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 45.6,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 26.7,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 46.4,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 40.0,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 40.0,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 36.6,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 51.7,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 27.4,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 44.6,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 33.9,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 38.2,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 21.4,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 26.9,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 28.5,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 32.2,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 41.5,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 37.0,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 45.0,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 47.0,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 45.2,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 44.6,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 40.4,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 45.5,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 58.9,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "EF-G",
+    "emergence_year": 2000,
+    "peak_year": 2000,
+    "peak_frequency": 58.8,
+    "current_frequency": 52.6,
+    "current_year": 2024,
+    "overall_prevalence": 36.7,
+    "growth_model": {
+      "model": "logistic",
+      "slope": 0.25,
+      "r2": 0.033,
+      "plateau": 84.4,
+      "emergence_speed": "slow",
+      "p_value": 0.3954,
+      "midpoint": 2030.0,
+      "growth_k": 0.013
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 58.8,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 38.6,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 43.3,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 50.0,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 20.0,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 33.7,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 33.8,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 32.8,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 29.0,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 37.3,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 32.1,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 32.8,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 16.3,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 25.2,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 26.5,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 27.3,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 36.5,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 36.4,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 46.0,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 46.8,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 44.2,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 44.5,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 48.1,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 42.5,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 52.6,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "leuO",
+    "emergence_year": 2000,
+    "peak_year": 2003,
+    "peak_frequency": 50.0,
+    "current_frequency": 42.1,
+    "current_year": 2024,
+    "overall_prevalence": 27.7,
+    "growth_model": {
+      "model": "logistic",
+      "slope": 0.448,
+      "r2": 0.159,
+      "plateau": 73.0,
+      "emergence_speed": "slow",
+      "p_value": 0.0558,
+      "midpoint": 2030.0,
+      "growth_k": 0.029
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 29.4,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 19.3,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 23.3,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 50.0,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 27.5,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 20.0,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 23.9,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 24.1,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 17.7,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 20.5,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 24.1,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 24.4,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 15.2,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 17.4,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 18.7,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 21.5,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 30.1,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 31.1,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 33.4,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 32.5,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 36.9,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 32.8,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 34.6,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 35.9,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 42.1,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "alaS",
+    "emergence_year": 2000,
+    "peak_year": 2000,
+    "peak_frequency": 41.2,
+    "current_frequency": 35.8,
+    "current_year": 2024,
+    "overall_prevalence": 22.9,
+    "growth_model": {
+      "model": "logistic",
+      "slope": 0.103,
+      "r2": 0.012,
+      "plateau": 52.5,
+      "emergence_speed": "slow",
+      "p_value": 0.6003,
+      "midpoint": 2030.0,
+      "growth_k": 0.008
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 41.2,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 24.6,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 13.3,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 32.1,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 25.0,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 25.3,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 25.4,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 19.0,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 21.0,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 26.5,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 24.1,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 20.2,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 10.2,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 14.6,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 17.6,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 19.7,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 20.8,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 24.6,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 26.8,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 26.6,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 29.7,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 25.5,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 27.8,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 30.8,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 35.8,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "EmrD",
+    "emergence_year": 2000,
+    "peak_year": 2000,
+    "peak_frequency": 41.2,
+    "current_frequency": 38.9,
+    "current_year": 2024,
+    "overall_prevalence": 21.2,
+    "growth_model": {
+      "model": "logistic",
+      "slope": 0.336,
+      "r2": 0.106,
+      "plateau": 57.1,
+      "emergence_speed": "slow",
+      "p_value": 0.1358,
+      "midpoint": 2030.0,
+      "growth_k": 0.03
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 41.2,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 19.3,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 30.0,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 14.3,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 15.0,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 20.0,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 15.5,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 13.8,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 14.5,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 14.5,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 14.3,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 16.8,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 11.7,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 14.1,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 14.7,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 16.9,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 22.1,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 21.1,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 25.7,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 26.0,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 28.5,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 23.2,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 27.5,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 30.5,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 38.9,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "inhA, fabI",
+    "emergence_year": 2000,
+    "peak_year": 2024,
+    "peak_frequency": 37.9,
+    "current_frequency": 37.9,
+    "current_year": 2024,
+    "overall_prevalence": 21.2,
+    "growth_model": {
+      "model": "logistic",
+      "slope": 0.386,
+      "r2": 0.185,
+      "plateau": 58.6,
+      "emergence_speed": "slow",
+      "p_value": 0.0427,
+      "midpoint": 2030.0,
+      "growth_k": 0.033
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 35.3,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 21.1,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 16.7,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 21.4,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 15.0,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 16.8,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 15.5,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 19.0,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 16.1,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 20.5,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 11.6,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 16.8,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 11.2,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 15.1,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 15.1,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 15.9,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 22.4,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 19.2,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 25.1,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 29.3,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 27.0,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 23.4,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 25.7,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 30.5,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 37.9,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "ramR",
+    "emergence_year": 2000,
+    "peak_year": 2002,
+    "peak_frequency": 36.7,
+    "current_frequency": 32.6,
+    "current_year": 2024,
+    "overall_prevalence": 20.7,
+    "growth_model": {
+      "model": "logistic",
+      "slope": 0.07,
+      "r2": 0.005,
+      "plateau": 45.8,
+      "emergence_speed": "slow",
+      "p_value": 0.73,
+      "midpoint": 2030.0,
+      "growth_k": 0.006
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 23.5,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 26.3,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 36.7,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 35.7,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 10.0,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 14.7,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 19.7,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 19.0,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 12.9,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 21.1,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 19.6,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 21.8,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 7.7,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 14.4,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 15.6,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 16.9,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 23.3,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 23.2,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 25.7,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 25.2,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 24.9,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 21.7,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 20.9,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 26.6,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 32.6,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "MdfA/Cmr",
+    "emergence_year": 2000,
+    "peak_year": 2001,
+    "peak_frequency": 33.3,
+    "current_frequency": 27.4,
+    "current_year": 2024,
+    "overall_prevalence": 21.4,
+    "growth_model": {
+      "model": "logistic",
+      "slope": 0.177,
+      "r2": 0.055,
+      "plateau": 50.4,
+      "emergence_speed": "slow",
+      "p_value": 0.2683,
+      "midpoint": 2030.0,
+      "growth_k": 0.015
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 23.5,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 33.3,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 23.3,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 14.3,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 12.5,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 22.1,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 22.5,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 25.9,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 19.4,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 26.5,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 17.0,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 17.2,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 12.3,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 14.4,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 16.9,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 15.9,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 23.5,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 19.7,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 24.3,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 27.6,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 26.9,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 24.2,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 24.4,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 30.5,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 27.4,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "mdtH",
+    "emergence_year": 2000,
+    "peak_year": 2024,
+    "peak_frequency": 32.6,
+    "current_frequency": 32.6,
+    "current_year": 2024,
+    "overall_prevalence": 22.5,
+    "growth_model": {
+      "model": "logistic",
+      "slope": 0.433,
+      "r2": 0.368,
+      "plateau": 60.7,
+      "emergence_speed": "slow",
+      "p_value": 0.0016,
+      "midpoint": 2030.0,
+      "growth_k": 0.033
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 23.5,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 10.5,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 20.0,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 17.9,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 22.5,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 21.1,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 19.7,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 24.1,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 21.0,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 19.9,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 21.4,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 19.3,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 11.6,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 15.9,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 15.5,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 17.6,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 23.1,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 25.5,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 26.4,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 27.8,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 28.6,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 27.5,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 24.2,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 28.1,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 32.6,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "Transcriptional regulator, MarR family",
+    "emergence_year": 2004,
+    "peak_year": 2012,
+    "peak_frequency": 31.7,
+    "current_frequency": 0.0,
+    "current_year": 2024,
+    "overall_prevalence": 6.9,
+    "growth_model": {
+      "model": "logistic",
+      "slope": 0.051,
+      "r2": 0.125,
+      "plateau": 6.6,
+      "emergence_speed": "slow",
+      "p_value": 0.8333,
+      "midpoint": 2010.1,
+      "growth_k": 2.852
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 0.0,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 0.0,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 0.0,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 0.0,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 2.5,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 0.0,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 0.0,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 0.0,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 0.0,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 2.4,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 2.7,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 4.2,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 31.7,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 21.8,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 21.7,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 11.1,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 0.9,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 0.2,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 0.0,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 0.0,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 0.0,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 0.0,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 0.0,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 0.0,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 0.0,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "Class A beta-lactamase (EC 3.5.2.6) => CTX-M family, extended-spectrum",
+    "emergence_year": 2002,
+    "peak_year": 2012,
+    "peak_frequency": 30.3,
+    "current_frequency": 4.2,
+    "current_year": 2024,
+    "overall_prevalence": 12.3,
+    "growth_model": {
+      "model": "logistic",
+      "slope": 0.388,
+      "r2": 0.418,
+      "plateau": 12.0,
+      "emergence_speed": "slow",
+      "p_value": 0.0328,
+      "midpoint": 2007.0,
+      "growth_k": 0.638
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 0.0,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 0.0,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 3.3,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 3.6,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 2.5,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 1.1,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 7.0,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 6.9,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 3.2,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 5.4,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 8.0,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 10.9,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 30.3,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 18.6,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 17.6,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 13.5,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 9.2,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 12.2,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 8.1,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 10.0,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 8.4,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 11.0,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 10.7,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 8.7,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 4.2,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "hypothetical protein",
+    "emergence_year": 2000,
+    "peak_year": 2012,
+    "peak_frequency": 29.9,
+    "current_frequency": 3.2,
+    "current_year": 2024,
+    "overall_prevalence": 14.3,
+    "growth_model": {
+      "model": "logistic",
+      "slope": 0.031,
+      "r2": 0.081,
+      "plateau": 13.2,
+      "emergence_speed": "slow",
+      "p_value": 0.8564,
+      "midpoint": 2000.0,
+      "growth_k": 0.331
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 11.8,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 7.0,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 6.7,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 7.1,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 10.0,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 7.4,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 18.3,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 5.2,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 12.9,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 10.2,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 10.7,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 14.7,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 29.9,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 22.3,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 19.8,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 17.1,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 13.6,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 11.5,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 9.4,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 12.7,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 11.0,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 10.8,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 7.6,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 9.6,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 3.2,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "Multidrug resistance protein MdtH",
+    "emergence_year": 2004,
+    "peak_year": 2012,
+    "peak_frequency": 27.7,
+    "current_frequency": 0.0,
+    "current_year": 2024,
+    "overall_prevalence": 6.1,
+    "growth_model": {
+      "model": "logistic",
+      "slope": 0.037,
+      "r2": 0.134,
+      "plateau": 6.0,
+      "emergence_speed": "slow",
+      "p_value": 0.8604,
+      "midpoint": 2009.4,
+      "growth_k": 3.672
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 0.0,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 0.0,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 0.0,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 0.0,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 2.5,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 0.0,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 0.0,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 1.7,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 0.0,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 1.2,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 5.4,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 5.9,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 27.7,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 19.6,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 17.7,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 9.9,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 1.6,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 0.9,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 0.0,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 0.1,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 0.1,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 0.0,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 0.0,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 0.0,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 0.0,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "AAC(6')-Ib-cr",
+    "emergence_year": 2003,
+    "peak_year": 2016,
+    "peak_frequency": 10.6,
+    "current_frequency": 4.2,
+    "current_year": 2024,
+    "overall_prevalence": 6.1,
+    "growth_model": {
+      "model": "logistic",
+      "slope": 0.278,
+      "r2": 0.537,
+      "plateau": 6.6,
+      "emergence_speed": "slow",
+      "p_value": 0.0002,
+      "midpoint": 2007.2,
+      "growth_k": 0.305
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 0.0,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 0.0,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 0.0,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 3.6,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 0.0,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 1.1,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 2.8,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 6.9,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 8.1,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 1.2,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 2.7,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 4.6,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 2.6,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 4.4,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 5.0,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 6.7,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 10.6,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 8.3,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 6.7,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 6.6,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 5.4,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 6.1,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 6.1,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 7.5,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 4.2,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "Multidrug efflux system AcrAB-TolC, membrane fusion component AcrA",
+    "emergence_year": 2001,
+    "peak_year": 2012,
+    "peak_frequency": 48.9,
+    "current_frequency": 0.0,
+    "current_year": 2024,
+    "overall_prevalence": 15.3,
+    "growth_model": {
+      "model": "linear",
+      "slope": -0.439,
+      "r2": 0.081,
+      "plateau": null,
+      "emergence_speed": "declining",
+      "p_value": 0.1687
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 0.0,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 17.5,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 16.7,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 14.3,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 10.0,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 15.8,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 15.5,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 15.5,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 17.7,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 17.5,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 13.4,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 21.8,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 48.9,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 34.4,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 28.9,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 21.8,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 10.9,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 15.0,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 4.7,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 3.7,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 4.5,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 4.1,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 2.1,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 2.4,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 0.0,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "murA",
+    "emergence_year": 2000,
+    "peak_year": 2000,
+    "peak_frequency": 47.1,
+    "current_frequency": 33.7,
+    "current_year": 2024,
+    "overall_prevalence": 23.7,
+    "growth_model": {
+      "model": "linear",
+      "slope": -0.155,
+      "r2": 0.029,
+      "plateau": null,
+      "emergence_speed": "declining",
+      "p_value": 0.4148
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 47.1,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 29.8,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 23.3,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 25.0,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 27.5,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 31.6,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 26.8,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 24.1,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 22.6,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 19.3,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 31.2,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 25.2,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 9.8,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 17.3,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 17.4,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 24.9,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 25.7,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 24.9,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 26.3,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 27.0,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 27.4,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 28.0,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 26.2,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 24.6,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 33.7,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "Multidrug efflux pump MdfA/Cmr (of MFS type), broad spectrum",
+    "emergence_year": 2000,
+    "peak_year": 2012,
+    "peak_frequency": 45.5,
+    "current_frequency": 0.0,
+    "current_year": 2024,
+    "overall_prevalence": 15.0,
+    "growth_model": {
+      "model": "linear",
+      "slope": -0.451,
+      "r2": 0.095,
+      "plateau": null,
+      "emergence_speed": "declining",
+      "p_value": 0.1342
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 5.9,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 26.3,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 13.3,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 7.1,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 10.0,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 12.6,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 14.1,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 13.8,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 17.7,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 15.7,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 14.3,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 21.0,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 45.5,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 31.7,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 28.9,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 22.4,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 10.5,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 15.1,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 5.1,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 4.0,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 3.7,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 5.2,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 2.5,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 2.4,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 0.0,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "Multidrug efflux system AcrAB-TolC, inner-membrane proton/drug antiporter AcrB (RND type)",
+    "emergence_year": 2000,
+    "peak_year": 2012,
+    "peak_frequency": 45.5,
+    "current_frequency": 0.0,
+    "current_year": 2024,
+    "overall_prevalence": 16.2,
+    "growth_model": {
+      "model": "linear",
+      "slope": -0.594,
+      "r2": 0.165,
+      "plateau": null,
+      "emergence_speed": "declining",
+      "p_value": 0.0438
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 5.9,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 22.8,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 23.3,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 10.7,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 12.5,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 18.9,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 19.7,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 15.5,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 19.4,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 20.5,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 17.9,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 20.6,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 45.5,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 32.6,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 27.9,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 23.5,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 13.9,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 17.9,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 8.5,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 6.4,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 4.1,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 4.3,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 2.1,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 0.9,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 0.0,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "Multidrug efflux system MdtABC-TolC, inner-membrane proton/drug antiporter MdtC (RND type)",
+    "emergence_year": 2001,
+    "peak_year": 2012,
+    "peak_frequency": 42.6,
+    "current_frequency": 0.0,
+    "current_year": 2024,
+    "overall_prevalence": 13.5,
+    "growth_model": {
+      "model": "linear",
+      "slope": -0.391,
+      "r2": 0.081,
+      "plateau": null,
+      "emergence_speed": "declining",
+      "p_value": 0.1683
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 0.0,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 8.8,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 10.0,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 14.3,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 12.5,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 22.1,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 12.7,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 17.2,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 14.5,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 18.7,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 17.9,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 19.7,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 42.6,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 28.2,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 25.2,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 20.4,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 10.6,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 12.5,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 4.4,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 3.5,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 3.7,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 3.3,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 2.5,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 2.1,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 0.0,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "Multidrug resistance regulator EmrR (MprA)",
+    "emergence_year": 2000,
+    "peak_year": 2012,
+    "peak_frequency": 38.2,
+    "current_frequency": 0.0,
+    "current_year": 2024,
+    "overall_prevalence": 14.0,
+    "growth_model": {
+      "model": "linear",
+      "slope": -0.611,
+      "r2": 0.229,
+      "plateau": null,
+      "emergence_speed": "declining",
+      "p_value": 0.0155
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 5.9,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 14.0,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 16.7,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 17.9,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 20.0,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 16.8,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 19.7,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 19.0,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 22.6,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 18.1,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 15.2,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 18.1,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 38.2,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 29.5,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 25.7,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 20.5,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 10.5,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 13.4,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 4.7,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 5.1,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 4.1,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 5.9,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 2.8,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 1.2,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 0.0,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "Macrolide export ATP-binding/permease protein MacB",
+    "emergence_year": 2002,
+    "peak_year": 2012,
+    "peak_frequency": 34.2,
+    "current_frequency": 0.0,
+    "current_year": 2024,
+    "overall_prevalence": 8.0,
+    "growth_model": {
+      "model": "linear",
+      "slope": -0.047,
+      "r2": 0.002,
+      "plateau": null,
+      "emergence_speed": "declining",
+      "p_value": 0.8517
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 0.0,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 0.0,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 3.3,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 0.0,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 7.5,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 3.2,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 1.4,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 1.7,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 6.5,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 4.2,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 8.9,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 10.1,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 34.2,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 24.2,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 21.3,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 12.7,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 3.3,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 3.9,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 0.0,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 0.0,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 0.0,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 0.0,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 0.0,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 0.0,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 0.0,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "DNA-directed RNA polymerase beta subunit (EC 2.7.7.6)",
+    "emergence_year": 2002,
+    "peak_year": 2012,
+    "peak_frequency": 31.7,
+    "current_frequency": 0.0,
+    "current_year": 2024,
+    "overall_prevalence": 6.8,
+    "growth_model": {
+      "model": "linear",
+      "slope": -0.066,
+      "r2": 0.004,
+      "plateau": null,
+      "emergence_speed": "declining",
+      "p_value": 0.7712
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 0.0,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 0.0,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 3.3,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 0.0,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 5.0,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 1.1,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 9.9,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 1.7,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 4.8,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 3.0,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 2.7,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 8.0,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 31.7,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 20.6,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 19.3,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 9.7,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 1.4,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 1.9,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 0.1,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 0.0,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 0.0,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 0.0,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 0.0,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 0.0,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 0.0,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "Dihydropteroate synthase type-2 (EC 2.5.1.15) @ Sulfonamide resistance protein",
+    "emergence_year": 2000,
+    "peak_year": 2012,
+    "peak_frequency": 29.9,
+    "current_frequency": 0.0,
+    "current_year": 2024,
+    "overall_prevalence": 10.8,
+    "growth_model": {
+      "model": "linear",
+      "slope": -0.07,
+      "r2": 0.005,
+      "plateau": null,
+      "emergence_speed": "declining",
+      "p_value": 0.7276
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 5.9,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 0.0,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 3.3,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 3.6,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 12.5,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 4.2,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 12.7,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 10.3,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 11.3,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 9.6,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 10.7,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 18.1,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 29.9,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 22.0,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 17.7,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 13.6,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 7.9,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 8.4,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 6.9,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 5.7,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 4.4,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 5.2,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 5.1,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 2.7,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 0.0,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "Multidrug efflux system AcrEF-TolC, membrane fusion component AcrE",
+    "emergence_year": 2003,
+    "peak_year": 2012,
+    "peak_frequency": 29.9,
+    "current_frequency": 0.0,
+    "current_year": 2024,
+    "overall_prevalence": 7.0,
+    "growth_model": {
+      "model": "linear",
+      "slope": -0.005,
+      "r2": 0.0,
+      "plateau": null,
+      "emergence_speed": "declining",
+      "p_value": 0.9811
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 0.0,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 0.0,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 0.0,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 3.6,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 2.5,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 1.1,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 2.8,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 3.4,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 3.2,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 2.4,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 5.4,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 8.8,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 29.9,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 19.7,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 18.6,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 11.1,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 2.9,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 4.5,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 0.1,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 0.0,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 0.0,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 0.1,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 0.0,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 0.0,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 0.0,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "Aminoglycoside 3''-nucleotidyltransferase (EC 2.7.7.-) => ANT(3'')-Ia (AadA family)",
+    "emergence_year": 2000,
+    "peak_year": 2012,
+    "peak_frequency": 28.7,
+    "current_frequency": 2.1,
+    "current_year": 2024,
+    "overall_prevalence": 12.6,
+    "growth_model": {
+      "model": "linear",
+      "slope": -0.156,
+      "r2": 0.031,
+      "plateau": null,
+      "emergence_speed": "declining",
+      "p_value": 0.4015
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 11.8,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 5.3,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 10.0,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 7.1,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 17.5,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 7.4,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 22.5,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 8.6,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 9.7,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 8.4,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 14.3,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 24.8,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 28.7,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 22.6,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 16.7,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 12.1,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 11.0,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 10.4,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 7.9,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 8.5,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 8.1,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 9.6,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 8.4,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 8.4,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 2.1,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "Class A beta-lactamase (EC 3.5.2.6) => TEM family",
+    "emergence_year": 2000,
+    "peak_year": 2012,
+    "peak_frequency": 28.0,
+    "current_frequency": 3.2,
+    "current_year": 2024,
+    "overall_prevalence": 11.6,
+    "growth_model": {
+      "model": "linear",
+      "slope": -0.065,
+      "r2": 0.007,
+      "plateau": null,
+      "emergence_speed": "declining",
+      "p_value": 0.6891
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 5.9,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 0.0,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 10.0,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 10.7,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 17.5,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 8.4,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 18.3,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 8.6,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 6.5,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 10.8,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 12.5,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 12.2,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 28.0,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 19.2,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 13.7,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 14.2,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 9.3,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 10.7,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 8.6,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 7.8,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 8.8,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 8.8,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 7.4,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 7.5,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 3.2,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "DNA gyrase subunit B (EC 5.99.1.3)",
+    "emergence_year": 2002,
+    "peak_year": 2012,
+    "peak_frequency": 21.9,
+    "current_frequency": 0.0,
+    "current_year": 2024,
+    "overall_prevalence": 4.8,
+    "growth_model": {
+      "model": "linear",
+      "slope": -0.043,
+      "r2": 0.003,
+      "plateau": null,
+      "emergence_speed": "declining",
+      "p_value": 0.7861
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 0.0,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 0.0,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 3.3,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 0.0,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 0.0,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 3.2,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 2.8,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 1.7,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 8.1,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 0.6,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 4.5,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 8.0,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 21.9,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 14.8,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 12.7,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 5.8,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 1.1,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 2.4,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 0.3,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 0.0,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 0.0,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 0.0,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 0.0,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 0.0,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 0.0,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "Aminoglycoside N(3)-acetyltransferase (EC 2.3.1.81) => AAC(3)-II,III,IV,VI,VIII,IX,X",
+    "emergence_year": 2001,
+    "peak_year": 2012,
+    "peak_frequency": 19.3,
+    "current_frequency": 0.0,
+    "current_year": 2024,
+    "overall_prevalence": 5.5,
+    "growth_model": {
+      "model": "linear",
+      "slope": -0.263,
+      "r2": 0.109,
+      "plateau": null,
+      "emergence_speed": "declining",
+      "p_value": 0.1075
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 0.0,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 1.8,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 0.0,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 10.7,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 12.5,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 5.3,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 16.9,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 13.8,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 4.8,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 3.6,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 9.8,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 5.9,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 19.3,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 13.8,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 11.9,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 7.0,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 3.6,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 2.8,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 2.1,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 1.4,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 0.4,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 1.4,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 0.8,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 0.3,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 0.0,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "Aminoglycoside 6-phosphotransferase (EC 2.7.1.72) => APH(6)-Ic/APH(6)-Id",
+    "emergence_year": 2000,
+    "peak_year": 2012,
+    "peak_frequency": 19.3,
+    "current_frequency": 0.0,
+    "current_year": 2024,
+    "overall_prevalence": 7.5,
+    "growth_model": {
+      "model": "linear",
+      "slope": -0.089,
+      "r2": 0.027,
+      "plateau": null,
+      "emergence_speed": "declining",
+      "p_value": 0.4361
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 5.9,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 0.0,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 10.0,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 7.1,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 5.0,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 5.3,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 9.9,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 10.3,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 6.5,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 4.8,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 8.0,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 5.9,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 19.3,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 11.7,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 12.1,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 9.7,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 6.9,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 4.4,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 4.6,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 4.4,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 3.8,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 6.0,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 6.9,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 3.9,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 0.0,
+        "n_total": 95
+      }
+    ]
+  },
+  {
+    "gene": "Undecaprenyl phosphate-aminoarabinose flippase subunit ArnF",
+    "emergence_year": 2003,
+    "peak_year": 2012,
+    "peak_frequency": 19.1,
+    "current_frequency": 0.0,
+    "current_year": 2024,
+    "overall_prevalence": 4.6,
+    "growth_model": {
+      "model": "linear",
+      "slope": -0.064,
+      "r2": 0.01,
+      "plateau": null,
+      "emergence_speed": "declining",
+      "p_value": 0.6421
+    },
+    "yearly": [
+      {
+        "year": 2000,
+        "frequency": 0.0,
+        "n_total": 17
+      },
+      {
+        "year": 2001,
+        "frequency": 0.0,
+        "n_total": 57
+      },
+      {
+        "year": 2002,
+        "frequency": 0.0,
+        "n_total": 30
+      },
+      {
+        "year": 2003,
+        "frequency": 3.6,
+        "n_total": 28
+      },
+      {
+        "year": 2004,
+        "frequency": 5.0,
+        "n_total": 40
+      },
+      {
+        "year": 2005,
+        "frequency": 0.0,
+        "n_total": 95
+      },
+      {
+        "year": 2006,
+        "frequency": 5.6,
+        "n_total": 71
+      },
+      {
+        "year": 2007,
+        "frequency": 5.2,
+        "n_total": 58
+      },
+      {
+        "year": 2008,
+        "frequency": 4.8,
+        "n_total": 62
+      },
+      {
+        "year": 2009,
+        "frequency": 0.6,
+        "n_total": 166
+      },
+      {
+        "year": 2010,
+        "frequency": 5.4,
+        "n_total": 112
+      },
+      {
+        "year": 2011,
+        "frequency": 8.0,
+        "n_total": 238
+      },
+      {
+        "year": 2012,
+        "frequency": 19.1,
+        "n_total": 571
+      },
+      {
+        "year": 2013,
+        "frequency": 12.1,
+        "n_total": 1109
+      },
+      {
+        "year": 2014,
+        "frequency": 10.7,
+        "n_total": 1458
+      },
+      {
+        "year": 2015,
+        "frequency": 7.1,
+        "n_total": 970
+      },
+      {
+        "year": 2016,
+        "frequency": 3.4,
+        "n_total": 884
+      },
+      {
+        "year": 2017,
+        "frequency": 3.8,
+        "n_total": 1143
+      },
+      {
+        "year": 2018,
+        "frequency": 0.1,
+        "n_total": 1384
+      },
+      {
+        "year": 2019,
+        "frequency": 0.0,
+        "n_total": 1240
+      },
+      {
+        "year": 2020,
+        "frequency": 0.0,
+        "n_total": 1034
+      },
+      {
+        "year": 2021,
+        "frequency": 0.0,
+        "n_total": 930
+      },
+      {
+        "year": 2022,
+        "frequency": 0.0,
+        "n_total": 607
+      },
+      {
+        "year": 2023,
+        "frequency": 0.0,
+        "n_total": 334
+      },
+      {
+        "year": 2024,
+        "frequency": 0.0,
+        "n_total": 95
+      }
+    ]
+  }
+]

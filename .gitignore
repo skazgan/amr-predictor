@@ -1,0 +1,31 @@
+# Large data files — not needed for deployment (website reads from artifacts/)
+data/raw/
+data/processed/X.csv
+data/processed/gene_matrix.csv
+data/processed/*/
+
+# Old large model files (not needed for deployment)
+models/rf.pkl
+models/rf_combined.pkl
+models/rf_genes.pkl
+models/xgb.pkl
+models/xgb_combined.pkl
+models/xgb_genes.pkl
+models/*.png
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+.venv
+venv/
+
+# macOS
+.DS_Store
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Keep artifacts (pre-computed JSON for website)
+!artifacts/

@@ -1,0 +1,62 @@
+[
+  {
+    "antibiotic": "ciprofloxacin",
+    "n_train": 2340,
+    "n_test": 700,
+    "train_years": "< 2020",
+    "test_years": ">= 2020",
+    "auc_temporal": 0.766,
+    "auc_random": 0.8,
+    "drift": 0.034
+  },
+  {
+    "antibiotic": "meropenem",
+    "n_train": 2271,
+    "n_test": 713,
+    "train_years": "< 2020",
+    "test_years": ">= 2020",
+    "auc_temporal": 0.881,
+    "auc_random": 0.892,
+    "drift": 0.011
+  },
+  {
+    "antibiotic": "gentamicin",
+    "n_train": 2302,
+    "n_test": 659,
+    "train_years": "< 2020",
+    "test_years": ">= 2020",
+    "auc_temporal": 0.725,
+    "auc_random": 0.807,
+    "drift": 0.082
+  },
+  {
+    "antibiotic": "tetracycline",
+    "n_train": 2295,
+    "n_test": 783,
+    "train_years": "< 2020",
+    "test_years": ">= 2020",
+    "auc_temporal": 0.733,
+    "auc_random": 0.739,
+    "drift": 0.005
+  },
+  {
+    "antibiotic": "trimethoprim/sulfamethoxazole",
+    "n_train": 2372,
+    "n_test": 540,
+    "train_years": "< 2020",
+    "test_years": ">= 2020",
+    "auc_temporal": 0.785,
+    "auc_random": 0.821,
+    "drift": 0.036
+  },
+  {
+    "antibiotic": "cefepime",
+    "n_train": 2286,
+    "n_test": 707,
+    "train_years": "< 2020",
+    "test_years": ">= 2020",
+    "auc_temporal": 0.804,
+    "auc_random": 0.795,
+    "drift": -0.009
+  }
+]

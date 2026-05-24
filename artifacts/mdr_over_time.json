@@ -1,0 +1,1470 @@
+{
+  "yearly_mdr": [
+    {
+      "year": 2000,
+      "n_total": 17,
+      "n_mdr": 0,
+      "pct_mdr": 0.0,
+      "mean_drugs_resistant": 0.294
+    },
+    {
+      "year": 2001,
+      "n_total": 57,
+      "n_mdr": 0,
+      "pct_mdr": 0.0,
+      "mean_drugs_resistant": 0.123
+    },
+    {
+      "year": 2002,
+      "n_total": 30,
+      "n_mdr": 0,
+      "pct_mdr": 0.0,
+      "mean_drugs_resistant": 0.2
+    },
+    {
+      "year": 2003,
+      "n_total": 28,
+      "n_mdr": 1,
+      "pct_mdr": 3.6,
+      "mean_drugs_resistant": 0.643
+    },
+    {
+      "year": 2004,
+      "n_total": 40,
+      "n_mdr": 0,
+      "pct_mdr": 0.0,
+      "mean_drugs_resistant": 0.775
+    },
+    {
+      "year": 2005,
+      "n_total": 95,
+      "n_mdr": 0,
+      "pct_mdr": 0.0,
+      "mean_drugs_resistant": 0.326
+    },
+    {
+      "year": 2006,
+      "n_total": 71,
+      "n_mdr": 1,
+      "pct_mdr": 1.4,
+      "mean_drugs_resistant": 0.845
+    },
+    {
+      "year": 2007,
+      "n_total": 58,
+      "n_mdr": 0,
+      "pct_mdr": 0.0,
+      "mean_drugs_resistant": 0.707
+    },
+    {
+      "year": 2008,
+      "n_total": 62,
+      "n_mdr": 0,
+      "pct_mdr": 0.0,
+      "mean_drugs_resistant": 0.645
+    },
+    {
+      "year": 2009,
+      "n_total": 166,
+      "n_mdr": 1,
+      "pct_mdr": 0.6,
+      "mean_drugs_resistant": 0.47
+    },
+    {
+      "year": 2010,
+      "n_total": 112,
+      "n_mdr": 0,
+      "pct_mdr": 0.0,
+      "mean_drugs_resistant": 0.67
+    },
+    {
+      "year": 2011,
+      "n_total": 240,
+      "n_mdr": 3,
+      "pct_mdr": 1.2,
+      "mean_drugs_resistant": 0.688
+    },
+    {
+      "year": 2012,
+      "n_total": 571,
+      "n_mdr": 17,
+      "pct_mdr": 3.0,
+      "mean_drugs_resistant": 0.928
+    },
+    {
+      "year": 2013,
+      "n_total": 1109,
+      "n_mdr": 28,
+      "pct_mdr": 2.5,
+      "mean_drugs_resistant": 0.835
+    },
+    {
+      "year": 2014,
+      "n_total": 1458,
+      "n_mdr": 33,
+      "pct_mdr": 2.3,
+      "mean_drugs_resistant": 0.767
+    },
+    {
+      "year": 2015,
+      "n_total": 970,
+      "n_mdr": 25,
+      "pct_mdr": 2.6,
+      "mean_drugs_resistant": 0.697
+    },
+    {
+      "year": 2016,
+      "n_total": 885,
+      "n_mdr": 17,
+      "pct_mdr": 1.9,
+      "mean_drugs_resistant": 0.745
+    },
+    {
+      "year": 2017,
+      "n_total": 1143,
+      "n_mdr": 17,
+      "pct_mdr": 1.5,
+      "mean_drugs_resistant": 0.672
+    },
+    {
+      "year": 2018,
+      "n_total": 1384,
+      "n_mdr": 10,
+      "pct_mdr": 0.7,
+      "mean_drugs_resistant": 0.656
+    },
+    {
+      "year": 2019,
+      "n_total": 1240,
+      "n_mdr": 13,
+      "pct_mdr": 1.0,
+      "mean_drugs_resistant": 0.649
+    },
+    {
+      "year": 2020,
+      "n_total": 1034,
+      "n_mdr": 12,
+      "pct_mdr": 1.2,
+      "mean_drugs_resistant": 0.669
+    },
+    {
+      "year": 2021,
+      "n_total": 930,
+      "n_mdr": 11,
+      "pct_mdr": 1.2,
+      "mean_drugs_resistant": 0.657
+    },
+    {
+      "year": 2022,
+      "n_total": 607,
+      "n_mdr": 6,
+      "pct_mdr": 1.0,
+      "mean_drugs_resistant": 0.68
+    },
+    {
+      "year": 2023,
+      "n_total": 334,
+      "n_mdr": 2,
+      "pct_mdr": 0.6,
+      "mean_drugs_resistant": 0.641
+    },
+    {
+      "year": 2024,
+      "n_total": 95,
+      "n_mdr": 0,
+      "pct_mdr": 0.0,
+      "mean_drugs_resistant": 0.737
+    }
+  ],
+  "burden_by_year": [
+    {
+      "year": 2000,
+      "n_total": 17,
+      "n_0drugs": 12,
+      "pct_0drugs": 70.6,
+      "n_1drugs": 5,
+      "pct_1drugs": 29.4,
+      "n_2drugs": 0,
+      "pct_2drugs": 0.0,
+      "n_3drugs": 0,
+      "pct_3drugs": 0.0,
+      "n_4drugs": 0,
+      "pct_4drugs": 0.0,
+      "n_5drugs": 0,
+      "pct_5drugs": 0.0,
+      "n_6drugs": 0,
+      "pct_6drugs": 0.0
+    },
+    {
+      "year": 2001,
+      "n_total": 57,
+      "n_0drugs": 51,
+      "pct_0drugs": 89.5,
+      "n_1drugs": 5,
+      "pct_1drugs": 8.8,
+      "n_2drugs": 1,
+      "pct_2drugs": 1.8,
+      "n_3drugs": 0,
+      "pct_3drugs": 0.0,
+      "n_4drugs": 0,
+      "pct_4drugs": 0.0,
+      "n_5drugs": 0,
+      "pct_5drugs": 0.0,
+      "n_6drugs": 0,
+      "pct_6drugs": 0.0
+    },
+    {
+      "year": 2002,
+      "n_total": 30,
+      "n_0drugs": 24,
+      "pct_0drugs": 80.0,
+      "n_1drugs": 6,
+      "pct_1drugs": 20.0,
+      "n_2drugs": 0,
+      "pct_2drugs": 0.0,
+      "n_3drugs": 0,
+      "pct_3drugs": 0.0,
+      "n_4drugs": 0,
+      "pct_4drugs": 0.0,
+      "n_5drugs": 0,
+      "pct_5drugs": 0.0,
+      "n_6drugs": 0,
+      "pct_6drugs": 0.0
+    },
+    {
+      "year": 2003,
+      "n_total": 28,
+      "n_0drugs": 16,
+      "pct_0drugs": 57.1,
+      "n_1drugs": 7,
+      "pct_1drugs": 25.0,
+      "n_2drugs": 4,
+      "pct_2drugs": 14.3,
+      "n_3drugs": 1,
+      "pct_3drugs": 3.6,
+      "n_4drugs": 0,
+      "pct_4drugs": 0.0,
+      "n_5drugs": 0,
+      "pct_5drugs": 0.0,
+      "n_6drugs": 0,
+      "pct_6drugs": 0.0
+    },
+    {
+      "year": 2004,
+      "n_total": 40,
+      "n_0drugs": 14,
+      "pct_0drugs": 35.0,
+      "n_1drugs": 21,
+      "pct_1drugs": 52.5,
+      "n_2drugs": 5,
+      "pct_2drugs": 12.5,
+      "n_3drugs": 0,
+      "pct_3drugs": 0.0,
+      "n_4drugs": 0,
+      "pct_4drugs": 0.0,
+      "n_5drugs": 0,
+      "pct_5drugs": 0.0,
+      "n_6drugs": 0,
+      "pct_6drugs": 0.0
+    },
+    {
+      "year": 2005,
+      "n_total": 95,
+      "n_0drugs": 69,
+      "pct_0drugs": 72.6,
+      "n_1drugs": 21,
+      "pct_1drugs": 22.1,
+      "n_2drugs": 5,
+      "pct_2drugs": 5.3,
+      "n_3drugs": 0,
+      "pct_3drugs": 0.0,
+      "n_4drugs": 0,
+      "pct_4drugs": 0.0,
+      "n_5drugs": 0,
+      "pct_5drugs": 0.0,
+      "n_6drugs": 0,
+      "pct_6drugs": 0.0
+    },
+    {
+      "year": 2006,
+      "n_total": 71,
+      "n_0drugs": 24,
+      "pct_0drugs": 33.8,
+      "n_1drugs": 36,
+      "pct_1drugs": 50.7,
+      "n_2drugs": 10,
+      "pct_2drugs": 14.1,
+      "n_3drugs": 0,
+      "pct_3drugs": 0.0,
+      "n_4drugs": 1,
+      "pct_4drugs": 1.4,
+      "n_5drugs": 0,
+      "pct_5drugs": 0.0,
+      "n_6drugs": 0,
+      "pct_6drugs": 0.0
+    },
+    {
+      "year": 2007,
+      "n_total": 58,
+      "n_0drugs": 27,
+      "pct_0drugs": 46.6,
+      "n_1drugs": 21,
+      "pct_1drugs": 36.2,
+      "n_2drugs": 10,
+      "pct_2drugs": 17.2,
+      "n_3drugs": 0,
+      "pct_3drugs": 0.0,
+      "n_4drugs": 0,
+      "pct_4drugs": 0.0,
+      "n_5drugs": 0,
+      "pct_5drugs": 0.0,
+      "n_6drugs": 0,
+      "pct_6drugs": 0.0
+    },
+    {
+      "year": 2008,
+      "n_total": 62,
+      "n_0drugs": 28,
+      "pct_0drugs": 45.2,
+      "n_1drugs": 28,
+      "pct_1drugs": 45.2,
+      "n_2drugs": 6,
+      "pct_2drugs": 9.7,
+      "n_3drugs": 0,
+      "pct_3drugs": 0.0,
+      "n_4drugs": 0,
+      "pct_4drugs": 0.0,
+      "n_5drugs": 0,
+      "pct_5drugs": 0.0,
+      "n_6drugs": 0,
+      "pct_6drugs": 0.0
+    },
+    {
+      "year": 2009,
+      "n_total": 166,
+      "n_0drugs": 102,
+      "pct_0drugs": 61.4,
+      "n_1drugs": 51,
+      "pct_1drugs": 30.7,
+      "n_2drugs": 12,
+      "pct_2drugs": 7.2,
+      "n_3drugs": 1,
+      "pct_3drugs": 0.6,
+      "n_4drugs": 0,
+      "pct_4drugs": 0.0,
+      "n_5drugs": 0,
+      "pct_5drugs": 0.0,
+      "n_6drugs": 0,
+      "pct_6drugs": 0.0
+    },
+    {
+      "year": 2010,
+      "n_total": 112,
+      "n_0drugs": 45,
+      "pct_0drugs": 40.2,
+      "n_1drugs": 59,
+      "pct_1drugs": 52.7,
+      "n_2drugs": 8,
+      "pct_2drugs": 7.1,
+      "n_3drugs": 0,
+      "pct_3drugs": 0.0,
+      "n_4drugs": 0,
+      "pct_4drugs": 0.0,
+      "n_5drugs": 0,
+      "pct_5drugs": 0.0,
+      "n_6drugs": 0,
+      "pct_6drugs": 0.0
+    },
+    {
+      "year": 2011,
+      "n_total": 240,
+      "n_0drugs": 105,
+      "pct_0drugs": 43.8,
+      "n_1drugs": 108,
+      "pct_1drugs": 45.0,
+      "n_2drugs": 24,
+      "pct_2drugs": 10.0,
+      "n_3drugs": 3,
+      "pct_3drugs": 1.2,
+      "n_4drugs": 0,
+      "pct_4drugs": 0.0,
+      "n_5drugs": 0,
+      "pct_5drugs": 0.0,
+      "n_6drugs": 0,
+      "pct_6drugs": 0.0
+    },
+    {
+      "year": 2012,
+      "n_total": 571,
+      "n_0drugs": 175,
+      "pct_0drugs": 30.6,
+      "n_1drugs": 280,
+      "pct_1drugs": 49.0,
+      "n_2drugs": 99,
+      "pct_2drugs": 17.3,
+      "n_3drugs": 16,
+      "pct_3drugs": 2.8,
+      "n_4drugs": 1,
+      "pct_4drugs": 0.2,
+      "n_5drugs": 0,
+      "pct_5drugs": 0.0,
+      "n_6drugs": 0,
+      "pct_6drugs": 0.0
+    },
+    {
+      "year": 2013,
+      "n_total": 1109,
+      "n_0drugs": 380,
+      "pct_0drugs": 34.3,
+      "n_1drugs": 564,
+      "pct_1drugs": 50.9,
+      "n_2drugs": 137,
+      "pct_2drugs": 12.4,
+      "n_3drugs": 24,
+      "pct_3drugs": 2.2,
+      "n_4drugs": 4,
+      "pct_4drugs": 0.4,
+      "n_5drugs": 0,
+      "pct_5drugs": 0.0,
+      "n_6drugs": 0,
+      "pct_6drugs": 0.0
+    },
+    {
+      "year": 2014,
+      "n_total": 1458,
+      "n_0drugs": 593,
+      "pct_0drugs": 40.7,
+      "n_1drugs": 647,
+      "pct_1drugs": 44.4,
+      "n_2drugs": 185,
+      "pct_2drugs": 12.7,
+      "n_3drugs": 31,
+      "pct_3drugs": 2.1,
+      "n_4drugs": 2,
+      "pct_4drugs": 0.1,
+      "n_5drugs": 0,
+      "pct_5drugs": 0.0,
+      "n_6drugs": 0,
+      "pct_6drugs": 0.0
+    },
+    {
+      "year": 2015,
+      "n_total": 970,
+      "n_0drugs": 448,
+      "pct_0drugs": 46.2,
+      "n_1drugs": 395,
+      "pct_1drugs": 40.7,
+      "n_2drugs": 102,
+      "pct_2drugs": 10.5,
+      "n_3drugs": 23,
+      "pct_3drugs": 2.4,
+      "n_4drugs": 2,
+      "pct_4drugs": 0.2,
+      "n_5drugs": 0,
+      "pct_5drugs": 0.0,
+      "n_6drugs": 0,
+      "pct_6drugs": 0.0
+    },
+    {
+      "year": 2016,
+      "n_total": 885,
+      "n_0drugs": 369,
+      "pct_0drugs": 41.7,
+      "n_1drugs": 390,
+      "pct_1drugs": 44.1,
+      "n_2drugs": 109,
+      "pct_2drugs": 12.3,
+      "n_3drugs": 17,
+      "pct_3drugs": 1.9,
+      "n_4drugs": 0,
+      "pct_4drugs": 0.0,
+      "n_5drugs": 0,
+      "pct_5drugs": 0.0,
+      "n_6drugs": 0,
+      "pct_6drugs": 0.0
+    },
+    {
+      "year": 2017,
+      "n_total": 1143,
+      "n_0drugs": 523,
+      "pct_0drugs": 45.8,
+      "n_1drugs": 491,
+      "pct_1drugs": 43.0,
+      "n_2drugs": 112,
+      "pct_2drugs": 9.8,
+      "n_3drugs": 15,
+      "pct_3drugs": 1.3,
+      "n_4drugs": 2,
+      "pct_4drugs": 0.2,
+      "n_5drugs": 0,
+      "pct_5drugs": 0.0,
+      "n_6drugs": 0,
+      "pct_6drugs": 0.0
+    },
+    {
+      "year": 2018,
+      "n_total": 1384,
+      "n_0drugs": 626,
+      "pct_0drugs": 45.2,
+      "n_1drugs": 619,
+      "pct_1drugs": 44.7,
+      "n_2drugs": 129,
+      "pct_2drugs": 9.3,
+      "n_3drugs": 9,
+      "pct_3drugs": 0.7,
+      "n_4drugs": 1,
+      "pct_4drugs": 0.1,
+      "n_5drugs": 0,
+      "pct_5drugs": 0.0,
+      "n_6drugs": 0,
+      "pct_6drugs": 0.0
+    },
+    {
+      "year": 2019,
+      "n_total": 1240,
+      "n_0drugs": 578,
+      "pct_0drugs": 46.6,
+      "n_1drugs": 535,
+      "pct_1drugs": 43.1,
+      "n_2drugs": 114,
+      "pct_2drugs": 9.2,
+      "n_3drugs": 10,
+      "pct_3drugs": 0.8,
+      "n_4drugs": 3,
+      "pct_4drugs": 0.2,
+      "n_5drugs": 0,
+      "pct_5drugs": 0.0,
+      "n_6drugs": 0,
+      "pct_6drugs": 0.0
+    },
+    {
+      "year": 2020,
+      "n_total": 1034,
+      "n_0drugs": 462,
+      "pct_0drugs": 44.7,
+      "n_1drugs": 466,
+      "pct_1drugs": 45.1,
+      "n_2drugs": 94,
+      "pct_2drugs": 9.1,
+      "n_3drugs": 10,
+      "pct_3drugs": 1.0,
+      "n_4drugs": 2,
+      "pct_4drugs": 0.2,
+      "n_5drugs": 0,
+      "pct_5drugs": 0.0,
+      "n_6drugs": 0,
+      "pct_6drugs": 0.0
+    },
+    {
+      "year": 2021,
+      "n_total": 930,
+      "n_0drugs": 433,
+      "pct_0drugs": 46.6,
+      "n_1drugs": 395,
+      "pct_1drugs": 42.5,
+      "n_2drugs": 91,
+      "pct_2drugs": 9.8,
+      "n_3drugs": 10,
+      "pct_3drugs": 1.1,
+      "n_4drugs": 1,
+      "pct_4drugs": 0.1,
+      "n_5drugs": 0,
+      "pct_5drugs": 0.0,
+      "n_6drugs": 0,
+      "pct_6drugs": 0.0
+    },
+    {
+      "year": 2022,
+      "n_total": 607,
+      "n_0drugs": 263,
+      "pct_0drugs": 43.3,
+      "n_1drugs": 282,
+      "pct_1drugs": 46.5,
+      "n_2drugs": 56,
+      "pct_2drugs": 9.2,
+      "n_3drugs": 5,
+      "pct_3drugs": 0.8,
+      "n_4drugs": 1,
+      "pct_4drugs": 0.2,
+      "n_5drugs": 0,
+      "pct_5drugs": 0.0,
+      "n_6drugs": 0,
+      "pct_6drugs": 0.0
+    },
+    {
+      "year": 2023,
+      "n_total": 334,
+      "n_0drugs": 143,
+      "pct_0drugs": 42.8,
+      "n_1drugs": 170,
+      "pct_1drugs": 50.9,
+      "n_2drugs": 19,
+      "pct_2drugs": 5.7,
+      "n_3drugs": 2,
+      "pct_3drugs": 0.6,
+      "n_4drugs": 0,
+      "pct_4drugs": 0.0,
+      "n_5drugs": 0,
+      "pct_5drugs": 0.0,
+      "n_6drugs": 0,
+      "pct_6drugs": 0.0
+    },
+    {
+      "year": 2024,
+      "n_total": 95,
+      "n_0drugs": 33,
+      "pct_0drugs": 34.7,
+      "n_1drugs": 54,
+      "pct_1drugs": 56.8,
+      "n_2drugs": 8,
+      "pct_2drugs": 8.4,
+      "n_3drugs": 0,
+      "pct_3drugs": 0.0,
+      "n_4drugs": 0,
+      "pct_4drugs": 0.0,
+      "n_5drugs": 0,
+      "pct_5drugs": 0.0,
+      "n_6drugs": 0,
+      "pct_6drugs": 0.0
+    }
+  ],
+  "per_drug_by_year": {
+    "ciprofloxacin": [
+      {
+        "year": 2001,
+        "pct_resistant": 0.0,
+        "n": 14
+      },
+      {
+        "year": 2002,
+        "pct_resistant": 0.0,
+        "n": 10
+      },
+      {
+        "year": 2003,
+        "pct_resistant": 25.0,
+        "n": 12
+      },
+      {
+        "year": 2004,
+        "pct_resistant": 18.2,
+        "n": 11
+      },
+      {
+        "year": 2005,
+        "pct_resistant": 15.6,
+        "n": 32
+      },
+      {
+        "year": 2006,
+        "pct_resistant": 26.1,
+        "n": 23
+      },
+      {
+        "year": 2007,
+        "pct_resistant": 36.8,
+        "n": 19
+      },
+      {
+        "year": 2008,
+        "pct_resistant": 43.8,
+        "n": 16
+      },
+      {
+        "year": 2009,
+        "pct_resistant": 33.3,
+        "n": 48
+      },
+      {
+        "year": 2010,
+        "pct_resistant": 42.3,
+        "n": 26
+      },
+      {
+        "year": 2011,
+        "pct_resistant": 51.6,
+        "n": 62
+      },
+      {
+        "year": 2012,
+        "pct_resistant": 76.5,
+        "n": 149
+      },
+      {
+        "year": 2013,
+        "pct_resistant": 64.9,
+        "n": 251
+      },
+      {
+        "year": 2014,
+        "pct_resistant": 57.5,
+        "n": 362
+      },
+      {
+        "year": 2015,
+        "pct_resistant": 44.2,
+        "n": 260
+      },
+      {
+        "year": 2016,
+        "pct_resistant": 52.6,
+        "n": 196
+      },
+      {
+        "year": 2017,
+        "pct_resistant": 50.2,
+        "n": 257
+      },
+      {
+        "year": 2018,
+        "pct_resistant": 38.4,
+        "n": 307
+      },
+      {
+        "year": 2019,
+        "pct_resistant": 45.9,
+        "n": 283
+      },
+      {
+        "year": 2020,
+        "pct_resistant": 43.4,
+        "n": 242
+      },
+      {
+        "year": 2021,
+        "pct_resistant": 52.1,
+        "n": 213
+      },
+      {
+        "year": 2022,
+        "pct_resistant": 52.2,
+        "n": 138
+      },
+      {
+        "year": 2023,
+        "pct_resistant": 55.8,
+        "n": 86
+      },
+      {
+        "year": 2024,
+        "pct_resistant": 66.7,
+        "n": 21
+      }
+    ],
+    "meropenem": [
+      {
+        "year": 2001,
+        "pct_resistant": 8.3,
+        "n": 12
+      },
+      {
+        "year": 2002,
+        "pct_resistant": 0.0,
+        "n": 6
+      },
+      {
+        "year": 2004,
+        "pct_resistant": 10.0,
+        "n": 10
+      },
+      {
+        "year": 2005,
+        "pct_resistant": 10.5,
+        "n": 19
+      },
+      {
+        "year": 2006,
+        "pct_resistant": 16.7,
+        "n": 18
+      },
+      {
+        "year": 2007,
+        "pct_resistant": 25.0,
+        "n": 8
+      },
+      {
+        "year": 2008,
+        "pct_resistant": 23.5,
+        "n": 17
+      },
+      {
+        "year": 2009,
+        "pct_resistant": 20.0,
+        "n": 35
+      },
+      {
+        "year": 2010,
+        "pct_resistant": 57.7,
+        "n": 26
+      },
+      {
+        "year": 2011,
+        "pct_resistant": 43.5,
+        "n": 46
+      },
+      {
+        "year": 2012,
+        "pct_resistant": 55.2,
+        "n": 154
+      },
+      {
+        "year": 2013,
+        "pct_resistant": 55.9,
+        "n": 270
+      },
+      {
+        "year": 2014,
+        "pct_resistant": 44.4,
+        "n": 322
+      },
+      {
+        "year": 2015,
+        "pct_resistant": 47.5,
+        "n": 259
+      },
+      {
+        "year": 2016,
+        "pct_resistant": 41.4,
+        "n": 174
+      },
+      {
+        "year": 2017,
+        "pct_resistant": 47.2,
+        "n": 265
+      },
+      {
+        "year": 2018,
+        "pct_resistant": 58.1,
+        "n": 327
+      },
+      {
+        "year": 2019,
+        "pct_resistant": 51.4,
+        "n": 296
+      },
+      {
+        "year": 2020,
+        "pct_resistant": 61.5,
+        "n": 260
+      },
+      {
+        "year": 2021,
+        "pct_resistant": 41.7,
+        "n": 211
+      },
+      {
+        "year": 2022,
+        "pct_resistant": 51.1,
+        "n": 141
+      },
+      {
+        "year": 2023,
+        "pct_resistant": 46.6,
+        "n": 73
+      },
+      {
+        "year": 2024,
+        "pct_resistant": 53.6,
+        "n": 28
+      }
+    ],
+    "gentamicin": [
+      {
+        "year": 2001,
+        "pct_resistant": 0.0,
+        "n": 14
+      },
+      {
+        "year": 2002,
+        "pct_resistant": 20.0,
+        "n": 5
+      },
+      {
+        "year": 2003,
+        "pct_resistant": 40.0,
+        "n": 5
+      },
+      {
+        "year": 2004,
+        "pct_resistant": 58.3,
+        "n": 12
+      },
+      {
+        "year": 2005,
+        "pct_resistant": 22.2,
+        "n": 27
+      },
+      {
+        "year": 2006,
+        "pct_resistant": 84.2,
+        "n": 19
+      },
+      {
+        "year": 2007,
+        "pct_resistant": 60.0,
+        "n": 20
+      },
+      {
+        "year": 2008,
+        "pct_resistant": 68.8,
+        "n": 16
+      },
+      {
+        "year": 2009,
+        "pct_resistant": 47.2,
+        "n": 36
+      },
+      {
+        "year": 2010,
+        "pct_resistant": 54.5,
+        "n": 33
+      },
+      {
+        "year": 2011,
+        "pct_resistant": 41.8,
+        "n": 55
+      },
+      {
+        "year": 2012,
+        "pct_resistant": 57.1,
+        "n": 154
+      },
+      {
+        "year": 2013,
+        "pct_resistant": 62.8,
+        "n": 282
+      },
+      {
+        "year": 2014,
+        "pct_resistant": 52.5,
+        "n": 339
+      },
+      {
+        "year": 2015,
+        "pct_resistant": 44.8,
+        "n": 223
+      },
+      {
+        "year": 2016,
+        "pct_resistant": 54.4,
+        "n": 226
+      },
+      {
+        "year": 2017,
+        "pct_resistant": 47.8,
+        "n": 251
+      },
+      {
+        "year": 2018,
+        "pct_resistant": 43.1,
+        "n": 306
+      },
+      {
+        "year": 2019,
+        "pct_resistant": 46.2,
+        "n": 279
+      },
+      {
+        "year": 2020,
+        "pct_resistant": 41.7,
+        "n": 223
+      },
+      {
+        "year": 2021,
+        "pct_resistant": 43.8,
+        "n": 203
+      },
+      {
+        "year": 2022,
+        "pct_resistant": 47.9,
+        "n": 142
+      },
+      {
+        "year": 2023,
+        "pct_resistant": 40.6,
+        "n": 69
+      },
+      {
+        "year": 2024,
+        "pct_resistant": 22.7,
+        "n": 22
+      }
+    ],
+    "tetracycline": [
+      {
+        "year": 2001,
+        "pct_resistant": 60.0,
+        "n": 5
+      },
+      {
+        "year": 2002,
+        "pct_resistant": 50.0,
+        "n": 6
+      },
+      {
+        "year": 2003,
+        "pct_resistant": 55.6,
+        "n": 9
+      },
+      {
+        "year": 2004,
+        "pct_resistant": 81.8,
+        "n": 11
+      },
+      {
+        "year": 2005,
+        "pct_resistant": 52.4,
+        "n": 21
+      },
+      {
+        "year": 2006,
+        "pct_resistant": 60.0,
+        "n": 20
+      },
+      {
+        "year": 2007,
+        "pct_resistant": 43.8,
+        "n": 16
+      },
+      {
+        "year": 2008,
+        "pct_resistant": 53.8,
+        "n": 13
+      },
+      {
+        "year": 2009,
+        "pct_resistant": 35.0,
+        "n": 40
+      },
+      {
+        "year": 2010,
+        "pct_resistant": 40.0,
+        "n": 20
+      },
+      {
+        "year": 2011,
+        "pct_resistant": 59.6,
+        "n": 57
+      },
+      {
+        "year": 2012,
+        "pct_resistant": 44.6,
+        "n": 130
+      },
+      {
+        "year": 2013,
+        "pct_resistant": 40.3,
+        "n": 258
+      },
+      {
+        "year": 2014,
+        "pct_resistant": 49.0,
+        "n": 353
+      },
+      {
+        "year": 2015,
+        "pct_resistant": 52.1,
+        "n": 236
+      },
+      {
+        "year": 2016,
+        "pct_resistant": 53.3,
+        "n": 214
+      },
+      {
+        "year": 2017,
+        "pct_resistant": 54.2,
+        "n": 277
+      },
+      {
+        "year": 2018,
+        "pct_resistant": 56.5,
+        "n": 331
+      },
+      {
+        "year": 2019,
+        "pct_resistant": 53.3,
+        "n": 274
+      },
+      {
+        "year": 2020,
+        "pct_resistant": 44.5,
+        "n": 274
+      },
+      {
+        "year": 2021,
+        "pct_resistant": 49.0,
+        "n": 261
+      },
+      {
+        "year": 2022,
+        "pct_resistant": 60.6,
+        "n": 137
+      },
+      {
+        "year": 2023,
+        "pct_resistant": 48.8,
+        "n": 84
+      },
+      {
+        "year": 2024,
+        "pct_resistant": 77.8,
+        "n": 27
+      }
+    ],
+    "trimethoprim/sulfamethoxazole": [
+      {
+        "year": 2000,
+        "pct_resistant": 42.9,
+        "n": 7
+      },
+      {
+        "year": 2001,
+        "pct_resistant": 11.5,
+        "n": 26
+      },
+      {
+        "year": 2003,
+        "pct_resistant": 28.6,
+        "n": 7
+      },
+      {
+        "year": 2004,
+        "pct_resistant": 81.8,
+        "n": 11
+      },
+      {
+        "year": 2005,
+        "pct_resistant": 21.7,
+        "n": 23
+      },
+      {
+        "year": 2006,
+        "pct_resistant": 68.8,
+        "n": 16
+      },
+      {
+        "year": 2007,
+        "pct_resistant": 60.0,
+        "n": 10
+      },
+      {
+        "year": 2008,
+        "pct_resistant": 36.4,
+        "n": 11
+      },
+      {
+        "year": 2009,
+        "pct_resistant": 25.4,
+        "n": 59
+      },
+      {
+        "year": 2010,
+        "pct_resistant": 47.4,
+        "n": 19
+      },
+      {
+        "year": 2011,
+        "pct_resistant": 40.4,
+        "n": 57
+      },
+      {
+        "year": 2012,
+        "pct_resistant": 67.8,
+        "n": 149
+      },
+      {
+        "year": 2013,
+        "pct_resistant": 60.6,
+        "n": 302
+      },
+      {
+        "year": 2014,
+        "pct_resistant": 50.0,
+        "n": 382
+      },
+      {
+        "year": 2015,
+        "pct_resistant": 46.0,
+        "n": 226
+      },
+      {
+        "year": 2016,
+        "pct_resistant": 54.6,
+        "n": 216
+      },
+      {
+        "year": 2017,
+        "pct_resistant": 49.5,
+        "n": 279
+      },
+      {
+        "year": 2018,
+        "pct_resistant": 45.8,
+        "n": 319
+      },
+      {
+        "year": 2019,
+        "pct_resistant": 46.5,
+        "n": 271
+      },
+      {
+        "year": 2020,
+        "pct_resistant": 53.1,
+        "n": 211
+      },
+      {
+        "year": 2021,
+        "pct_resistant": 45.5,
+        "n": 187
+      },
+      {
+        "year": 2022,
+        "pct_resistant": 43.4,
+        "n": 99
+      },
+      {
+        "year": 2023,
+        "pct_resistant": 42.9,
+        "n": 42
+      }
+    ],
+    "cefepime": [
+      {
+        "year": 2001,
+        "pct_resistant": 0.0,
+        "n": 14
+      },
+      {
+        "year": 2002,
+        "pct_resistant": 20.0,
+        "n": 10
+      },
+      {
+        "year": 2003,
+        "pct_resistant": 80.0,
+        "n": 5
+      },
+      {
+        "year": 2005,
+        "pct_resistant": 14.3,
+        "n": 14
+      },
+      {
+        "year": 2006,
+        "pct_resistant": 50.0,
+        "n": 24
+      },
+      {
+        "year": 2007,
+        "pct_resistant": 53.8,
+        "n": 13
+      },
+      {
+        "year": 2008,
+        "pct_resistant": 46.7,
+        "n": 15
+      },
+      {
+        "year": 2009,
+        "pct_resistant": 30.0,
+        "n": 30
+      },
+      {
+        "year": 2010,
+        "pct_resistant": 53.8,
+        "n": 26
+      },
+      {
+        "year": 2011,
+        "pct_resistant": 49.3,
+        "n": 67
+      },
+      {
+        "year": 2012,
+        "pct_resistant": 60.4,
+        "n": 139
+      },
+      {
+        "year": 2013,
+        "pct_resistant": 60.9,
+        "n": 243
+      },
+      {
+        "year": 2014,
+        "pct_resistant": 57.5,
+        "n": 391
+      },
+      {
+        "year": 2015,
+        "pct_resistant": 50.0,
+        "n": 222
+      },
+      {
+        "year": 2016,
+        "pct_resistant": 60.6,
+        "n": 213
+      },
+      {
+        "year": 2017,
+        "pct_resistant": 40.6,
+        "n": 261
+      },
+      {
+        "year": 2018,
+        "pct_resistant": 43.1,
+        "n": 313
+      },
+      {
+        "year": 2019,
+        "pct_resistant": 41.2,
+        "n": 296
+      },
+      {
+        "year": 2020,
+        "pct_resistant": 43.5,
+        "n": 230
+      },
+      {
+        "year": 2021,
+        "pct_resistant": 52.9,
+        "n": 208
+      },
+      {
+        "year": 2022,
+        "pct_resistant": 44.9,
+        "n": 167
+      },
+      {
+        "year": 2023,
+        "pct_resistant": 56.2,
+        "n": 80
+      },
+      {
+        "year": 2024,
+        "pct_resistant": 63.6,
+        "n": 22
+      }
+    ]
+  },
+  "combo_trends": {
+    "Cipro+TMP/SMX+Cef": [
+      {
+        "year": 2012,
+        "pct": 0.0,
+        "n": 7
+      },
+      {
+        "year": 2014,
+        "pct": 37.5,
+        "n": 8
+      },
+      {
+        "year": 2015,
+        "pct": 40.0,
+        "n": 5
+      },
+      {
+        "year": 2016,
+        "pct": 20.0,
+        "n": 5
+      },
+      {
+        "year": 2017,
+        "pct": 11.11,
+        "n": 9
+      },
+      {
+        "year": 2018,
+        "pct": 0.0,
+        "n": 5
+      },
+      {
+        "year": 2021,
+        "pct": 0.0,
+        "n": 5
+      }
+    ],
+    "Gent+TMP/SMX+Cef": [
+      {
+        "year": 2012,
+        "pct": 14.29,
+        "n": 7
+      },
+      {
+        "year": 2014,
+        "pct": 11.11,
+        "n": 9
+      },
+      {
+        "year": 2017,
+        "pct": 33.33,
+        "n": 6
+      },
+      {
+        "year": 2019,
+        "pct": 33.33,
+        "n": 6
+      },
+      {
+        "year": 2021,
+        "pct": 40.0,
+        "n": 5
+      }
+    ],
+    "Cipro+Gent+TMP/SMX": [
+      {
+        "year": 2012,
+        "pct": 60.0,
+        "n": 5
+      },
+      {
+        "year": 2013,
+        "pct": 62.5,
+        "n": 8
+      },
+      {
+        "year": 2014,
+        "pct": 18.75,
+        "n": 16
+      },
+      {
+        "year": 2015,
+        "pct": 42.86,
+        "n": 7
+      },
+      {
+        "year": 2016,
+        "pct": 16.67,
+        "n": 6
+      },
+      {
+        "year": 2017,
+        "pct": 33.33,
+        "n": 6
+      },
+      {
+        "year": 2018,
+        "pct": 20.0,
+        "n": 5
+      }
+    ],
+    "Pan-resistant (all 6)": []
+  },
+  "antibiotics": [
+    "ciprofloxacin",
+    "meropenem",
+    "gentamicin",
+    "tetracycline",
+    "trimethoprim/sulfamethoxazole",
+    "cefepime"
+  ],
+  "short_names": {
+    "ciprofloxacin": "Cipro",
+    "meropenem": "Mero",
+    "gentamicin": "Gent",
+    "tetracycline": "Tet",
+    "trimethoprim/sulfamethoxazole": "TMP/SMX",
+    "cefepime": "Cef"
+  }
+}
