@@ -1,15 +1,14 @@
 """
-Resistance forecasting — predict 2025-2030 resistance rates.
+Resistance forecasting — project future resistance rates.
 
-Uses temporal prevalence data (2000–2024) to project forward using:
+Uses temporal prevalence data (2000–present) to project forward using:
   1. Linear extrapolation with confidence intervals (simple, transparent)
-  2. ARIMA-style trend + noise model
-  3. Logistic saturation model (can't exceed 100%)
+  2. Logistic saturation model (can't exceed 100%)
 
 For each antibiotic, we output:
-  - Predicted % resistant in 2025, 2026, 2027, 2028, 2029, 2030
+  - Predicted % resistant for the next 5 years
   - 80% confidence interval (based on residual variance)
-  - Which model was selected (best AIC)
+  - Which model was selected (best R²)
   - Whether the forecast suggests the 50% "epidemic threshold" will be crossed
 
 Outputs:
@@ -18,6 +17,7 @@ Outputs:
 
 import json
 import sys
+from datetime import datetime
 from pathlib import Path
 
 import numpy as np
@@ -47,7 +47,10 @@ SHORT = {
     "cefepime":                     "Cef",
 }
 
-FORECAST_YEARS = list(range(2025, 2031))
+CURRENT_YEAR   = datetime.now().year
+FORECAST_START = CURRENT_YEAR + 1           # start forecasting from next year
+FORECAST_END   = FORECAST_START + 5         # 5-year horizon
+FORECAST_YEARS = list(range(FORECAST_START, FORECAST_END + 1))
 
 
 def logistic(x, L, k, x0):
@@ -173,7 +176,7 @@ def logistic_forecast(years, values, forecast_years):
 
 def main():
     print("=" * 60)
-    print("RESISTANCE FORECASTING 2025-2030")
+    print(f"RESISTANCE FORECASTING {FORECAST_START}–{FORECAST_END}")
     print("=" * 60)
 
     # Load historical prevalence
@@ -218,7 +221,7 @@ def main():
                 break
 
         print(f"    Model: {best_info['model']} (R²={best_info['r2']:.3f})")
-        print(f"    Forecast 2025: {best_fc[0]['predicted']:.1f}% "
+        print(f"    Forecast {FORECAST_START}: {best_fc[0]['predicted']:.1f}% "
               f"[{best_fc[0]['lower_80']:.1f}–{best_fc[0]['upper_80']:.1f}%]")
         print(f"    Forecast 2030: {best_fc[-1]['predicted']:.1f}% "
               f"[{best_fc[-1]['lower_80']:.1f}–{best_fc[-1]['upper_80']:.1f}%]")
@@ -241,7 +244,13 @@ def main():
             "current_year":     years[-1],
         })
 
-    (ART_DIR / "resistance_forecast.json").write_text(json.dumps(results, indent=2))
+    output = {
+        "forecast_start": FORECAST_START,
+        "forecast_end":   FORECAST_END,
+        "generated_year": CURRENT_YEAR,
+        "results":        results,
+    }
+    (ART_DIR / "resistance_forecast.json").write_text(json.dumps(output, indent=2))
     print(f"\n  Saved: {len(results)} antibiotics forecasted")
 
     # ── Summary ────────────────────────────────────────────────────────────────

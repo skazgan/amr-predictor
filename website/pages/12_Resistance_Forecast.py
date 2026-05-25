@@ -17,9 +17,9 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from utils import inject_mobile_css
 st.set_page_config(page_title="Resistance Forecast", page_icon="🔮", layout="wide")
 inject_mobile_css()
-st.title("🔮 Resistance Forecast 2025–2030")
+st.title(f"🔮 Resistance Forecast {FORECAST_START}–{FORECAST_END}")
 st.markdown("*If current trends continue — what does antibiotic resistance look like in 5 years?*")
-st.info("💡 Original research: we fit linear and logistic growth models to 24 years of resistance data, then project forward with confidence intervals.")
+st.info(f"💡 Original research: we fit linear and logistic growth models to historical resistance data, then project forward {FORECAST_START}–{FORECAST_END} with confidence intervals.")
 st.divider()
 
 # Load
@@ -28,7 +28,16 @@ if not path.exists():
     st.warning("Run `python src/resistance_forecast.py` to generate this artifact.")
     st.stop()
 
-results = json.loads(path.read_text())
+_raw = json.loads(path.read_text())
+# Support both old flat list format and new dict format
+if isinstance(_raw, dict):
+    results       = _raw["results"]
+    FORECAST_START = _raw.get("forecast_start", 2027)
+    FORECAST_END   = _raw.get("forecast_end",   2032)
+else:
+    results        = _raw
+    FORECAST_START = results[0]["forecast"][0]["year"] if results else 2027
+    FORECAST_END   = results[0]["forecast"][-1]["year"] if results else 2032
 
 
 def hex_to_rgba(hex_color: str, alpha: float = 0.15) -> str:
@@ -95,7 +104,7 @@ with col2:
 st.divider()
 
 # ── Section 2: All-antibiotic forecast overview ───────────────────────────────
-st.header("2. 2025–2030 forecast overview")
+st.header(f"2. {FORECAST_START}–{FORECAST_END} forecast overview")
 
 st.markdown("Historical data (solid lines) extended into the future (dashed) with 80% confidence bands.")
 
@@ -147,8 +156,7 @@ fig_all.add_hline(y=50, line_dash="dot", line_color="#6272a4",
                   annotation_text="50% — majority resistant",
                   annotation_position="bottom right")
 
-# 2025 divider
-fig_all.add_vline(x=2025, line_dash="dash", line_color="#6272a4",
+fig_all.add_vline(x=FORECAST_START - 0.5, line_dash="dash", line_color="#6272a4",
                   annotation_text="Forecast →", annotation_position="top left")
 
 fig_all.update_layout(
@@ -219,8 +227,8 @@ if sel:
 
         fig_single.add_hline(y=50, line_dash="dot", line_color="#6272a4",
                               annotation_text="50% majority-resistant threshold")
-        fig_single.add_vline(x=2024.5, line_dash="dash", line_color="#444",
-                              annotation_text="Now")
+        fig_single.add_vline(x=FORECAST_START - 0.5, line_dash="dash", line_color="#444",
+                              annotation_text="Now →")
 
         fig_single.update_layout(
             title=f"{selected_ab} — {sel['model_info']['model']} model forecast",
@@ -245,31 +253,32 @@ if sel:
         else:
             st.metric("Annual slope", f"{mi.get('slope', '?'):+.3f}%/yr")
 
-        st.markdown("---")
-        st.markdown("**Forecast table:**")
-        fc_df = pd.DataFrame(sel["forecast"])
-        fc_df.columns = ["Year", "Predicted %", "Lower 80%", "Upper 80%"]
-        st.dataframe(fc_df, hide_index=True, use_container_width=True)
-
         if sel.get("threshold_50_year"):
             st.error(f"⚠️ Projected to cross **50% resistance** around **{sel['threshold_50_year']}**")
         else:
-            st.success("✅ Projected to stay below 50% through 2030")
+            st.success(f"✅ Projected to stay below 50% through {FORECAST_END}")
+
+    # Forecast table — full width below the two columns
+    st.markdown("**Forecast table:**")
+    fc_df = pd.DataFrame(sel["forecast"])
+    fc_df.columns = ["Year", "Predicted %", "Lower 80%", "Upper 80%"]
+    st.dataframe(fc_df, hide_index=True, use_container_width=True)
 
 st.divider()
 
 # ── Section 4: Forecast summary table ────────────────────────────────────────
-st.header("4. 2030 projection summary")
+st.header(f"4. {FORECAST_END} projection summary")
 
 summary_rows = []
 for r in sorted(results, key=lambda x: -x["forecast"][-1]["predicted"]):
-    fc30 = r["forecast"][-1]
-    fc25 = r["forecast"][0]
+    fc_end   = r["forecast"][-1]
+    fc_start = r["forecast"][0]
+    current_year = r.get("current_year", "latest")
     summary_rows.append({
         "Antibiotic": r["antibiotic"],
-        "Current (2024)": f"{r['current_pct']:.1f}%",
-        "2025 forecast": f"{fc25['predicted']:.1f}% [{fc25['lower_80']:.1f}–{fc25['upper_80']:.1f}%]",
-        "2030 forecast": f"{fc30['predicted']:.1f}% [{fc30['lower_80']:.1f}–{fc30['upper_80']:.1f}%]",
+        f"Current ({current_year})": f"{r['current_pct']:.1f}%",
+        f"{FORECAST_START} forecast": f"{fc_start['predicted']:.1f}% [{fc_start['lower_80']:.1f}–{fc_start['upper_80']:.1f}%]",
+        f"{FORECAST_END} forecast": f"{fc_end['predicted']:.1f}% [{fc_end['lower_80']:.1f}–{fc_end['upper_80']:.1f}%]",
         "Model": r["model_info"]["model"].capitalize(),
         "Crosses 50%": "⚠️ Yes" if r.get("threshold_50_year") else "✅ No",
     })
