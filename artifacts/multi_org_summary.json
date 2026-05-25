@@ -1,0 +1,184 @@
+[
+  {
+    "organism": "escherichia_coli",
+    "antibiotic": "ciprofloxacin",
+    "test_auc": 0.969,
+    "n_total": 60384,
+    "n_resistant": 17374
+  },
+  {
+    "organism": "escherichia_coli",
+    "antibiotic": "meropenem",
+    "test_auc": 0.977,
+    "n_total": 60096,
+    "n_resistant": 4874
+  },
+  {
+    "organism": "escherichia_coli",
+    "antibiotic": "gentamicin",
+    "test_auc": 0.99,
+    "n_total": 46252,
+    "n_resistant": 9394
+  },
+  {
+    "organism": "escherichia_coli",
+    "antibiotic": "tetracycline",
+    "test_auc": 0.981,
+    "n_total": 58744,
+    "n_resistant": 27929
+  },
+  {
+    "organism": "escherichia_coli",
+    "antibiotic": "trimethoprim/sulfamethoxazole",
+    "test_auc": 0.979,
+    "n_total": 56533,
+    "n_resistant": 26938
+  },
+  {
+    "organism": "escherichia_coli",
+    "antibiotic": "cefepime",
+    "test_auc": 0.973,
+    "n_total": 58679,
+    "n_resistant": 10234
+  },
+  {
+    "organism": "escherichia_coli",
+    "antibiotic": "amikacin",
+    "test_auc": 0.961,
+    "n_total": 2435,
+    "n_resistant": 46
+  },
+  {
+    "organism": "escherichia_coli",
+    "antibiotic": "ampicillin",
+    "test_auc": 0.988,
+    "n_total": 60559,
+    "n_resistant": 34235
+  },
+  {
+    "organism": "escherichia_coli",
+    "antibiotic": "ceftriaxone",
+    "test_auc": 0.988,
+    "n_total": 58675,
+    "n_resistant": 18993
+  },
+  {
+    "organism": "escherichia_coli",
+    "antibiotic": "piperacillin/tazobactam",
+    "test_auc": 0.966,
+    "n_total": 45994,
+    "n_resistant": 6462
+  },
+  {
+    "organism": "staphylococcus_aureus",
+    "antibiotic": "oxacillin",
+    "test_auc": 0.993,
+    "n_total": 17544,
+    "n_resistant": 9004
+  },
+  {
+    "organism": "staphylococcus_aureus",
+    "antibiotic": "vancomycin",
+    "test_auc": 0.977,
+    "n_total": 2216,
+    "n_resistant": 49
+  },
+  {
+    "organism": "staphylococcus_aureus",
+    "antibiotic": "tetracycline",
+    "test_auc": 0.993,
+    "n_total": 21886,
+    "n_resistant": 4034
+  },
+  {
+    "organism": "staphylococcus_aureus",
+    "antibiotic": "trimethoprim/sulfamethoxazole",
+    "test_auc": 0.994,
+    "n_total": 20242,
+    "n_resistant": 1683
+  },
+  {
+    "organism": "staphylococcus_aureus",
+    "antibiotic": "clindamycin",
+    "test_auc": 0.99,
+    "n_total": 21763,
+    "n_resistant": 7073
+  },
+  {
+    "organism": "staphylococcus_aureus",
+    "antibiotic": "erythromycin",
+    "test_auc": 0.984,
+    "n_total": 21940,
+    "n_resistant": 10042
+  },
+  {
+    "organism": "staphylococcus_aureus",
+    "antibiotic": "ciprofloxacin",
+    "test_auc": 0.957,
+    "n_total": 21859,
+    "n_resistant": 6873
+  },
+  {
+    "organism": "staphylococcus_aureus",
+    "antibiotic": "gentamicin",
+    "test_auc": 0.952,
+    "n_total": 19460,
+    "n_resistant": 3489
+  },
+  {
+    "organism": "acinetobacter_baumannii",
+    "antibiotic": "meropenem",
+    "test_auc": 0.989,
+    "n_total": 12045,
+    "n_resistant": 7525
+  },
+  {
+    "organism": "acinetobacter_baumannii",
+    "antibiotic": "imipenem",
+    "test_auc": 0.989,
+    "n_total": 12166,
+    "n_resistant": 7452
+  },
+  {
+    "organism": "acinetobacter_baumannii",
+    "antibiotic": "ciprofloxacin",
+    "test_auc": 0.982,
+    "n_total": 12201,
+    "n_resistant": 10633
+  },
+  {
+    "organism": "acinetobacter_baumannii",
+    "antibiotic": "gentamicin",
+    "test_auc": 0.989,
+    "n_total": 10559,
+    "n_resistant": 8508
+  },
+  {
+    "organism": "acinetobacter_baumannii",
+    "antibiotic": "amikacin",
+    "test_auc": 0.988,
+    "n_total": 12181,
+    "n_resistant": 7661
+  },
+  {
+    "organism": "acinetobacter_baumannii",
+    "antibiotic": "colistin",
+    "test_auc": 0.93,
+    "n_total": 410,
+    "n_resistant": 24
+  },
+  {
+    "organism": "acinetobacter_baumannii",
+    "antibiotic": "tetracycline",
+    "test_auc": 0.989,
+    "n_total": 12034,
+    "n_resistant": 9045
+  },
+  {
+    "organism": "acinetobacter_baumannii",
+    "antibiotic": "trimethoprim/sulfamethoxazole",
+    "test_auc": 0.981,
+    "n_total": 10474,
+    "n_resistant": 7736
+  }
+]

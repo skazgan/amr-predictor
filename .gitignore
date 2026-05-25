@@ -4,7 +4,7 @@ data/processed/X.csv
 data/processed/gene_matrix.csv
 data/processed/*/
 
-# Old large model files (not needed for deployment)
+# Large/legacy model files
 models/rf.pkl
 models/rf_combined.pkl
 models/rf_genes.pkl
@@ -12,6 +12,10 @@ models/xgb.pkl
 models/xgb_combined.pkl
 models/xgb_genes.pkl
 models/*.png
+
+# Safety: block any model file over ~90 MB from accidental commit
+# (XGBoost-only models are < 10 MB; RF-ensemble models can be 250-400 MB)
+# To add a model: verify its size < 90 MB first
 
 # Python
 __pycache__/

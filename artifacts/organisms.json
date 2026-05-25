@@ -1,0 +1,62 @@
+{
+  "escherichia_coli": {
+    "display": "Escherichia coli",
+    "taxon_id": 562,
+    "antibiotics": [
+      "ciprofloxacin",
+      "meropenem",
+      "gentamicin",
+      "tetracycline",
+      "trimethoprim/sulfamethoxazole",
+      "cefepime",
+      "amikacin",
+      "ampicillin",
+      "ceftriaxone",
+      "piperacillin/tazobactam"
+    ]
+  },
+  "staphylococcus_aureus": {
+    "display": "Staphylococcus aureus",
+    "taxon_id": 1280,
+    "antibiotics": [
+      "oxacillin",
+      "vancomycin",
+      "tetracycline",
+      "trimethoprim/sulfamethoxazole",
+      "clindamycin",
+      "erythromycin",
+      "ciprofloxacin",
+      "gentamicin"
+    ]
+  },
+  "acinetobacter_baumannii": {
+    "display": "Acinetobacter baumannii",
+    "taxon_id": 470,
+    "antibiotics": [
+      "meropenem",
+      "imipenem",
+      "ciprofloxacin",
+      "gentamicin",
+      "amikacin",
+      "colistin",
+      "tetracycline",
+      "trimethoprim/sulfamethoxazole"
+    ]
+  },
+  "klebsiella_pneumoniae": {
+    "display": "Klebsiella pneumoniae",
+    "taxon_id": 573,
+    "antibiotics": [
+      "ciprofloxacin",
+      "meropenem",
+      "gentamicin",
+      "tetracycline",
+      "trimethoprim/sulfamethoxazole",
+      "cefepime",
+      "amikacin",
+      "imipenem",
+      "piperacillin/tazobactam",
+      "levofloxacin"
+    ]
+  }
+}

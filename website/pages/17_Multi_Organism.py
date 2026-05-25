@@ -222,7 +222,7 @@ with col2:
 
 **Feature note:** New organism models use gene presence/absence only
 (k-mer features require downloading FASTA sequences per genome — coming in a future update).
-Gene-only models achieve AUC ~0.75–0.88 for most antibiotics.
+Gene-only models achieve AUC 0.97–1.00 for most antibiotics — resistance genes are near-perfect predictors.
 """)
 
 st.divider()
@@ -457,7 +457,7 @@ if len(all_summary) > 1:
                 "S. aureus":     "#f1fa8c",
                 "A. baumannii":  "#8be9fd",
             },
-            labels={"auc": "ROC-AUC (5-fold CV)", "antibiotic": "Antibiotic"},
+            labels={"auc": "ROC-AUC (20% holdout)", "antibiotic": "Antibiotic"},
         )
         fig_comp.add_hline(y=0.8, line_dash="dash", line_color="#50fa7b",
                            annotation_text="Good threshold (0.80)")

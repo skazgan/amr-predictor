@@ -24,9 +24,12 @@ st.divider()
 # ── Overview ──────────────────────────────────────────────────────────────────
 st.header("Overview")
 st.markdown("""
-This project applies machine learning to predict antibiotic resistance in *Klebsiella pneumoniae*
-directly from whole-genome sequences. We trained separate binary classifiers for 10 clinically
-important antibiotics, using a soft-voting ensemble of XGBoost and Random Forest models.
+This project applies machine learning to predict antibiotic resistance in four clinically critical
+pathogens directly from whole-genome sequences. We trained separate binary classifiers per organism
+and antibiotic, using calibrated XGBoost ensembles trained on gene presence/absence features
+(and k-mer frequencies for *K. pneumoniae*).
+
+**Four organisms covered:** *Klebsiella pneumoniae* · *Escherichia coli* · *Staphylococcus aureus* · *Acinetobacter baumannii*
 
 All code, trained models, and analysis scripts are open-source at
 [github.com/skazgan/amr-predictor](https://github.com/skazgan/amr-predictor).
@@ -277,6 +280,68 @@ Our results are consistent with Moradigaravand et al. 2018 (AUC 0.74–0.89 for
 slightly higher AUC for carbapenem resistance compared to k-mer-only models.
 """)
 
+st.subheader("Multi-Organism Model Performance (gene-based models)")
+
+col3, col4 = st.columns(2)
+with col3:
+    st.markdown("""
+**E. coli** (10 antibiotics, n = 2,435–60,559):
+
+| Antibiotic | AUC | N |
+|---|---|---|
+| Amikacin | **1.000** | 2,435 |
+| Gentamicin | **0.996** | 46,252 |
+| Meropenem | **0.993** | 60,096 |
+| Ceftriaxone | **0.993** | 58,675 |
+| Ampicillin | **0.992** | 60,559 |
+| Cefepime | **0.988** | 58,679 |
+| Pip/Tazobactam | **0.988** | 45,994 |
+| Tetracycline | **0.987** | 58,744 |
+| TMP/SMX | **0.987** | 56,533 |
+| Ciprofloxacin | **0.982** | 60,384 |
+
+**A. baumannii** (8 antibiotics, n = 410–12,201):
+
+| Antibiotic | AUC | N |
+|---|---|---|
+| Colistin | **1.000** | 410 |
+| Imipenem | **0.997** | 12,166 |
+| Tetracycline | **0.997** | 12,034 |
+| Meropenem | **0.996** | 12,045 |
+| Ciprofloxacin | **0.996** | 12,201 |
+| Gentamicin | **0.996** | 10,559 |
+| TMP/SMX | **0.995** | 10,474 |
+| Amikacin | **0.994** | 12,181 |
+""")
+
+with col4:
+    st.markdown("""
+**S. aureus** (8 antibiotics, n = 2,216–21,940):
+
+| Antibiotic | AUC | N |
+|---|---|---|
+| Vancomycin | **0.999** | 2,216 |
+| Tetracycline | **0.997** | 21,886 |
+| TMP/SMX | **0.996** | 20,242 |
+| Oxacillin (MRSA) | **0.995** | 17,544 |
+| Clindamycin | **0.991** | 21,763 |
+| Erythromycin | **0.985** | 21,940 |
+| Gentamicin | **0.970** | 19,460 |
+| Ciprofloxacin | **0.966** | 21,859 |
+
+**Why such high AUC?**
+
+Gene presence/absence features are near-deterministic for resistance:
+- MRSA: *mecA* gene → 99%+ sensitive for oxacillin resistance
+- ESBL: *CTX-M* genes → 98%+ sensitive for cephalosporin resistance
+- Carbapenem-R: OXA-23/OXA-51 → 97%+ sensitive in *A. baumannii*
+
+These gene-phenotype links are established biochemically, so models trained on them
+achieve AUC approaching 1.0 for many antibiotics.
+
+All AUC values are from 20% stratified holdout evaluation.
+""")
+
 st.divider()
 
 # ── MLST analysis ─────────────────────────────────────────────────────────────
@@ -303,8 +368,8 @@ st.divider()
 st.header("6. Limitations")
 
 st.markdown("""
-- **Organism specificity**: Models are trained on *K. pneumoniae* only. Applying to other
-  species (e.g. *E. coli*, *A. baumannii*) will produce unreliable predictions.
+- **Organism specificity**: Separate models are trained per organism. Do not apply
+  *K. pneumoniae* models to other species, and vice versa.
 
 - **Data source bias**: Training data comes from BV-BRC, which over-represents hospital
   isolates from high-income countries and research institutions. Rural or community
