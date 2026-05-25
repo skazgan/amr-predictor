@@ -255,9 +255,34 @@ if run and genome_id:
 
     # ── Download results ──────────────────────────────────────────────────────
     csv = df_results[["antibiotic","drug_class","verdict","prob_r","prob_s","confidence"]].to_csv(index=False)
-    st.download_button(
-        "⬇️ Download results as CSV",
-        data=csv,
-        file_name=f"amr_profile_{genome_id}.csv",
-        mime="text/csv",
-    )
+
+    col_dl1, col_dl2 = st.columns(2)
+    with col_dl1:
+        st.download_button(
+            "⬇️ Download results as CSV",
+            data=csv,
+            file_name=f"amr_profile_{genome_id}.csv",
+            mime="text/csv",
+        )
+    with col_dl2:
+        try:
+            from pdf_report import generate_pdf
+            _SHORT = {
+                "ciprofloxacin": "Cipro", "meropenem": "Mero",
+                "gentamicin": "Gent", "tetracycline": "Tet",
+                "trimethoprim/sulfamethoxazole": "TMP/SMX", "cefepime": "Cef",
+                "amikacin": "Amik", "imipenem": "Imi",
+                "piperacillin/tazobactam": "Pip/Taz", "levofloxacin": "Levo",
+            }
+            pred_list = df_results[["antibiotic","drug_class","verdict","prob_r"]].to_dict("records")
+            for p in pred_list:
+                p["short"] = _SHORT.get(p["antibiotic"], p["antibiotic"][:8])
+            pdf_bytes = generate_pdf(pred_list, genome_id=genome_id, source="BV-BRC")
+            st.download_button(
+                "📄 Download PDF report",
+                data=pdf_bytes,
+                file_name=f"amr_report_{genome_id}.pdf",
+                mime="application/pdf",
+            )
+        except Exception as e:
+            st.caption(f"PDF unavailable: {e}")

@@ -12,3 +12,4 @@ streamlit==1.37.0
 plotly==5.23.0
 scipy==1.13.1
 shap==0.46.0
+fpdf2==2.8.7

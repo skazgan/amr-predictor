@@ -333,12 +333,26 @@ else:
     } for p in preds])
 
     csv = result_df.to_csv(index=False)
-    st.download_button(
-        "⬇️ Download results as CSV",
-        data=csv,
-        file_name="amr_gene_prediction.csv",
-        mime="text/csv",
-    )
+    col_dl1, col_dl2 = st.columns(2)
+    with col_dl1:
+        st.download_button(
+            "⬇️ Download results as CSV",
+            data=csv,
+            file_name="amr_gene_prediction.csv",
+            mime="text/csv",
+        )
+    with col_dl2:
+        try:
+            from pdf_report import generate_pdf
+            pdf_bytes = generate_pdf(preds, genome_id="Offline (gene toggle)", source="Manual gene selection")
+            st.download_button(
+                "📄 Download PDF report",
+                data=pdf_bytes,
+                file_name="amr_gene_report.pdf",
+                mime="application/pdf",
+            )
+        except Exception as e:
+            st.caption(f"PDF unavailable: {e}")
 
 st.divider()
 

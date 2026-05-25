@@ -338,12 +338,27 @@ else:
     } for p in preds])
 
     csv = result_df.to_csv(index=False)
-    st.download_button(
-        "⬇️ Download full results as CSV",
-        data=csv,
-        file_name="amr_fasta_prediction.csv",
-        mime="text/csv",
-    )
+    col_dl1, col_dl2 = st.columns(2)
+    with col_dl1:
+        st.download_button(
+            "⬇️ Download full results as CSV",
+            data=csv,
+            file_name="amr_fasta_prediction.csv",
+            mime="text/csv",
+        )
+    with col_dl2:
+        try:
+            from pdf_report import generate_pdf
+            genome_label = uploaded.name if uploaded else "Synthetic demo"
+            pdf_bytes = generate_pdf(preds, genome_id=genome_label, source="FASTA upload")
+            st.download_button(
+                "📄 Download PDF report",
+                data=pdf_bytes,
+                file_name="amr_fasta_report.pdf",
+                mime="application/pdf",
+            )
+        except Exception as e:
+            st.caption(f"PDF unavailable: {e}")
 
     st.divider()
     st.markdown("""
