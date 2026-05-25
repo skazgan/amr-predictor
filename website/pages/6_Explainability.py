@@ -21,7 +21,6 @@ sys.path.insert(0, str(ROOT / "src"))
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from utils import inject_mobile_css
-st.set_page_config(page_title="Explainability", page_icon="💡", layout="wide")
 inject_mobile_css()
 st.title("💡 Explainability")
 st.markdown("*Which genes and k-mers actually drive the predictions?*")

@@ -9,7 +9,6 @@ import sys
 from pathlib import Path as _Path
 sys.path.insert(0, str(_Path(__file__).parent.parent))
 from utils import inject_mobile_css
-st.set_page_config(page_title="The Biology", page_icon="🦠", layout="wide")
 inject_mobile_css()
 
 st.title("🦠 The Biology")

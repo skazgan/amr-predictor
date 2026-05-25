@@ -16,7 +16,6 @@ ART_DIR = ROOT / "artifacts"
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from utils import inject_mobile_css
-st.set_page_config(page_title="Country Analysis", page_icon="🌍", layout="wide")
 inject_mobile_css()
 st.title("🌍 Country-Level Resistance")
 st.markdown("*Where in the world is K. pneumoniae most dangerous? Geographic patterns in antibiotic resistance.*")

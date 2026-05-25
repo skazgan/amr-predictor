@@ -15,7 +15,6 @@ ART_DIR = ROOT / "artifacts"
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from utils import inject_mobile_css
-st.set_page_config(page_title="The Data", page_icon="📊", layout="wide")
 inject_mobile_css()
 st.title("📊 The Data")
 st.markdown("*Where it comes from, how much there is, and how we prepared it.*")

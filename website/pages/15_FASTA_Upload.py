@@ -34,7 +34,6 @@ sys.path.insert(0, str(ROOT / "src"))
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from utils import inject_mobile_css
-st.set_page_config(page_title="FASTA Upload", page_icon="📂", layout="wide")
 inject_mobile_css()
 st.title("📂 FASTA Upload Predictor")
 st.markdown("*Upload your own genome assembly → get an instant resistance prediction.*")

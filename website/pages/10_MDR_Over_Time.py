@@ -16,7 +16,6 @@ ART_DIR = ROOT / "artifacts"
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from utils import inject_mobile_css
-st.set_page_config(page_title="MDR Over Time", page_icon="📈", layout="wide")
 inject_mobile_css()
 st.title("📈 MDR Over Time")
 st.markdown("*Has multi-drug resistance been getting worse? We tracked 12,000+ strains across 24 years.*")

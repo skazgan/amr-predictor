@@ -22,7 +22,6 @@ sys.path.insert(0, str(ROOT / "src"))
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from utils import inject_mobile_css
-st.set_page_config(page_title="Live Predictor", page_icon="🔮", layout="wide")
 inject_mobile_css()
 st.title("🔮 Live Predictor")
 st.markdown("*Enter a BV-BRC genome ID to get a full resistance profile across all 10 antibiotics.*")

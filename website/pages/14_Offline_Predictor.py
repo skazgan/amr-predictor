@@ -26,7 +26,6 @@ PROC_DIR  = ROOT / "data" / "processed"
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from utils import inject_mobile_css
-st.set_page_config(page_title="Offline Predictor", page_icon="⚡", layout="wide")
 inject_mobile_css()
 st.title("⚡ Offline Predictor")
 st.markdown("*No genome ID required. Toggle which resistance genes are present → instant resistance profile.*")
