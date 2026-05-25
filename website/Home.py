@@ -29,6 +29,7 @@ pg = st.navigation(
             st.Page(str(P / "5_Live_Predictor.py"),       title="Live Predictor",            icon="🔮"),
             st.Page(str(P / "14_Offline_Predictor.py"),   title="Offline Predictor",         icon="⚡"),
             st.Page(str(P / "15_FASTA_Upload.py"),        title="FASTA Upload",              icon="📂"),
+            st.Page(str(P / "17_Multi_Organism.py"),      title="Multi-Organism",            icon="🦠"),
         ],
         "🔍 Explainability": [
             st.Page(str(P / "6_Explainability.py"),       title="Explainability (SHAP)",     icon="🔍"),
