@@ -240,6 +240,30 @@ selected_display = st.selectbox(
 selected_org = org_options[selected_display]
 meta = ORGANISM_META[selected_org]
 
+# K. pneumoniae has dedicated predictors (uses k-mer + gene features, not gene-only)
+if selected_org == "klebsiella_pneumoniae":
+    st.info("""
+**K. pneumoniae has dedicated predictors** that use the full feature set
+(k-mer frequencies + gene presence) for higher accuracy (AUC 0.76–0.89).
+
+The multi-organism predictor uses gene-only features designed for the three
+new organisms. For K. pneumoniae, use one of the dedicated pages instead:
+""")
+    col_a, col_b, col_c = st.columns(3)
+    with col_a:
+        st.page_link("pages/5_Live_Predictor.py",
+                     label="🔮 Live Predictor  (BV-BRC genome ID)",
+                     use_container_width=True)
+    with col_b:
+        st.page_link("pages/14_Offline_Predictor.py",
+                     label="⚡ Offline Predictor  (gene toggles)",
+                     use_container_width=True)
+    with col_c:
+        st.page_link("pages/15_FASTA_Upload.py",
+                     label="📂 FASTA Upload  (raw assembly)",
+                     use_container_width=True)
+    st.stop()
+
 with st.spinner(f"Loading {meta['display']} models..."):
     org_models = load_org_models(selected_org)
 
@@ -247,13 +271,11 @@ if not org_models:
     st.warning(f"""
 **No models found for {meta['display']}.**
 
-To train models, run:
+To train models locally, run:
 ```bash
 python src/fetch_multi_organism.py
 python src/train_organisms.py --organism {selected_org}
 ```
-
-*K. pneumoniae models are always available (trained separately).*
 """)
 else:
     st.success(f"✅ {len(org_models)} models loaded for {meta['display']}")
