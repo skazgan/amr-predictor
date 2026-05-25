@@ -151,20 +151,28 @@ to ciprofloxacin (via *gyrA* mutation) may be fully susceptible to meropenem.
 """)
 
 # Visual: mapping from genome to label
-fig = go.Figure()
-fig.add_annotation(x=0.1, y=0.5, text="🧬 Genome<br>ATGCTTACGG...", showarrow=False,
-    font=dict(size=14, color="#cdd6f4"),
-    bgcolor="#2d2d44", borderpad=10, bordercolor="#6272a4")
-fig.add_annotation(x=0.5, y=0.5, text="⚙️ ML Model<br>(XGBoost +<br>k-mer & gene features)", showarrow=False,
-    font=dict(size=13, color="#cdd6f4"),
-    bgcolor="#2d2d44", borderpad=10, bordercolor="#6272a4")
-fig.add_annotation(x=0.9, y=0.5, text="✗ Resistant<br>or<br>✓ Susceptible", showarrow=False,
-    font=dict(size=14, color="#cdd6f4"),
-    bgcolor="#2d2d44", borderpad=10, bordercolor="#6272a4")
-for x0, x1 in [(0.22, 0.38), (0.62, 0.78)]:
-    fig.add_shape(type="line", x0=x0, y0=0.5, x1=x1, y1=0.5,
-                  line=dict(color="#e94560", width=2),
-                  xref="paper", yref="paper")
-fig.update_layout(height=160, xaxis_visible=False, yaxis_visible=False,
-    plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e", margin=dict(t=10, b=10))
-st.plotly_chart(fig, use_container_width=True)
+st.markdown("""
+<div style='background:#1e1e2e; border-radius:10px; padding:1.2rem 1.5rem; margin:0.5rem 0;
+     display:flex; align-items:center; justify-content:center; gap:0; flex-wrap:wrap;'>
+  <div style='background:#2d2d44; border:1px solid #6272a4; border-radius:8px;
+       padding:0.8rem 1.2rem; text-align:center; min-width:160px;'>
+    <div style='font-size:1.6rem;'>🧬</div>
+    <div style='color:#cdd6f4; font-weight:bold; margin-top:4px;'>Genome</div>
+    <div style='color:#6272a4; font-size:0.78rem;'>ATGCTTACGG…</div>
+  </div>
+  <div style='color:#e94560; font-size:1.8rem; padding:0 0.8rem; font-weight:bold;'>→</div>
+  <div style='background:#2d2d44; border:1px solid #6272a4; border-radius:8px;
+       padding:0.8rem 1.2rem; text-align:center; min-width:200px;'>
+    <div style='font-size:1.6rem;'>⚙️</div>
+    <div style='color:#cdd6f4; font-weight:bold; margin-top:4px;'>ML Model</div>
+    <div style='color:#6272a4; font-size:0.78rem;'>XGBoost + k-mer &amp; gene features</div>
+  </div>
+  <div style='color:#e94560; font-size:1.8rem; padding:0 0.8rem; font-weight:bold;'>→</div>
+  <div style='background:#2d2d44; border:1px solid #6272a4; border-radius:8px;
+       padding:0.8rem 1.2rem; text-align:center; min-width:160px;'>
+    <div style='font-size:1.6rem;'>🔬</div>
+    <div style='color:#e94560; font-weight:bold; margin-top:4px;'>✗ Resistant</div>
+    <div style='color:#50fa7b; font-weight:bold;'>✓ Susceptible</div>
+  </div>
+</div>
+""", unsafe_allow_html=True)
