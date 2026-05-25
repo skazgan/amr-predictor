@@ -113,17 +113,18 @@ def fetch_amr_labels(taxon_id: int) -> pd.DataFrame:
 
 
 def fetch_genes(genome_ids: list, taxon_id: int) -> pd.DataFrame:
-    """Fetch specialty gene presence for a list of genome IDs."""
+    """Fetch resistance gene presence for a list of genome IDs via sp_gene."""
     print(f"  Fetching genes for {len(genome_ids):,} genomes...")
     all_rows = []
     batch_size = 200
     for i in range(0, len(genome_ids), batch_size):
         batch = genome_ids[i:i + batch_size]
         id_list = ",".join(batch)
+        # Use CARD and NDARO as resistance gene sources (property space must be encoded)
         params = (
             f"in(genome_id,({id_list}))"
-            f"&select(genome_id,gene,product)"
-            f"&eq(property,Antibiotic Resistance)"
+            f"&in(source,(CARD,NDARO))"
+            f"&select(genome_id,gene,product,source)"
         )
         rows = bvbrc_get("sp_gene", params, limit=10000)
         all_rows.extend(rows)
