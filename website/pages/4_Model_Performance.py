@@ -72,7 +72,17 @@ st.divider()
 # ── Section 2: Summary table ──────────────────────────────────────────────────
 st.header("2. Results across all 10 antibiotics (Klebsiella pneumoniae)")
 
-st.dataframe(
+def _color_auc(val):
+    """CSS colour for AUC cells — no matplotlib needed."""
+    try:
+        v = float(val)
+        if v >= 0.87:   return "background-color:#D1FAE5; color:#065F46; font-weight:600"
+        elif v >= 0.82: return "background-color:#FEF9C3; color:#713F12; font-weight:600"
+        else:           return "background-color:#FEE2E2; color:#991B1B; font-weight:600"
+    except Exception:
+        return ""
+
+df_display = (
     df_sum[["antibiotic", "drug_class", "n_genomes",
             "cv_auc", "test_auc", "accuracy", "precision_r", "recall_r", "f1_r"]]
     .rename(columns={
@@ -81,8 +91,10 @@ st.dataframe(
         "test_auc": "Test AUC", "accuracy": "Accuracy",
         "precision_r": "Precision (R)", "recall_r": "Recall (R)", "f1_r": "F1 (R)",
     })
-    .style
-    .background_gradient(subset=["Test AUC"], cmap="RdYlGn", vmin=0.6, vmax=1.0)
+)
+st.dataframe(
+    df_display.style
+    .applymap(_color_auc, subset=["Test AUC"])
     .format({"CV AUC": "{:.3f}", "Test AUC": "{:.3f}", "Accuracy": "{:.3f}",
              "Precision (R)": "{:.3f}", "Recall (R)": "{:.3f}", "F1 (R)": "{:.3f}"}),
     use_container_width=True, hide_index=True,
