@@ -41,6 +41,10 @@ ANTIBIOTICS = [
     "tetracycline",
     "trimethoprim/sulfamethoxazole",
     "cefepime",
+    "amikacin",
+    "imipenem",
+    "piperacillin/tazobactam",
+    "levofloxacin",
 ]
 
 DRUG_CLASS = {
@@ -50,6 +54,10 @@ DRUG_CLASS = {
     "tetracycline":                 "Tetracycline",
     "trimethoprim/sulfamethoxazole":"Folate inhibitor",
     "cefepime":                     "Cephalosporin",
+    "amikacin":                     "Aminoglycoside",
+    "imipenem":                     "Carbapenem",
+    "piperacillin/tazobactam":      "Beta-lactam/inhibitor",
+    "levofloxacin":                 "Fluoroquinolone",
 }
 
 

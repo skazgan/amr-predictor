@@ -40,5 +40,33 @@
     "n_resistant": 2000,
     "n_susceptible": 2000,
     "total": 4000
+  },
+  {
+    "antibiotic": "amikacin",
+    "drug_class": "Aminoglycoside",
+    "n_resistant": 1861,
+    "n_susceptible": 7746,
+    "total": 9607
+  },
+  {
+    "antibiotic": "imipenem",
+    "drug_class": "Carbapenem",
+    "n_resistant": 3148,
+    "n_susceptible": 6605,
+    "total": 9753
+  },
+  {
+    "antibiotic": "piperacillin/tazobactam",
+    "drug_class": "Beta-lactam/inhibitor",
+    "n_resistant": 4408,
+    "n_susceptible": 5201,
+    "total": 9609
+  },
+  {
+    "antibiotic": "levofloxacin",
+    "drug_class": "Fluoroquinolone",
+    "n_resistant": 4256,
+    "n_susceptible": 5555,
+    "total": 9811
   }
 ]

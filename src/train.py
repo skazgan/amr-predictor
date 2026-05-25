@@ -9,9 +9,11 @@ Usage:
 
 import argparse
 import pickle
+import numpy as np
 import pandas as pd
+from sklearn.base import BaseEstimator, ClassifierMixin
 from sklearn.calibration import CalibratedClassifierCV
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import RandomForestClassifier, VotingClassifier
 from sklearn.feature_selection import SelectKBest, mutual_info_classif
 from sklearn.model_selection import StratifiedKFold, cross_validate
 from sklearn.pipeline import Pipeline
@@ -19,16 +21,72 @@ from sklearn.preprocessing import StandardScaler
 from xgboost import XGBClassifier
 
 
-def build_pipeline(model: str = "rf", n_features: int = 512) -> Pipeline:
+class SoftVotingEnsemble(BaseEstimator, ClassifierMixin):
+    """
+    Weighted soft-voting ensemble of XGBoost and Random Forest.
+
+    Instead of hard majority vote, we average the predicted probabilities —
+    XGBoost gets 60% weight (it consistently outperforms RF on this dataset),
+    RF gets 40% weight. This reduces variance while keeping XGBoost's signal.
+    """
+
+    def __init__(self, xgb_weight: float = 0.6, n_estimators: int = 300):
+        self.xgb_weight  = xgb_weight
+        self.n_estimators = n_estimators
+
+    def fit(self, X, y):
+        self.classes_ = np.unique(y)
+        self.xgb_ = CalibratedClassifierCV(
+            XGBClassifier(
+                n_estimators=self.n_estimators, max_depth=6, learning_rate=0.05,
+                subsample=0.8, colsample_bytree=0.8, random_state=42,
+                eval_metric="logloss", verbosity=0,
+            ),
+            method="isotonic", cv=3,
+        )
+        self.rf_ = CalibratedClassifierCV(
+            RandomForestClassifier(
+                n_estimators=self.n_estimators, max_features="sqrt",
+                class_weight="balanced", random_state=42, n_jobs=-1,
+            ),
+            method="isotonic", cv=3,
+        )
+        self.xgb_.fit(X, y)
+        self.rf_.fit(X, y)
+        return self
+
+    def predict_proba(self, X):
+        p_xgb = self.xgb_.predict_proba(X)
+        p_rf  = self.rf_.predict_proba(X)
+        rf_w  = 1.0 - self.xgb_weight
+        return self.xgb_weight * p_xgb + rf_w * p_rf
+
+    def predict(self, X):
+        return (self.predict_proba(X)[:, 1] >= 0.5).astype(int)
+
+    def feature_importances_(self):
+        """Average feature importances from both base estimators."""
+        def get_fi(cal_clf):
+            fis = [est.estimator.feature_importances_
+                   for est in cal_clf.calibrated_classifiers_]
+            return np.mean(fis, axis=0)
+        fi_xgb = get_fi(self.xgb_)
+        fi_rf  = get_fi(self.rf_)
+        return self.xgb_weight * fi_xgb + (1 - self.xgb_weight) * fi_rf
+
+
+def build_pipeline(model: str = "xgb", n_features: int = 512) -> Pipeline:
     """
     Build a pipeline with:
       1. Feature selection  – keep the top n_features k-mers by mutual information
       2. Scaling            – standardise counts
-      3. Classifier         – RF or XGBoost
+      3. Classifier         – RF, XGBoost, or ensemble (soft-voting XGB+RF)
     """
     selector = SelectKBest(score_func=mutual_info_classif, k=n_features)
 
-    if model == "xgb":
+    if model == "ensemble":
+        clf = SoftVotingEnsemble(xgb_weight=0.6)
+    elif model == "xgb":
         base_clf = XGBClassifier(
             n_estimators=300,
             max_depth=6,
@@ -40,6 +98,7 @@ def build_pipeline(model: str = "rf", n_features: int = 512) -> Pipeline:
             eval_metric="logloss",
             verbosity=0,
         )
+        clf = CalibratedClassifierCV(base_clf, method="isotonic", cv=3)
     else:
         base_clf = RandomForestClassifier(
             n_estimators=300,
@@ -48,11 +107,7 @@ def build_pipeline(model: str = "rf", n_features: int = 512) -> Pipeline:
             random_state=42,
             n_jobs=-1,
         )
-
-    # Wrap with isotonic calibration so predicted probabilities are reliable.
-    # cv=3 uses internal cross-fitting — the calibrator learns on held-out folds
-    # so the model can't overfit its own predictions.
-    clf = CalibratedClassifierCV(base_clf, method="isotonic", cv=3)
+        clf = CalibratedClassifierCV(base_clf, method="isotonic", cv=3)
 
     return Pipeline([
         ("select", selector),

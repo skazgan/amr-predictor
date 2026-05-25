@@ -37,6 +37,11 @@ ANTIBIOTICS = [
     "tetracycline",
     "trimethoprim/sulfamethoxazole",
     "cefepime",
+    # New antibiotics added in v2
+    "amikacin",
+    "imipenem",
+    "piperacillin/tazobactam",
+    "levofloxacin",
 ]
 
 
@@ -119,9 +124,9 @@ def train_antibiotic(antibiotic: str,
     X_train, X_test = X_train[keep], X_test[keep]
     print(f"  Features: {len(keep)} ({len(top_kmers)} k-mer + {len(gene_cols)} gene)")
 
-    # ── Train XGBoost (best model from earlier) ───────────────────────────────
+    # ── Train ensemble (XGBoost 60% + RF 40%, soft-voting) ────────────────────
     n_feat = min(512, len(keep))
-    model, scores = train(X_train, y_train, model="xgb", n_features=n_feat)
+    model, scores = train(X_train, y_train, model="ensemble", n_features=n_feat)
 
     cv_auc = scores["test_roc_auc"].mean()
 

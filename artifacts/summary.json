@@ -3,33 +3,33 @@
     "antibiotic": "ciprofloxacin",
     "drug_class": "Fluoroquinolone",
     "n_genomes": 3668,
-    "cv_auc": 0.804,
-    "test_auc": 0.79,
-    "accuracy": 0.725,
-    "precision_r": 0.722,
-    "recall_r": 0.726,
-    "f1_r": 0.724
+    "cv_auc": 0.805,
+    "test_auc": 0.803,
+    "accuracy": 0.745,
+    "precision_r": 0.743,
+    "recall_r": 0.745,
+    "f1_r": 0.744
   },
   {
     "antibiotic": "meropenem",
     "drug_class": "Carbapenem",
     "n_genomes": 3678,
     "cv_auc": 0.875,
-    "test_auc": 0.869,
-    "accuracy": 0.791,
-    "precision_r": 0.831,
-    "recall_r": 0.732,
-    "f1_r": 0.779
+    "test_auc": 0.867,
+    "accuracy": 0.795,
+    "precision_r": 0.843,
+    "recall_r": 0.727,
+    "f1_r": 0.781
   },
   {
     "antibiotic": "gentamicin",
     "drug_class": "Aminoglycoside",
     "n_genomes": 3664,
     "cv_auc": 0.79,
-    "test_auc": 0.821,
-    "accuracy": 0.727,
-    "precision_r": 0.777,
-    "recall_r": 0.642,
+    "test_auc": 0.828,
+    "accuracy": 0.734,
+    "precision_r": 0.802,
+    "recall_r": 0.626,
     "f1_r": 0.703
   },
   {
@@ -37,32 +37,76 @@
     "drug_class": "Tetracycline",
     "n_genomes": 3680,
     "cv_auc": 0.745,
-    "test_auc": 0.773,
-    "accuracy": 0.7,
-    "precision_r": 0.809,
-    "recall_r": 0.519,
-    "f1_r": 0.632
+    "test_auc": 0.757,
+    "accuracy": 0.696,
+    "precision_r": 0.803,
+    "recall_r": 0.514,
+    "f1_r": 0.627
   },
   {
     "antibiotic": "trimethoprim/sulfamethoxazole",
     "drug_class": "Folate inhibitor",
     "n_genomes": 3610,
-    "cv_auc": 0.827,
-    "test_auc": 0.842,
-    "accuracy": 0.77,
-    "precision_r": 0.763,
-    "recall_r": 0.788,
-    "f1_r": 0.776
+    "cv_auc": 0.819,
+    "test_auc": 0.846,
+    "accuracy": 0.767,
+    "precision_r": 0.761,
+    "recall_r": 0.786,
+    "f1_r": 0.773
   },
   {
     "antibiotic": "cefepime",
     "drug_class": "Cephalosporin",
     "n_genomes": 3620,
-    "cv_auc": 0.803,
-    "test_auc": 0.802,
+    "cv_auc": 0.798,
+    "test_auc": 0.792,
     "accuracy": 0.732,
-    "precision_r": 0.751,
-    "recall_r": 0.697,
-    "f1_r": 0.723
+    "precision_r": 0.741,
+    "recall_r": 0.716,
+    "f1_r": 0.728
+  },
+  {
+    "antibiotic": "amikacin",
+    "drug_class": "Aminoglycoside",
+    "n_genomes": 5624,
+    "cv_auc": 0.833,
+    "test_auc": 0.828,
+    "accuracy": 0.848,
+    "precision_r": 0.723,
+    "recall_r": 0.384,
+    "f1_r": 0.501
+  },
+  {
+    "antibiotic": "imipenem",
+    "drug_class": "Carbapenem",
+    "n_genomes": 5628,
+    "cv_auc": 0.89,
+    "test_auc": 0.886,
+    "accuracy": 0.842,
+    "precision_r": 0.848,
+    "recall_r": 0.639,
+    "f1_r": 0.729
+  },
+  {
+    "antibiotic": "piperacillin/tazobactam",
+    "drug_class": "Beta-lactam/inhibitor",
+    "n_genomes": 5707,
+    "cv_auc": 0.836,
+    "test_auc": 0.851,
+    "accuracy": 0.768,
+    "precision_r": 0.788,
+    "recall_r": 0.7,
+    "f1_r": 0.741
+  },
+  {
+    "antibiotic": "levofloxacin",
+    "drug_class": "Fluoroquinolone",
+    "n_genomes": 5693,
+    "cv_auc": 0.806,
+    "test_auc": 0.786,
+    "accuracy": 0.72,
+    "precision_r": 0.71,
+    "recall_r": 0.631,
+    "f1_r": 0.668
   }
 ]
