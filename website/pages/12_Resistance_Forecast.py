@@ -17,12 +17,8 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from utils import inject_mobile_css
 st.set_page_config(page_title="Resistance Forecast", page_icon="🔮", layout="wide")
 inject_mobile_css()
-st.title(f"🔮 Resistance Forecast {FORECAST_START}–{FORECAST_END}")
-st.markdown("*If current trends continue — what does antibiotic resistance look like in 5 years?*")
-st.info(f"💡 Original research: we fit linear and logistic growth models to historical resistance data, then project forward {FORECAST_START}–{FORECAST_END} with confidence intervals.")
-st.divider()
 
-# Load
+# Load data first so FORECAST_START / FORECAST_END are defined before use
 path = ART_DIR / "resistance_forecast.json"
 if not path.exists():
     st.warning("Run `python src/resistance_forecast.py` to generate this artifact.")
@@ -31,13 +27,18 @@ if not path.exists():
 _raw = json.loads(path.read_text())
 # Support both old flat list format and new dict format
 if isinstance(_raw, dict):
-    results       = _raw["results"]
+    results        = _raw["results"]
     FORECAST_START = _raw.get("forecast_start", 2027)
     FORECAST_END   = _raw.get("forecast_end",   2032)
 else:
     results        = _raw
     FORECAST_START = results[0]["forecast"][0]["year"] if results else 2027
     FORECAST_END   = results[0]["forecast"][-1]["year"] if results else 2032
+
+st.title(f"🔮 Resistance Forecast {FORECAST_START}–{FORECAST_END}")
+st.markdown("*If current trends continue — what does antibiotic resistance look like in 5 years?*")
+st.info(f"💡 Original research: we fit linear and logistic growth models to historical resistance data, then project forward {FORECAST_START}–{FORECAST_END} with confidence intervals.")
+st.divider()
 
 
 def hex_to_rgba(hex_color: str, alpha: float = 0.15) -> str:
