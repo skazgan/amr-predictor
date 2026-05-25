@@ -18,22 +18,39 @@ MODEL_DIR = ROOT / "models"
 PROC_DIR  = ROOT / "data" / "processed"
 sys.path.insert(0, str(ROOT / "src"))
 
+
+import sys
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from utils import inject_mobile_css
 st.set_page_config(page_title="Live Predictor", page_icon="🔮", layout="wide")
+inject_mobile_css()
 st.title("🔮 Live Predictor")
-st.markdown("*Enter a BV-BRC genome ID to get a full resistance profile across all 6 antibiotics.*")
+st.markdown("*Enter a BV-BRC genome ID to get a full resistance profile across all 10 antibiotics.*")
 st.divider()
 
 ANTIBIOTICS = [
-    "ciprofloxacin", "meropenem", "gentamicin",
-    "tetracycline", "trimethoprim/sulfamethoxazole", "cefepime",
+    "ciprofloxacin", "meropenem", "gentamicin", "tetracycline",
+    "trimethoprim/sulfamethoxazole", "cefepime",
+    "amikacin", "imipenem", "piperacillin/tazobactam", "levofloxacin",
 ]
+SHORT = {
+    "ciprofloxacin": "Cipro", "meropenem": "Mero",
+    "gentamicin": "Gent", "tetracycline": "Tet",
+    "trimethoprim/sulfamethoxazole": "TMP/SMX", "cefepime": "Cef",
+    "amikacin": "Amik", "imipenem": "Imi",
+    "piperacillin/tazobactam": "Pip/Taz", "levofloxacin": "Levo",
+}
 DRUG_CLASS = {
-    "ciprofloxacin":                "Fluoroquinolone",
-    "meropenem":                    "Carbapenem",
-    "gentamicin":                   "Aminoglycoside",
-    "tetracycline":                 "Tetracycline",
-    "trimethoprim/sulfamethoxazole":"Folate inhibitor",
-    "cefepime":                     "Cephalosporin",
+    "ciprofloxacin":                 "Fluoroquinolone",
+    "meropenem":                     "Carbapenem",
+    "gentamicin":                    "Aminoglycoside",
+    "tetracycline":                  "Tetracycline",
+    "trimethoprim/sulfamethoxazole": "Folate inhibitor",
+    "cefepime":                      "Cephalosporin",
+    "amikacin":                      "Aminoglycoside",
+    "imipenem":                      "Carbapenem",
+    "piperacillin/tazobactam":       "Beta-lactam/inhibitor",
+    "levofloxacin":                  "Fluoroquinolone",
 }
 
 # ── Helpers ───────────────────────────────────────────────────────────────────

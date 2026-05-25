@@ -12,7 +12,12 @@ import numpy as np
 ROOT    = Path(__file__).parent.parent.parent
 ART_DIR = ROOT / "artifacts"
 
+
+import sys
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from utils import inject_mobile_css
 st.set_page_config(page_title="MLST Lineages", page_icon="🧬", layout="wide")
+inject_mobile_css()
 st.title("🧬 MLST Lineages — Tracking Dangerous Clones")
 st.markdown("*Which bacterial lineages carry the most resistance? How are they spreading?*")
 st.info("💡 Original research: we typed 22,673 genomes by Multi-Locus Sequence Type (MLST) and linked lineages to resistance profiles.")

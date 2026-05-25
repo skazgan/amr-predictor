@@ -10,7 +10,12 @@ import pandas as pd
 ROOT    = Path(__file__).parent.parent.parent
 ART_DIR = ROOT / "artifacts"
 
+
+import sys
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from utils import inject_mobile_css
 st.set_page_config(page_title="Features", page_icon="🔬", layout="wide")
+inject_mobile_css()
 st.title("🔬 Feature Engineering")
 st.markdown("*How we turn 5.5 million DNA letters into numbers a model can learn from.*")
 st.divider()

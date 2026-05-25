@@ -12,7 +12,12 @@ import numpy as np
 ROOT    = Path(__file__).parent.parent.parent
 ART_DIR = ROOT / "artifacts"
 
+
+import sys
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from utils import inject_mobile_css
 st.set_page_config(page_title="Co-Resistance Network", page_icon="🕸️", layout="wide")
+inject_mobile_css()
 st.title("🕸️ Co-Resistance Network")
 st.markdown("*Novel findings: which antibiotic resistances travel together — and why.*")
 st.info("💡 This page presents original analysis from this project, not reproduced from existing literature.")

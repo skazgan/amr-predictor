@@ -11,7 +11,12 @@ import numpy as np
 ROOT    = Path(__file__).parent.parent.parent
 ART_DIR = ROOT / "artifacts"
 
+
+import sys
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from utils import inject_mobile_css
 st.set_page_config(page_title="Resistance Forecast", page_icon="🔮", layout="wide")
+inject_mobile_css()
 st.title("🔮 Resistance Forecast 2025–2030")
 st.markdown("*If current trends continue — what does antibiotic resistance look like in 5 years?*")
 st.info("💡 Original research: we fit linear and logistic growth models to 24 years of resistance data, then project forward with confidence intervals.")
