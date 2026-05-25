@@ -91,7 +91,7 @@ st.markdown("<br>", unsafe_allow_html=True)
 # ── Organism cards with navigation ────────────────────────────────────────────
 st.subheader("🦠 Select a pathogen to predict resistance")
 
-PAGES_DIR = Path(__file__).parent
+
 
 ORG_CARDS = [
     {
@@ -100,7 +100,7 @@ ORG_CARDS = [
         "desc": "10 antibiotics · k-mer + gene features · AUC 0.76–0.89",
         "models": len(summary),
         "color": "#EF4444", "bg": "#FFF5F5", "border": "#FCA5A5",
-        "page": str(PAGES_DIR / "5_Live_Predictor.py"),
+        "page": "pages/5_Live_Predictor.py",
         "btn": "→ Live Predictor",
     },
     {
@@ -109,7 +109,7 @@ ORG_CARDS = [
         "desc": "10 antibiotics · gene features · AUC 0.961–0.990",
         "models": sum(1 for r in multi_sum if r["organism"] == "escherichia_coli"),
         "color": "#F97316", "bg": "#FFF7ED", "border": "#FED7AA",
-        "page": str(PAGES_DIR / "17_Multi_Organism.py"),
+        "page": "pages/17_Multi_Organism.py",
         "btn": "→ Multi-Organism",
     },
     {
@@ -118,7 +118,7 @@ ORG_CARDS = [
         "desc": "8 antibiotics · gene features · AUC 0.952–0.994",
         "models": sum(1 for r in multi_sum if r["organism"] == "staphylococcus_aureus"),
         "color": "#D97706", "bg": "#FFFBEB", "border": "#FCD34D",
-        "page": str(PAGES_DIR / "17_Multi_Organism.py"),
+        "page": "pages/17_Multi_Organism.py",
         "btn": "→ Multi-Organism",
     },
     {
@@ -127,7 +127,7 @@ ORG_CARDS = [
         "desc": "8 antibiotics · gene features · AUC 0.930–0.989",
         "models": sum(1 for r in multi_sum if r["organism"] == "acinetobacter_baumannii"),
         "color": "#3B82F6", "bg": "#EFF6FF", "border": "#BFDBFE",
-        "page": str(PAGES_DIR / "17_Multi_Organism.py"),
+        "page": "pages/17_Multi_Organism.py",
         "btn": "→ Multi-Organism",
     },
 ]
