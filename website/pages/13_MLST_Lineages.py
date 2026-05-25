@@ -74,29 +74,27 @@ st.divider()
 st.header("2. Clinically important K. pneumoniae lineages")
 
 cols = st.columns(4)
-notable_in_data = {st: desc for st, desc in notable.items()
-                   if any(p["st"] == st for p in profiles)}
-for i, (st, desc) in enumerate(list(notable.items())[:8]):
-    match = next((p for p in profiles if p["st"] == st), None)
+for i, (st_id, desc) in enumerate(list(notable.items())[:8]):
+    match = next((p for p in profiles if p["st"] == st_id), None)
     with cols[i % 4]:
         if match:
-            mdr = match["pct_mdr"]
+            mdr  = match["pct_mdr"]
             mero = match.get("Mero_pct_R")
-            color = "🔴" if mdr > 20 else "🟠" if mdr > 10 else "🟡"
+            border = "#e94560" if mdr > 20 else "#ffb86c" if mdr > 10 else "#8be9fd"
+            mero_tag = f'  <span style="color:#ffb86c;">Mero: {mero}%</span>' if mero else ""
             st.markdown(f"""
-<div style='background:#1e1e2e; border-left:3px solid {"#e94560" if mdr>20 else "#ffb86c" if mdr>10 else "#8be9fd"};
+<div style='background:#1e1e2e; border-left:3px solid {border};
      padding:0.6rem 0.8rem; border-radius:6px; margin-bottom:8px;'>
-<b style='color:#cdd6f4;'>ST{st}</b><br>
+<b style='color:#cdd6f4;'>ST{st_id}</b><br>
 <small style='color:#6272a4;'>{desc.split("—")[1].strip() if "—" in desc else desc}</small><br>
-<span style='color:#e94560;'>MDR: {mdr:.0f}%</span>
-{'  <span style="color:#ffb86c;">Mero: ' + str(mero) + '%</span>' if mero else ''}
+<span style='color:#e94560;'>MDR: {mdr:.0f}%</span>{mero_tag}
 </div>
 """, unsafe_allow_html=True)
         else:
             st.markdown(f"""
 <div style='background:#1e1e2e; border-left:3px solid #2d2d44;
      padding:0.6rem 0.8rem; border-radius:6px; margin-bottom:8px; opacity:0.5;'>
-<b style='color:#cdd6f4;'>ST{st}</b><br>
+<b style='color:#cdd6f4;'>ST{st_id}</b><br>
 <small style='color:#6272a4;'>{desc.split("—")[1].strip() if "—" in desc else desc}</small><br>
 <small style='color:#444;'>Not in dataset</small>
 </div>
