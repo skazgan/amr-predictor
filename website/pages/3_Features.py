@@ -97,7 +97,7 @@ with col2:
         title="Example: 6-mer counts in one genome",
         xaxis_title="Count", height=280, margin=dict(t=40, b=10, l=10),
         plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-        font_color="#cdd6f4", xaxis_gridcolor="#2d2d44",
+        font_color="#1E293B", xaxis_gridcolor="#2d2d44",
     )
     st.plotly_chart(fig, use_container_width=True)
 
@@ -154,7 +154,7 @@ with col2:
                 xaxis_title="Importance", height=320,
                 margin=dict(t=40, b=10, l=10),
                 plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-                font_color="#cdd6f4", xaxis_gridcolor="#2d2d44",
+                font_color="#1E293B", xaxis_gridcolor="#2d2d44",
             )
             st.plotly_chart(fig2, use_container_width=True)
 
@@ -228,7 +228,7 @@ if seq_input:
             yaxis_title="Count", height=300,
             margin=dict(t=40, b=10),
             plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-            font_color="#cdd6f4", yaxis_gridcolor="#2d2d44",
+            font_color="#1E293B", yaxis_gridcolor="#2d2d44",
         )
         st.plotly_chart(fig3, use_container_width=True)
         st.caption(f"A full genome has ~5,500,000 bp → ~5,499,995 6-mers across 4,096 unique combinations.")

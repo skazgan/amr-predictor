@@ -110,7 +110,7 @@ fig_heat = go.Figure(go.Heatmap(
 fig_heat.update_layout(
     height=420, margin=dict(t=20, b=10),
     plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-    font_color="#cdd6f4",
+    font_color="#1E293B",
 )
 st.plotly_chart(fig_heat, use_container_width=True)
 st.caption("*** p<0.001  ** p<0.01  * p<0.05  ns = not significant")
@@ -158,7 +158,7 @@ with col2:
         yaxis_title="Number of genomes",
         height=300, margin=dict(t=20, b=10),
         plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-        font_color="#cdd6f4", yaxis_gridcolor="#2d2d44",
+        font_color="#1E293B", yaxis_gridcolor="#2d2d44",
     )
     st.plotly_chart(fig_bar, use_container_width=True)
     st.caption("🟢 Susceptible  🔵 1–2 drugs  🟠 3–4 drugs (MDR)  🔴 5–6 drugs")
@@ -190,13 +190,13 @@ if mdr_genes:
         text=[f"{v:+.3f}" for v in df_plot["enrichment"]],
         textposition="outside",
     ))
-    fig_genes.add_vline(x=0, line_color="#cdd6f4", line_width=1)
+    fig_genes.add_vline(x=0, line_color="#1E293B", line_width=1)
     fig_genes.update_layout(
         title="Gene enrichment: MDR vs non-MDR strains",
         xaxis_title="Enrichment (rate in MDR − rate in non-MDR)",
         height=440, margin=dict(t=40, b=10, r=80),
         plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-        font_color="#cdd6f4", xaxis_gridcolor="#2d2d44",
+        font_color="#1E293B", xaxis_gridcolor="#2d2d44",
     )
     st.plotly_chart(fig_genes, use_container_width=True)
     st.caption("🔴 More common in MDR strains (likely on resistance plasmids) &nbsp; 🟢 Less common in MDR strains")
@@ -244,14 +244,14 @@ if cross_pred:
         text=[f"+{b:.3f}" for b in df_cp["boost"]],
         textposition="outside",
     ))
-    fig_cp.add_hline(y=0.5, line_dash="dot", line_color="#6272a4",
+    fig_cp.add_hline(y=0.5, line_dash="dot", line_color="#64748B",
                      annotation_text="Random (0.50)")
     fig_cp.update_layout(
         barmode="overlay",
         yaxis=dict(title="ROC-AUC", range=[0.4, 0.85]),
         height=340, margin=dict(t=20, b=10),
         plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-        font_color="#cdd6f4", yaxis_gridcolor="#2d2d44",
+        font_color="#1E293B", yaxis_gridcolor="#2d2d44",
         legend=dict(orientation="h", yanchor="bottom", y=1.02),
     )
     st.plotly_chart(fig_cp, use_container_width=True)

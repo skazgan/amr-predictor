@@ -102,7 +102,7 @@ if not df_map.empty:
     )
     fig_map.update_layout(
         height=440, margin=dict(t=20, b=0, l=0, r=0),
-        paper_bgcolor="#1e1e2e", font_color="#cdd6f4",
+        paper_bgcolor="#1e1e2e", font_color="#1E293B",
         geo=dict(
             bgcolor="#1e1e2e",
             showframe=False,
@@ -200,7 +200,7 @@ if col_sel in df.columns:
             xaxis=dict(range=[0, 110], title="% Resistant"),
             height=260, margin=dict(t=10, b=10, r=60),
             plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-            font_color="#cdd6f4", xaxis_gridcolor="#2d2d44",
+            font_color="#1E293B", xaxis_gridcolor="#2d2d44",
         )
         st.plotly_chart(fig_top, use_container_width=True)
 
@@ -217,7 +217,7 @@ if col_sel in df.columns:
             xaxis=dict(range=[0, 110], title="% Resistant"),
             height=260, margin=dict(t=10, b=10, r=60),
             plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-            font_color="#cdd6f4", xaxis_gridcolor="#2d2d44",
+            font_color="#1E293B", xaxis_gridcolor="#2d2d44",
         )
         st.plotly_chart(fig_bot, use_container_width=True)
 
@@ -271,10 +271,10 @@ if len(valid) >= 3:
     ))
     fig_radar.update_layout(
         polar=dict(
-            radialaxis=dict(visible=True, range=[0, 100], color="#6272a4"),
+            radialaxis=dict(visible=True, range=[0, 100], color="#64748B"),
             bgcolor="#1e1e2e",
         ),
-        paper_bgcolor="#1e1e2e", font_color="#cdd6f4",
+        paper_bgcolor="#1e1e2e", font_color="#1E293B",
         height=380,
         legend=dict(orientation="h", yanchor="bottom", y=1.05),
     )
@@ -313,7 +313,7 @@ if trends:
                 marker=dict(size=5),
                 hovertemplate=f"<b>{sh}</b><br>Year: %{{x}}<br>% R: %{{y:.1f}}%<extra></extra>",
             ))
-        fig_tr.add_hline(y=50, line_dash="dot", line_color="#6272a4",
+        fig_tr.add_hline(y=50, line_dash="dot", line_color="#64748B",
                          annotation_text="50% threshold")
         fig_tr.update_layout(
             title=f"{country_trend_sel} — resistance over time",
@@ -321,7 +321,7 @@ if trends:
             yaxis=dict(range=[0, 100]),
             height=380, margin=dict(t=50, b=20),
             plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-            font_color="#cdd6f4", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
+            font_color="#1E293B", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
             legend=dict(orientation="h", yanchor="bottom", y=1.02),
         )
         st.plotly_chart(fig_tr, use_container_width=True)

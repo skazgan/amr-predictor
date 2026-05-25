@@ -205,28 +205,28 @@ if run and genome_id:
                          else "#50fa7b" if row["verdict"] == "Susceptible"
                          else "#ffb86c")
             st.markdown(f"""
-<div style="background:#1e1e2e; border-radius:8px; padding:0.8rem 1rem;
+<div style="background:#FFFFFF; border-radius:8px; padding:0.8rem 1rem;
             margin-bottom:0.5rem; border-left: 4px solid {bar_color};">
   <div style="display:flex; justify-content:space-between; align-items:center;">
     <div>
-      <strong style="color:#cdd6f4;">{row['antibiotic']}</strong>
-      <span style="color:#6272a4; font-size:0.8rem; margin-left:0.5rem;">
+      <strong style="color:#1E293B;">{row['antibiotic']}</strong>
+      <span style="color:#64748B; font-size:0.8rem; margin-left:0.5rem;">
         ({row['drug_class']})
       </span>
     </div>
     <div style="text-align:right;">
       <strong style="color:{bar_color};">{icon} {row['verdict']}</strong>
-      <span style="color:#a8b2d8; font-size:0.85rem; margin-left:0.8rem;">
+      <span style="color:#4A5568; font-size:0.85rem; margin-left:0.8rem;">
         {row['confidence']:.0f}% confidence
       </span>
     </div>
   </div>
-  <div style="margin-top:0.4rem; background:#2d2d44; border-radius:4px; height:6px;">
+  <div style="margin-top:0.4rem; background:#EEF2FF; border-radius:4px; height:6px;">
     <div style="width:{row['prob_r']}%; background:{bar_color};
                 border-radius:4px; height:6px;"></div>
   </div>
   <div style="display:flex; justify-content:space-between;
-              color:#6272a4; font-size:0.75rem; margin-top:0.2rem;">
+              color:#64748B; font-size:0.75rem; margin-top:0.2rem;">
     <span>P(Susceptible) = {row['prob_s']:.1f}%</span>
     <span>P(Resistant) = {row['prob_r']:.1f}%</span>
   </div>
@@ -249,7 +249,7 @@ if run and genome_id:
             title="Summary",
             height=280, margin=dict(t=40, b=10),
             plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-            font_color="#cdd6f4", showlegend=False,
+            font_color="#1E293B", showlegend=False,
         )
         st.plotly_chart(fig_pie, use_container_width=True)
 
@@ -258,7 +258,7 @@ if run and genome_id:
         for _, row in df_results.iterrows():
             auc = row["model_auc"]
             st.markdown(
-                f"<small style='color:#a8b2d8;'>{row['antibiotic']}: "
+                f"<small style='color:#4A5568;'>{row['antibiotic']}: "
                 f"<strong style='color:#50fa7b;'>{auc:.3f}</strong></small>",
                 unsafe_allow_html=True
             )

@@ -88,7 +88,7 @@ fig.update_layout(
     xaxis_title="Number of genomes",
     height=350, margin=dict(l=10, r=20, t=20, b=40),
     plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-    font_color="#cdd6f4", xaxis_gridcolor="#2d2d44",
+    font_color="#1E293B", xaxis_gridcolor="#2d2d44",
     legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
 )
 st.plotly_chart(fig, use_container_width=True)
@@ -125,13 +125,13 @@ with col2:
             text=[f"{pct_r:.0f}%R"],
             textposition="outside",
         ))
-    fig2.add_hline(y=50, line_dash="dash", line_color="#6272a4",
+    fig2.add_hline(y=50, line_dash="dash", line_color="#64748B",
                    annotation_text="Perfect balance")
     fig2.update_layout(
         yaxis=dict(title="% Resistant", range=[0, 70]),
         height=280, margin=dict(t=20, b=10),
         plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-        font_color="#cdd6f4", yaxis_gridcolor="#2d2d44",
+        font_color="#1E293B", yaxis_gridcolor="#2d2d44",
     )
     st.plotly_chart(fig2, use_container_width=True)
 
@@ -203,7 +203,7 @@ with col2:
         yaxis=dict(tickvals=list(range(5)), ticktext=[f"Round {i+1}" for i in range(5)]),
         height=240, margin=dict(t=40, b=10),
         plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-        font_color="#cdd6f4",
+        font_color="#1E293B",
     )
     st.plotly_chart(fig3, use_container_width=True)
     st.caption("🟧 = Validation fold  |  ⬛ = Training folds")

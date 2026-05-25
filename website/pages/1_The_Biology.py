@@ -52,7 +52,7 @@ with col2:
         title="Typical K. pneumoniae base composition",
         height=280, margin=dict(t=40, b=10),
         plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-        font_color="#cdd6f4", showlegend=False,
+        font_color="#1E293B", showlegend=False,
     )
     st.plotly_chart(fig, use_container_width=True)
 
@@ -152,23 +152,23 @@ to ciprofloxacin (via *gyrA* mutation) may be fully susceptible to meropenem.
 
 # Visual: mapping from genome to label
 st.markdown("""
-<div style='background:#1e1e2e; border-radius:10px; padding:1.2rem 1.5rem; margin:0.5rem 0;
+<div style='background:#FFFFFF; border-radius:10px; padding:1.2rem 1.5rem; margin:0.5rem 0;
      display:flex; align-items:center; justify-content:center; gap:0; flex-wrap:wrap;'>
-  <div style='background:#2d2d44; border:1px solid #6272a4; border-radius:8px;
+  <div style='background:#EEF2FF; border:1px solid #6272a4; border-radius:8px;
        padding:0.8rem 1.2rem; text-align:center; min-width:160px;'>
     <div style='font-size:1.6rem;'>🧬</div>
-    <div style='color:#cdd6f4; font-weight:bold; margin-top:4px;'>Genome</div>
-    <div style='color:#6272a4; font-size:0.78rem;'>ATGCTTACGG…</div>
+    <div style='color:#1E293B; font-weight:bold; margin-top:4px;'>Genome</div>
+    <div style='color:#64748B; font-size:0.78rem;'>ATGCTTACGG…</div>
   </div>
   <div style='color:#e94560; font-size:1.8rem; padding:0 0.8rem; font-weight:bold;'>→</div>
-  <div style='background:#2d2d44; border:1px solid #6272a4; border-radius:8px;
+  <div style='background:#EEF2FF; border:1px solid #6272a4; border-radius:8px;
        padding:0.8rem 1.2rem; text-align:center; min-width:200px;'>
     <div style='font-size:1.6rem;'>⚙️</div>
-    <div style='color:#cdd6f4; font-weight:bold; margin-top:4px;'>ML Model</div>
-    <div style='color:#6272a4; font-size:0.78rem;'>XGBoost + k-mer &amp; gene features</div>
+    <div style='color:#1E293B; font-weight:bold; margin-top:4px;'>ML Model</div>
+    <div style='color:#64748B; font-size:0.78rem;'>XGBoost + k-mer &amp; gene features</div>
   </div>
   <div style='color:#e94560; font-size:1.8rem; padding:0 0.8rem; font-weight:bold;'>→</div>
-  <div style='background:#2d2d44; border:1px solid #6272a4; border-radius:8px;
+  <div style='background:#EEF2FF; border:1px solid #6272a4; border-radius:8px;
        padding:0.8rem 1.2rem; text-align:center; min-width:160px;'>
     <div style='font-size:1.6rem;'>🔬</div>
     <div style='color:#e94560; font-weight:bold; margin-top:4px;'>✗ Resistant</div>

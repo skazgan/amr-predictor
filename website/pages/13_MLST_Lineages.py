@@ -88,19 +88,19 @@ for i, (st_id, desc) in enumerate(list(notable.items())[:8]):
             border = "#e94560" if mdr > 20 else "#ffb86c" if mdr > 10 else "#8be9fd"
             mero_tag = f'  <span style="color:#ffb86c;">Mero: {mero}%</span>' if mero else ""
             st.markdown(f"""
-<div style='background:#1e1e2e; border-left:3px solid {border};
+<div style='background:#FFFFFF; border-left:3px solid {border};
      padding:0.6rem 0.8rem; border-radius:6px; margin-bottom:8px;'>
-<b style='color:#cdd6f4;'>ST{st_id}</b><br>
-<small style='color:#6272a4;'>{desc.split("—")[1].strip() if "—" in desc else desc}</small><br>
+<b style='color:#1E293B;'>ST{st_id}</b><br>
+<small style='color:#64748B;'>{desc.split("—")[1].strip() if "—" in desc else desc}</small><br>
 <span style='color:#e94560;'>MDR: {mdr:.0f}%</span>{mero_tag}
 </div>
 """, unsafe_allow_html=True)
         else:
             st.markdown(f"""
-<div style='background:#1e1e2e; border-left:3px solid #2d2d44;
+<div style='background:#FFFFFF; border-left:3px solid #2d2d44;
      padding:0.6rem 0.8rem; border-radius:6px; margin-bottom:8px; opacity:0.5;'>
-<b style='color:#cdd6f4;'>ST{st_id}</b><br>
-<small style='color:#6272a4;'>{desc.split("—")[1].strip() if "—" in desc else desc}</small><br>
+<b style='color:#1E293B;'>ST{st_id}</b><br>
+<small style='color:#64748B;'>{desc.split("—")[1].strip() if "—" in desc else desc}</small><br>
 <small style='color:#444;'>Not in dataset</small>
 </div>
 """, unsafe_allow_html=True)
@@ -133,7 +133,7 @@ if not df_plot.empty:
         mode="markers+text",
         text=["ST" + s if s in list(notable.keys()) else "" for s in df_plot["st"]],
         textposition="top center",
-        textfont=dict(size=9, color="#cdd6f4"),
+        textfont=dict(size=9, color="#1E293B"),
         marker=dict(
             size=np.sqrt(df_plot["n_genomes"]) * 1.5,
             color=df_plot["pct_mdr"],
@@ -156,7 +156,7 @@ if not df_plot.empty:
         yaxis_title=f"% resistant to {drug_y}",
         height=460, margin=dict(t=20, b=20),
         plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-        font_color="#cdd6f4", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
+        font_color="#1E293B", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
     )
     st.plotly_chart(fig_bubble, use_container_width=True)
     st.caption("Bubble size = number of genomes. Colour = MDR rate (red = high MDR). Labelled = clinically notable STs.")
@@ -197,7 +197,7 @@ fig_heat.update_layout(
     height=max(350, top_n * 28),
     margin=dict(t=20, b=10),
     plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-    font_color="#cdd6f4",
+    font_color="#1E293B",
     xaxis=dict(side="top"),
 )
 st.plotly_chart(fig_heat, use_container_width=True)
@@ -245,7 +245,7 @@ if trends:
         yaxis_title="% of year's sequenced genomes",
         height=380, margin=dict(t=20, b=20),
         plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-        font_color="#cdd6f4", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
+        font_color="#1E293B", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
         legend=dict(orientation="h", yanchor="bottom", y=1.02),
     )
     st.plotly_chart(fig_trend, use_container_width=True)
@@ -294,13 +294,13 @@ if enrichment:
             text=[f"{v:+.3f}" for v in df_genes["enrichment"]],
             textposition="outside",
         ))
-        fig_genes.add_vline(x=0, line_color="#cdd6f4", line_width=1)
+        fig_genes.add_vline(x=0, line_color="#1E293B", line_width=1)
         fig_genes.update_layout(
             title=f"{st_sel} — enriched resistance genes vs all other STs",
             xaxis_title="Enrichment (rate in ST − rate in others)",
             height=380, margin=dict(t=50, b=10, r=80),
             plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-            font_color="#cdd6f4", xaxis_gridcolor="#2d2d44",
+            font_color="#1E293B", xaxis_gridcolor="#2d2d44",
         )
         st.plotly_chart(fig_genes, use_container_width=True)
 

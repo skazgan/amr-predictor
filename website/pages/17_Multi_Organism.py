@@ -60,7 +60,7 @@ ORGANISM_META = {
         "desc":     "Most common cause of urinary tract infections and a major ESBL/carbapenemase reservoir.",
         "gram":     "Gram-negative",
         "concern":  "Critical priority (WHO)",
-        "color":    "#ffb86c",
+        "color":    "#F97316",
         "drug_class": {
             "ciprofloxacin": "Fluoroquinolone", "meropenem": "Carbapenem",
             "gentamicin": "Aminoglycoside", "tetracycline": "Tetracycline",
@@ -81,7 +81,7 @@ ORGANISM_META = {
         "desc":     "MRSA (methicillin-resistant S. aureus) is a leading cause of skin, bloodstream, and surgical infections.",
         "gram":     "Gram-positive",
         "concern":  "High priority (WHO)",
-        "color":    "#f1fa8c",
+        "color":    "#D97706",
         "drug_class": {
             "oxacillin": "Beta-lactam (MRSA marker)", "vancomycin": "Glycopeptide",
             "tetracycline": "Tetracycline", "trimethoprim/sulfamethoxazole": "Folate inhibitor",
@@ -100,7 +100,7 @@ ORGANISM_META = {
         "desc":     "Extremely drug-resistant nosocomial pathogen. Carbapenem resistance makes infections nearly untreatable.",
         "gram":     "Gram-negative",
         "concern":  "Critical priority (WHO)",
-        "color":    "#8be9fd",
+        "color":    "#3B82F6",
         "drug_class": {
             "meropenem": "Carbapenem", "imipenem": "Carbapenem",
             "ciprofloxacin": "Fluoroquinolone", "gentamicin": "Aminoglycoside",
@@ -116,8 +116,8 @@ ORGANISM_META = {
 }
 
 RESIST_COLOR   = "#e94560"
-SUSCEPT_COLOR  = "#50fa7b"
-UNCERTAIN_COLOR = "#ffb86c"
+SUSCEPT_COLOR  = "#16A34A"
+UNCERTAIN_COLOR = "#D97706"
 
 
 @st.cache_resource(show_spinner=False)
@@ -177,15 +177,17 @@ for i, (org_key, meta) in enumerate(ORGANISM_META.items()):
     models_available = (MODEL_DIR / org_key).exists() and any((MODEL_DIR / org_key).glob("*.pkl"))
     status = "✅ Models ready" if models_available else "⏳ Training pending"
     with cols[i]:
+        status_color = "#16A34A" if "ready" in status else "#D97706"
         st.markdown(f"""
-<div style='background:#1e1e2e; border-left:4px solid {meta["color"]};
-     padding:0.8rem 1rem; border-radius:8px; height:180px;'>
-  <div style='font-size:1.8rem;'>{meta["emoji"]}</div>
-  <b style='color:#cdd6f4; font-size:0.95rem;'>{meta["display"]}</b><br>
-  <small style='color:#6272a4;'>{meta["gram"]}</small><br>
-  <small style='color:#6272a4;'>{meta["concern"]}</small><br>
-  <small style='color:#cdd6f4; font-size:0.78rem;'>{meta["desc"][:80]}...</small><br>
-  <small style='color:{"#50fa7b" if "ready" in status else "#ffb86c"};'>{status}</small>
+<div style='background:#FFFFFF; border:1.5px solid {meta["color"]}40;
+     border-top:4px solid {meta["color"]};
+     padding:0.9rem 1rem; border-radius:10px; min-height:185px;
+     box-shadow:0 2px 6px rgba(0,0,0,0.06);'>
+  <div style='font-size:1.8rem; margin-bottom:4px;'>{meta["emoji"]}</div>
+  <b style='color:#1E293B; font-size:0.92rem; font-style:italic;'>{meta["display"]}</b><br>
+  <span style='color:{meta["color"]}; font-size:0.72rem; font-weight:600;'>{meta["concern"]}</span><br>
+  <small style='color:#475569; font-size:0.76rem; line-height:1.4;'>{meta["desc"][:80]}…</small><br>
+  <small style='color:{status_color}; font-weight:600;'>{status}</small>
 </div>
 """, unsafe_allow_html=True)
 
@@ -267,25 +269,62 @@ else:
             all_genes.add(feat.replace("gene__", "", 1))
     all_genes = sorted(all_genes)
 
-    col_search, col_threshold = st.columns([3, 1])
+    col_search, col_btn, col_threshold = st.columns([3, 1.2, 1])
     with col_search:
-        search = st.text_input("Search genes:", placeholder="e.g. bla, gyr, mec, van...")
+        search = st.text_input("Search genes:", placeholder="e.g. bla, gyr, mec, van...",
+                               label_visibility="collapsed")
     with col_threshold:
-        threshold = st.slider("Confidence threshold", 0.50, 0.90, 0.65, 0.05)
+        threshold = st.slider("Confidence threshold", 0.50, 0.90, 0.65, 0.05,
+                              label_visibility="collapsed")
 
-    selected_genes = set()
+    # Session state for selected genes (persists across interactions)
+    state_key = f"selected_genes_{selected_org}"
+    if state_key not in st.session_state:
+        st.session_state[state_key] = set()
 
     if search:
         filtered = [g for g in all_genes if search.lower() in g.lower()]
-        st.caption(f"{len(filtered)} genes matching '{search}' (from {len(all_genes):,} total)")
+        n_show = min(len(filtered), 30)
+
+        with col_btn:
+            if st.button(f"✅ Select all {len(filtered)}", use_container_width=True,
+                         help=f"Add all {len(filtered)} matching genes to selection"):
+                st.session_state[state_key].update(filtered)
+                st.rerun()
+
+        col_clear = st.columns([1])[0]
+        st.caption(
+            f"**{len(filtered)}** genes matching **'{search}'** "
+            f"(showing {n_show}) — {len(st.session_state[state_key])} selected total"
+        )
+
         cols_g = st.columns(3)
         for i, gene in enumerate(filtered[:30]):
-            if cols_g[i % 3].checkbox(gene[:55], key=f"mg_{gene}"):
-                selected_genes.add(gene)
+            checked = gene in st.session_state[state_key]
+            new_val = cols_g[i % 3].checkbox(
+                gene[:55], value=checked, key=f"mg_{selected_org}_{gene}"
+            )
+            if new_val:
+                st.session_state[state_key].add(gene)
+            else:
+                st.session_state[state_key].discard(gene)
+
         if len(filtered) > 30:
-            st.caption(f"Showing first 30. Refine your search.")
+            st.caption(f"Showing first 30 of {len(filtered)}. Refine your search or use 'Select all'.")
     else:
-        st.info(f"🔍 Type a gene name to search {len(all_genes):,} resistance genes for {meta['display']}.")
+        with col_btn:
+            if st.button("🗑 Clear all", use_container_width=True,
+                         help="Clear all selected genes"):
+                st.session_state[state_key] = set()
+                st.rerun()
+        if st.session_state[state_key]:
+            st.info(f"🔍 **{len(st.session_state[state_key])} genes selected.** "
+                    f"Type a gene name to add more, or use a preset below.")
+        else:
+            st.info(f"🔍 Type a gene name to search {len(all_genes):,} resistance genes for "
+                    f"**{meta['display']}**, or use a preset below.")
+
+    selected_genes = st.session_state[state_key].copy()
 
     # Organism-specific quick presets
     st.markdown("**Quick presets:**")
@@ -312,15 +351,18 @@ else:
         }
 
     preset_cols = st.columns(len(presets) + 1)
-    for i, (label, genes) in enumerate(presets.items()):
+    for i, (label, genes_pat) in enumerate(presets.items()):
         if preset_cols[i].button(label, use_container_width=True):
-            for g_pat in genes:
+            st.session_state[state_key] = set()
+            for g_pat in genes_pat:
                 matches = [g for g in all_genes if g_pat.lower() in g.lower()]
-                selected_genes.update(matches)
-            st.session_state[f"preset_genes_{selected_org}"] = selected_genes
+                st.session_state[state_key].update(matches)
+            st.rerun()
+    if preset_cols[len(presets)].button("🗑 Reset", use_container_width=True):
+        st.session_state[state_key] = set()
+        st.rerun()
 
-    if f"preset_genes_{selected_org}" in st.session_state and not selected_genes:
-        selected_genes = st.session_state[f"preset_genes_{selected_org}"]
+    selected_genes = st.session_state[state_key].copy()
 
     # Run prediction
     if selected_genes:
@@ -355,19 +397,19 @@ else:
             bar_pct = int(prob_r * 100)
 
             st.markdown(f"""
-<div style='background:#181825; border-left:4px solid {color};
+<div style='background:#F8F9FF; border-left:4px solid {color};
      padding:0.5rem 1rem; border-radius:6px; margin-bottom:6px;
      display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.4rem;'>
   <div>
-    <b style='color:#cdd6f4;'>{emoji} {short}</b>
-    <span style='color:#6272a4; font-size:0.8rem; margin-left:8px;'>{d_class}</span>
+    <b style='color:#1E293B;'>{emoji} {short}</b>
+    <span style='color:#64748B; font-size:0.8rem; margin-left:8px;'>{d_class}</span>
   </div>
   <div style='text-align:right; min-width:200px;'>
     <span style='color:{color}; font-weight:bold;'>{verdict}</span>
-    <div style='background:#2d2d44; border-radius:4px; height:6px; margin-top:4px;'>
+    <div style='background:#EEF2FF; border-radius:4px; height:6px; margin-top:4px;'>
       <div style='background:{color}; width:{bar_pct}%; height:6px; border-radius:4px;'></div>
     </div>
-    <small style='color:#6272a4;'>P(R) = {prob_r:.1%}</small>
+    <small style='color:#64748B;'>P(R) = {prob_r:.1%}</small>
   </div>
 </div>
 """, unsafe_allow_html=True)
@@ -461,12 +503,12 @@ if len(all_summary) > 1:
         )
         fig_comp.add_hline(y=0.8, line_dash="dash", line_color="#50fa7b",
                            annotation_text="Good threshold (0.80)")
-        fig_comp.add_hline(y=0.5, line_dash="dot", line_color="#6272a4",
+        fig_comp.add_hline(y=0.5, line_dash="dot", line_color="#64748B",
                            annotation_text="Random baseline")
         fig_comp.update_layout(
             height=400, margin=dict(t=20, b=20),
             plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-            font_color="#cdd6f4", yaxis_gridcolor="#2d2d44",
+            font_color="#1E293B", yaxis_gridcolor="#2d2d44",
             yaxis=dict(range=[0.4, 1.0]),
             legend=dict(orientation="h", yanchor="bottom", y=1.02),
         )

@@ -52,7 +52,7 @@ with col2:
     fpr_rand = [0, 1]
     tpr_rand = [0, 1]
     fig.add_trace(go.Scatter(x=fpr_rand, y=tpr_rand, mode="lines",
-        name="Random (AUC=0.50)", line=dict(dash="dot", color="#6272a4")))
+        name="Random (AUC=0.50)", line=dict(dash="dot", color="#64748B")))
     fpr_good = np.linspace(0, 1, 100)
     tpr_good = 1 - (1 - fpr_good) ** 3
     fig.add_trace(go.Scatter(x=list(fpr_good), y=list(tpr_good), mode="lines",
@@ -61,11 +61,11 @@ with col2:
         xaxis_title="False Positive Rate", yaxis_title="True Positive Rate",
         height=260, margin=dict(t=10, b=40),
         plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-        font_color="#cdd6f4", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
+        font_color="#1E293B", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
         legend=dict(yanchor="bottom", y=0.02, xanchor="right", x=0.98),
     )
     fig.add_shape(type="line", x0=0, y0=0, x1=1, y1=1,
-        line=dict(dash="dot", color="#6272a4"), xref="x", yref="y")
+        line=dict(dash="dot", color="#64748B"), xref="x", yref="y")
     st.plotly_chart(fig, use_container_width=True)
 
 st.divider()
@@ -112,13 +112,13 @@ for i, row in df_sum.iterrows():
     ))
 
 fig_roc.add_shape(type="line", x0=0, y0=0, x1=1, y1=1,
-    line=dict(dash="dot", color="#6272a4"), xref="x", yref="y")
+    line=dict(dash="dot", color="#64748B"), xref="x", yref="y")
 fig_roc.update_layout(
     xaxis_title="False Positive Rate (1 − Specificity)",
     yaxis_title="True Positive Rate (Sensitivity)",
     height=480, margin=dict(t=20, b=40),
     plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-    font_color="#cdd6f4", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
+    font_color="#1E293B", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
     legend=dict(yanchor="bottom", y=0.02, xanchor="right", x=0.98),
 )
 st.plotly_chart(fig_roc, use_container_width=True)
@@ -169,7 +169,7 @@ if cm_path.exists():
         fig_cm.update_layout(
             height=280, margin=dict(t=20, b=10),
             plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-            font_color="#cdd6f4",
+            font_color="#1E293B",
         )
         st.plotly_chart(fig_cm, use_container_width=True)
 
@@ -213,7 +213,7 @@ fig_prog.update_layout(
     yaxis=dict(range=[0.55, 0.92], title="Mean ROC-AUC"),
     height=300, margin=dict(t=20, b=10, r=120),
     plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-    font_color="#cdd6f4", yaxis_gridcolor="#2d2d44",
+    font_color="#1E293B", yaxis_gridcolor="#2d2d44",
 )
 st.plotly_chart(fig_prog, use_container_width=True)
 
@@ -254,7 +254,7 @@ if multi_path.exists():
     fig_mo.update_layout(
         height=520, margin=dict(t=20, b=20, r=20),
         plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-        font_color="#cdd6f4", xaxis_gridcolor="#2d2d44",
+        font_color="#1E293B", xaxis_gridcolor="#2d2d44",
         xaxis=dict(range=[0.85, 1.01]),
         legend=dict(orientation="h", yanchor="bottom", y=1.01),
     )
@@ -267,14 +267,14 @@ if multi_path.exists():
         with cols[i]:
             color = org_color[org_name]
             st.markdown(f"""
-<div style='background:#1e1e2e; border-left:4px solid {color};
+<div style='background:#FFFFFF; border-left:4px solid {color};
      padding:0.8rem 1rem; border-radius:8px;'>
-  <b style='color:#cdd6f4;'>{org_name}</b><br>
-  <small style='color:#6272a4;'>{len(sub)} antibiotics modelled</small><br>
+  <b style='color:#1E293B;'>{org_name}</b><br>
+  <small style='color:#64748B;'>{len(sub)} antibiotics modelled</small><br>
   <span style='color:{color}; font-size:1.3rem; font-weight:bold;'>
     AUC {sub["test_auc"].min():.3f}–{sub["test_auc"].max():.3f}
   </span><br>
-  <small style='color:#6272a4;'>
+  <small style='color:#64748B;'>
     {sub["n_total"].sum():,} total labeled genomes
   </small>
 </div>""", unsafe_allow_html=True)

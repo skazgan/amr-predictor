@@ -153,11 +153,11 @@ for r in results:
     ))
 
 # 50% threshold line
-fig_all.add_hline(y=50, line_dash="dot", line_color="#6272a4",
+fig_all.add_hline(y=50, line_dash="dot", line_color="#64748B",
                   annotation_text="50% — majority resistant",
                   annotation_position="bottom right")
 
-fig_all.add_vline(x=FORECAST_START - 0.5, line_dash="dash", line_color="#6272a4",
+fig_all.add_vline(x=FORECAST_START - 0.5, line_dash="dash", line_color="#64748B",
                   annotation_text="Forecast →", annotation_position="top left")
 
 fig_all.update_layout(
@@ -166,7 +166,7 @@ fig_all.update_layout(
     yaxis=dict(range=[0, 105]),
     height=450, margin=dict(t=20, b=20),
     plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-    font_color="#cdd6f4", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
+    font_color="#1E293B", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
     legend=dict(orientation="h", yanchor="bottom", y=1.02),
 )
 st.plotly_chart(fig_all, use_container_width=True)
@@ -226,7 +226,7 @@ if sel:
             hovertemplate="Year: %{x}<br>Forecast: %{y:.1f}%<extra></extra>",
         ))
 
-        fig_single.add_hline(y=50, line_dash="dot", line_color="#6272a4",
+        fig_single.add_hline(y=50, line_dash="dot", line_color="#64748B",
                               annotation_text="50% majority-resistant threshold")
         fig_single.add_vline(x=FORECAST_START - 0.5, line_dash="dash", line_color="#444",
                               annotation_text="Now →")
@@ -237,7 +237,7 @@ if sel:
             yaxis=dict(range=[0, 105]),
             height=380, margin=dict(t=50, b=20),
             plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-            font_color="#cdd6f4", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
+            font_color="#1E293B", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
             legend=dict(orientation="h", yanchor="bottom", y=1.02),
         )
         st.plotly_chart(fig_single, use_container_width=True)

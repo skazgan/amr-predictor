@@ -286,19 +286,19 @@ else:
         bar_pct = int(prob_r * 100)
 
         st.markdown(f"""
-<div style='background:#181825; border-left:4px solid {color};
+<div style='background:#F8F9FF; border-left:4px solid {color};
      padding:0.5rem 1rem; border-radius:6px; margin-bottom:6px;
      display:flex; justify-content:space-between; align-items:center;'>
   <div>
-    <b style='color:#cdd6f4;'>{emoji} {pred["short"]}</b>
-    <span style='color:#6272a4; font-size:0.8rem; margin-left:8px;'>{pred["drug_class"]}</span>
+    <b style='color:#1E293B;'>{emoji} {pred["short"]}</b>
+    <span style='color:#64748B; font-size:0.8rem; margin-left:8px;'>{pred["drug_class"]}</span>
   </div>
   <div style='text-align:right; min-width:220px;'>
     <span style='color:{color}; font-weight:bold;'>{verdict}</span>
-    <div style='background:#2d2d44; border-radius:4px; height:6px; margin-top:4px;'>
+    <div style='background:#EEF2FF; border-radius:4px; height:6px; margin-top:4px;'>
       <div style='background:{color}; width:{bar_pct}%; height:6px; border-radius:4px;'></div>
     </div>
-    <small style='color:#6272a4;'>P(Resistant) = {prob_r:.1%}</small>
+    <small style='color:#64748B;'>P(Resistant) = {prob_r:.1%}</small>
   </div>
 </div>
 """, unsafe_allow_html=True)
@@ -317,9 +317,9 @@ else:
         text=[f"{p['prob_r']:.0%}" for p in preds],
         textposition="outside",
     ))
-    fig_bar.add_hline(y=threshold * 100, line_dash="dash", line_color="#6272a4",
+    fig_bar.add_hline(y=threshold * 100, line_dash="dash", line_color="#64748B",
                       annotation_text=f"Resistance threshold ({threshold:.0%})")
-    fig_bar.add_hline(y=(1 - threshold) * 100, line_dash="dash", line_color="#6272a4",
+    fig_bar.add_hline(y=(1 - threshold) * 100, line_dash="dash", line_color="#64748B",
                       annotation_text=f"Susceptible threshold ({1-threshold:.0%})")
     fig_bar.update_layout(
         xaxis_title="Antibiotic",
@@ -327,7 +327,7 @@ else:
         yaxis=dict(range=[0, 115]),
         height=340, margin=dict(t=20, b=20),
         plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-        font_color="#cdd6f4", yaxis_gridcolor="#2d2d44",
+        font_color="#1E293B", yaxis_gridcolor="#2d2d44",
     )
     st.plotly_chart(fig_bar, use_container_width=True)
     st.caption("🔴 Resistant  🟡 Uncertain (between thresholds)  🟢 Susceptible")

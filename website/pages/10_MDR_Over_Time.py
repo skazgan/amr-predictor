@@ -118,8 +118,8 @@ if yearly:
         yaxis_title="% of strains that are MDR (3+ drugs)",
         yaxis=dict(range=[0, max(df_yr["pct_mdr"]) * 1.5 + 1]),
         height=380, margin=dict(t=20, b=20),
-        plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-        font_color="#cdd6f4", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
+        plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+        font_color="#1E293B", xaxis_gridcolor="#E2E8F0", yaxis_gridcolor="#E2E8F0",
         legend=dict(orientation="h", yanchor="bottom", y=1.02),
     )
     st.plotly_chart(fig, use_container_width=True)
@@ -181,8 +181,8 @@ if burden:
         yaxis_title="% of genomes",
         yaxis=dict(range=[0, 100]),
         height=400, margin=dict(t=20, b=20),
-        plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-        font_color="#cdd6f4", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
+        plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+        font_color="#1E293B", xaxis_gridcolor="#E2E8F0", yaxis_gridcolor="#E2E8F0",
         legend=dict(orientation="h", yanchor="bottom", y=1.02, x=0),
     )
     st.plotly_chart(fig2, use_container_width=True)
@@ -204,8 +204,8 @@ if burden:
             title="Average resistance burden per strain",
             xaxis_title="Year", yaxis_title="Avg. antibiotics resistant to",
             height=280, margin=dict(t=40, b=20),
-            plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-            font_color="#cdd6f4", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
+            plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+            font_color="#1E293B", xaxis_gridcolor="#E2E8F0", yaxis_gridcolor="#E2E8F0",
         )
         st.plotly_chart(fig3, use_container_width=True)
 
@@ -249,14 +249,14 @@ for i, ab in enumerate(ANTIBIOTICS):
         hovertemplate=f"<b>{ab}</b><br>Year: %{{x}}<br>% Resistant: %{{y:.1f}}%<extra></extra>",
     ))
 
-fig4.add_hline(y=50, line_dash="dot", line_color="#6272a4", annotation_text="50% threshold")
+fig4.add_hline(y=50, line_dash="dot", line_color="#64748B", annotation_text="50% threshold")
 fig4.update_layout(
     xaxis_title="Year",
     yaxis_title="% Resistant strains",
     yaxis=dict(range=[0, 100]),
     height=400, margin=dict(t=20, b=20),
-    plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-    font_color="#cdd6f4", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
+    plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+    font_color="#1E293B", xaxis_gridcolor="#E2E8F0", yaxis_gridcolor="#E2E8F0",
     legend=dict(orientation="h", yanchor="bottom", y=1.02),
 )
 st.plotly_chart(fig4, use_container_width=True)
@@ -308,8 +308,8 @@ if combos:
         xaxis_title="Year",
         yaxis_title="% of tested strains with this combination",
         height=340, margin=dict(t=20, b=20),
-        plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-        font_color="#cdd6f4", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
+        plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+        font_color="#1E293B", xaxis_gridcolor="#E2E8F0", yaxis_gridcolor="#E2E8F0",
         legend=dict(orientation="h", yanchor="bottom", y=1.02),
     )
     st.plotly_chart(fig5, use_container_width=True)

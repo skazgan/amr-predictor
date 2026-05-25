@@ -18,18 +18,33 @@ inject_mobile_css()
 # ── Custom CSS ────────────────────────────────────────────────────────────────
 st.markdown("""
 <style>
-    .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-            padding: 3rem 2rem; border-radius: 12px; margin-bottom: 2rem; }
-    .hero h1 { color: #e94560; font-size: 3rem; font-weight: 800; margin-bottom: 0.5rem; }
-    .hero p  { color: #a8b2d8; font-size: 1.2rem; }
-    .metric-card { background: #1e1e2e; border: 1px solid #2d2d44;
-                   border-radius: 10px; padding: 1.5rem; text-align: center; }
-    .metric-card .value { font-size: 2.5rem; font-weight: 700; color: #e94560; }
-    .metric-card .label { color: #a8b2d8; font-size: 0.9rem; margin-top: 0.3rem; }
-    .step-card { background: #1e1e2e; border-left: 4px solid #e94560;
-                 border-radius: 6px; padding: 1rem 1.5rem; margin-bottom: 1rem; }
-    .step-card h4 { color: #cdd6f4; margin: 0 0 0.3rem; }
-    .step-card p  { color: #a8b2d8; margin: 0; font-size: 0.9rem; }
+    .hero {
+        background: linear-gradient(135deg, #EEF2FF 0%, #F0F9FF 50%, #F5F3FF 100%);
+        padding: 3rem 2rem; border-radius: 16px; margin-bottom: 2rem;
+        border: 1px solid #E0E7FF;
+    }
+    .hero h1 { color: #4338CA; font-size: 2.8rem; font-weight: 800; margin-bottom: 0.5rem; }
+    .hero p  { color: #475569; font-size: 1.15rem; line-height: 1.6; }
+    .metric-card {
+        background: #FFFFFF; border: 1px solid #E0E7FF;
+        border-radius: 12px; padding: 1.5rem; text-align: center;
+        box-shadow: 0 1px 3px rgba(99,102,241,0.08);
+    }
+    .metric-card .value { font-size: 2.5rem; font-weight: 700; color: #6366F1; }
+    .metric-card .label { color: #64748B; font-size: 0.9rem; margin-top: 0.3rem; }
+    .org-card {
+        background: #FFFFFF; border-radius: 12px; padding: 1.2rem;
+        border: 1px solid #E2E8F0; transition: box-shadow 0.2s;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.06); height: 200px;
+    }
+    .step-card {
+        background: #FAFAFA; border-left: 4px solid #6366F1;
+        border-radius: 6px; padding: 1rem 1.5rem; margin-bottom: 0.8rem;
+        border-top: 1px solid #F1F5F9; border-right: 1px solid #F1F5F9;
+        border-bottom: 1px solid #F1F5F9;
+    }
+    .step-card h4 { color: #1E293B; margin: 0 0 0.3rem; }
+    .step-card p  { color: #475569; margin: 0; font-size: 0.9rem; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -40,7 +55,7 @@ st.markdown("""
   <p>Predicting antibiotic resistance across four critical pathogens —
      <em>K. pneumoniae</em>, <em>E. coli</em>, <em>S. aureus</em> &amp; <em>A. baumannii</em> —
      from whole-genome sequences using machine learning.</p>
-  <p style="color:#6272a4; font-size:0.95rem; margin-top:1rem;">
+  <p style="color:#94A3B8; font-size:0.9rem; margin-top:0.8rem;">
     A bioinformatics + ML project — from raw DNA to clinical resistance predictions.
   </p>
 </div>
@@ -52,72 +67,129 @@ stats      = json.loads((ART_DIR / "dataset_stats.json").read_text())
 multi_path = ART_DIR / "multi_org_summary.json"
 multi_sum  = json.loads(multi_path.read_text()) if multi_path.exists() else []
 
-# Combined stats across all organisms
-all_aucs   = [r["test_auc"] for r in summary] + [r["test_auc"] for r in multi_sum]
-mean_auc   = sum(all_aucs) / len(all_aucs)
-best_auc   = max(all_aucs)
-n_models   = len(summary) + len(multi_sum)   # 10 KP + 26 multi-org = 36
-total_gen  = sum(r["n_resistant"] + r["n_susceptible"] for r in stats)
-# Add multi-org genome counts
+all_aucs  = [r["test_auc"] for r in summary] + [r["test_auc"] for r in multi_sum]
+mean_auc  = sum(all_aucs) / len(all_aucs)
+best_auc  = max(all_aucs)
+n_models  = len(summary) + len(multi_sum)
+total_gen = sum(r["n_resistant"] + r["n_susceptible"] for r in stats)
 total_gen += sum(r["n_total"] for r in multi_sum)
 
 col1, col2, col3, col4 = st.columns(4)
-with col1:
-    st.markdown(f"""<div class="metric-card">
-        <div class="value">{n_models}</div>
-        <div class="label">ML models (4 organisms)</div></div>""", unsafe_allow_html=True)
-with col2:
-    st.markdown(f"""<div class="metric-card">
-        <div class="value">{total_gen:,}</div>
-        <div class="label">Labeled genomes used</div></div>""", unsafe_allow_html=True)
-with col3:
-    st.markdown(f"""<div class="metric-card">
-        <div class="value">{mean_auc:.2f}</div>
-        <div class="label">Mean ROC-AUC (all models)</div></div>""", unsafe_allow_html=True)
-with col4:
-    st.markdown(f"""<div class="metric-card">
-        <div class="value">{best_auc:.2f}</div>
-        <div class="label">Best ROC-AUC</div></div>""", unsafe_allow_html=True)
+for col, value, label in [
+    (col1, str(n_models),           "ML models · 4 organisms"),
+    (col2, f"{total_gen:,}",        "Labeled genomes used"),
+    (col3, f"{mean_auc:.2f}",       "Mean ROC-AUC"),
+    (col4, f"{best_auc:.2f}",       "Best ROC-AUC"),
+]:
+    with col:
+        st.markdown(f"""<div class="metric-card">
+            <div class="value">{value}</div>
+            <div class="label">{label}</div></div>""", unsafe_allow_html=True)
 
 st.markdown("<br>", unsafe_allow_html=True)
 
-# ── Performance overview mini-chart ───────────────────────────────────────────
-st.subheader("Model performance across all antibiotics")
+# ── Organism cards with navigation ────────────────────────────────────────────
+st.subheader("🦠 Select a pathogen to predict resistance")
+
+PAGES_DIR = Path(__file__).parent
+
+ORG_CARDS = [
+    {
+        "emoji": "🔴", "name": "Klebsiella pneumoniae",
+        "tag": "Critical priority · WHO",
+        "desc": "10 antibiotics · k-mer + gene features · AUC 0.76–0.89",
+        "models": len(summary),
+        "color": "#EF4444", "bg": "#FFF5F5", "border": "#FCA5A5",
+        "page": str(PAGES_DIR / "5_Live_Predictor.py"),
+        "btn": "→ Live Predictor",
+    },
+    {
+        "emoji": "🟠", "name": "Escherichia coli",
+        "tag": "Critical priority · WHO",
+        "desc": "10 antibiotics · gene features · AUC 0.961–0.990",
+        "models": sum(1 for r in multi_sum if r["organism"] == "escherichia_coli"),
+        "color": "#F97316", "bg": "#FFF7ED", "border": "#FED7AA",
+        "page": str(PAGES_DIR / "17_Multi_Organism.py"),
+        "btn": "→ Multi-Organism",
+    },
+    {
+        "emoji": "🟡", "name": "Staphylococcus aureus",
+        "tag": "High priority · WHO",
+        "desc": "8 antibiotics · gene features · AUC 0.952–0.994",
+        "models": sum(1 for r in multi_sum if r["organism"] == "staphylococcus_aureus"),
+        "color": "#D97706", "bg": "#FFFBEB", "border": "#FCD34D",
+        "page": str(PAGES_DIR / "17_Multi_Organism.py"),
+        "btn": "→ Multi-Organism",
+    },
+    {
+        "emoji": "🔵", "name": "Acinetobacter baumannii",
+        "tag": "Critical priority · WHO",
+        "desc": "8 antibiotics · gene features · AUC 0.930–0.989",
+        "models": sum(1 for r in multi_sum if r["organism"] == "acinetobacter_baumannii"),
+        "color": "#3B82F6", "bg": "#EFF6FF", "border": "#BFDBFE",
+        "page": str(PAGES_DIR / "17_Multi_Organism.py"),
+        "btn": "→ Multi-Organism",
+    },
+]
+
+cols = st.columns(4)
+for i, card in enumerate(ORG_CARDS):
+    with cols[i]:
+        st.markdown(f"""
+<div style='background:{card["bg"]}; border:1.5px solid {card["border"]};
+     border-radius:12px; padding:1rem 1.1rem;
+     box-shadow:0 2px 6px rgba(0,0,0,0.06); min-height:190px;'>
+  <div style='font-size:2rem; margin-bottom:4px;'>{card["emoji"]}</div>
+  <div style='font-weight:700; color:#1E293B; font-size:0.92rem;
+       line-height:1.3; margin-bottom:4px;'><em>{card["name"]}</em></div>
+  <div style='font-size:0.72rem; color:{card["color"]}; font-weight:600;
+       margin-bottom:6px;'>{card["tag"]}</div>
+  <div style='font-size:0.78rem; color:#475569; margin-bottom:10px;
+       line-height:1.4;'>{card["desc"]}</div>
+</div>""", unsafe_allow_html=True)
+        st.page_link(card["page"], label=card["btn"], use_container_width=True)
+
+st.divider()
+
+# ── KP Performance mini-chart ─────────────────────────────────────────────────
+st.subheader("📊 K. pneumoniae model performance (10 antibiotics)")
 
 antibiotics = [r["antibiotic"] for r in sorted(summary, key=lambda x: x["test_auc"])]
 aucs        = [r["test_auc"]   for r in sorted(summary, key=lambda x: x["test_auc"])]
-colors      = ["#e94560" if a >= 0.80 else "#ffb86c" if a >= 0.75 else "#8be9fd"
+bar_colors  = ["#6366F1" if a >= 0.85 else "#818CF8" if a >= 0.80 else "#A5B4FC"
                for a in aucs]
 
 fig = go.Figure(go.Bar(
     x=aucs, y=antibiotics, orientation="h",
-    marker_color=colors,
+    marker_color=bar_colors,
     text=[f"{a:.3f}" for a in aucs], textposition="outside",
+    textfont=dict(color="#1E293B"),
 ))
-fig.add_vline(x=0.5, line_dash="dot", line_color="#6272a4",
-              annotation_text="Random baseline (0.50)")
-fig.add_vline(x=0.8, line_dash="dash", line_color="#50fa7b",
-              annotation_text="Good threshold (0.80)")
+fig.add_vline(x=0.8, line_dash="dash", line_color="#10B981",
+              annotation_text="Good threshold (0.80)",
+              annotation_font_color="#10B981")
 fig.update_layout(
-    xaxis=dict(range=[0.4, 1.0], title="ROC-AUC (test set)"),
-    height=320, margin=dict(l=10, r=80, t=20, b=40),
-    plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-    font_color="#cdd6f4",
-    xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
+    xaxis=dict(range=[0.4, 1.0], title="ROC-AUC (test set)", gridcolor="#E2E8F0"),
+    yaxis=dict(gridcolor="#E2E8F0"),
+    height=320, margin=dict(l=10, r=90, t=10, b=40),
+    plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+    font_color="#1E293B",
 )
 st.plotly_chart(fig, use_container_width=True)
 
+st.divider()
+
 # ── Project pipeline steps ────────────────────────────────────────────────────
-st.subheader("How the project works — step by step")
+st.subheader("⚙️ How the project works")
 
 steps = [
-    ("1 — The Biology",        "Bacteria develop resistance to antibiotics through DNA mutations and gene acquisition. We treat resistance prediction as a classification problem."),
-    ("2 — The Data",           "26,000+ K. pneumoniae genomes from BV-BRC (74 countries, 2000–2024). Each genome has Resistant / Susceptible labels for up to 10 antibiotics."),
-    ("3 — Feature Extraction", "Two feature types: (a) k-mer counts — all 6-letter DNA substrings; (b) resistance gene presence/absence from BV-BRC specialty genes database."),
-    ("4 — Model Training",     "Calibrated XGBoost ensembles trained per organism × antibiotic. 36 models total: 10 for K. pneumoniae (k-mer + gene features) and 26 for E. coli, S. aureus, A. baumannii (gene features). AUC 0.76–1.00."),
-    ("5 — Prediction",         "Four predictors: Live (BV-BRC genome ID), Offline (gene toggles), FASTA Upload (raw assembly), Multi-Organism (select any of 4 pathogens). All output calibrated resistance probabilities + PDF report."),
-    ("6 — Explainability",     "SHAP values show which resistance genes and k-mer patterns drove each prediction. Co-resistance network reveals which drugs fail together."),
-    ("7–13 — Epidemiology",    "Gene emergence curves, MDR trends over 24 years, country-level resistance maps, 5-year resistance forecasts, and MLST lineage tracking."),
+    ("1 — The Biology",        "Bacteria develop resistance through DNA mutations and gene acquisition. We frame it as a binary classification problem per antibiotic."),
+    ("2 — The Data",           "26,000+ K. pneumoniae + 130,000+ multi-organism genomes from BV-BRC (74 countries, 2000–2024), each with Resistant / Susceptible labels."),
+    ("3 — Feature Extraction", "Two feature types: k-mer frequency counts (6-letter DNA substrings) and resistance gene presence/absence flags from CARD/NDARO databases."),
+    ("4 — Model Training",     "Calibrated XGBoost ensembles per organism × antibiotic. 36 models total, AUC 0.76–1.00. Gene features alone are near-deterministic for many antibiotics."),
+    ("5 — Prediction",         "Four predictors: Live (BV-BRC ID), Offline (gene toggles), FASTA Upload (raw assembly), Multi-Organism (4 pathogens). All output probabilities + PDF report."),
+    ("6 — Explainability",     "SHAP values reveal which genes and k-mer patterns drive each prediction. Co-resistance network shows which drug pairs fail together."),
+    ("7–13 — Epidemiology",    "Gene emergence curves, MDR trends over 24 years, global resistance maps, 5-year forecasts, and MLST lineage-specific resistance profiles."),
 ]
 
 for title, desc in steps:
@@ -125,9 +197,7 @@ for title, desc in steps:
         <h4>{title}</h4><p>{desc}</p></div>""", unsafe_allow_html=True)
 
 st.markdown("""
----
-<p style="color:#6272a4; font-size:0.85rem;">
-  Navigate the pages in the sidebar to explore each step in detail.
-  Use <strong>Live Predictor</strong> to test a new genome.
+<p style="color:#94A3B8; font-size:0.85rem; margin-top:1rem;">
+  Use the sidebar to explore each section, or click an organism card above to go straight to the predictor.
 </p>
 """, unsafe_allow_html=True)

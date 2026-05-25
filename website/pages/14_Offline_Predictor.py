@@ -272,7 +272,7 @@ else:
         ))
         fig_donut.update_layout(
             height=260, margin=dict(t=10, b=10, l=10, r=10),
-            paper_bgcolor="#1e1e2e", font_color="#cdd6f4",
+            paper_bgcolor="#1e1e2e", font_color="#1E293B",
             showlegend=False,
             annotations=[dict(text=f"{n_r}/{len(preds)}<br>Resistant",
                               x=0.5, y=0.5, font_size=14,
@@ -303,19 +303,19 @@ else:
         bar_r = int(prob_r * 100)
         bar_s = 100 - bar_r
         st.markdown(f"""
-<div style='background:#181825; border-left:4px solid {color};
+<div style='background:#F8F9FF; border-left:4px solid {color};
      padding:0.5rem 1rem; border-radius:6px; margin-bottom:6px;
      display:flex; justify-content:space-between; align-items:center;'>
   <div>
-    <b style='color:#cdd6f4; font-size:0.95rem;'>{emoji} {pred["short"]}</b>
-    <span style='color:#6272a4; font-size:0.8rem; margin-left:8px;'>{pred["drug_class"]}</span>
+    <b style='color:#1E293B; font-size:0.95rem;'>{emoji} {pred["short"]}</b>
+    <span style='color:#64748B; font-size:0.8rem; margin-left:8px;'>{pred["drug_class"]}</span>
   </div>
   <div style='text-align:right; min-width:200px;'>
     <span style='color:{color}; font-weight:bold;'>{verdict}</span>
-    <div style='background:#2d2d44; border-radius:4px; height:6px; margin-top:4px; width:180px;'>
+    <div style='background:#EEF2FF; border-radius:4px; height:6px; margin-top:4px; width:180px;'>
       <div style='background:{color}; width:{bar_r}%; height:6px; border-radius:4px;'></div>
     </div>
-    <small style='color:#6272a4;'>P(R) = {prob_r:.1%}</small>
+    <small style='color:#64748B;'>P(R) = {prob_r:.1%}</small>
   </div>
 </div>
 """, unsafe_allow_html=True)

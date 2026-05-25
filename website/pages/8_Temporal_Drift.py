@@ -114,7 +114,7 @@ for i, ab in enumerate(ANTIBIOTICS):
         ),
     ))
 
-fig.add_hline(y=50, line_dash="dot", line_color="#6272a4",
+fig.add_hline(y=50, line_dash="dot", line_color="#64748B",
               annotation_text="50% threshold")
 fig.update_layout(
     xaxis_title="Collection year",
@@ -122,7 +122,7 @@ fig.update_layout(
     yaxis=dict(range=[0, 100]),
     height=420, margin=dict(t=20, b=40),
     plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-    font_color="#cdd6f4", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
+    font_color="#1E293B", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
     legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
 )
 st.plotly_chart(fig, use_container_width=True)
@@ -188,7 +188,7 @@ if decay_data:
             yaxis=dict(title="ROC-AUC", range=[0.5, 1.0]),
             height=340, margin=dict(t=20, b=10),
             plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-            font_color="#cdd6f4", yaxis_gridcolor="#2d2d44",
+            font_color="#1E293B", yaxis_gridcolor="#2d2d44",
             legend=dict(orientation="h", yanchor="bottom", y=1.02),
         )
         st.plotly_chart(fig2, use_container_width=True)
@@ -200,16 +200,16 @@ if decay_data:
             color = "#e94560" if drift > 0.05 else "#ffb86c" if drift > 0.02 else "#50fa7b"
             st.markdown(
                 f"<div style='display:flex; justify-content:space-between; "
-                f"padding:0.4rem 0.8rem; background:#1e1e2e; border-radius:6px; "
+                f"padding:0.4rem 0.8rem; background:#FFFFFF; border-radius:6px; "
                 f"margin-bottom:4px; border-left:3px solid {color};'>"
-                f"<span style='color:#cdd6f4;'>{row['short']}</span>"
+                f"<span style='color:#1E293B;'>{row['short']}</span>"
                 f"<span style='color:{color}; font-weight:bold;'>{drift:+.3f}</span>"
                 f"</div>",
                 unsafe_allow_html=True,
             )
         st.markdown("""
 <br>
-<small style='color:#6272a4;'>
+<small style='color:#64748B;'>
 🔴 > 0.05 = significant drift<br>
 🟡 0.02–0.05 = moderate drift<br>
 🟢 < 0.02 = stable
@@ -276,7 +276,7 @@ if gene_trends:
             yaxis=dict(range=[0, max(df_trend["frequency"])*1.3]),
             height=320, margin=dict(t=40, b=10),
             plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-            font_color="#cdd6f4", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
+            font_color="#1E293B", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
         )
         st.plotly_chart(fig3, use_container_width=True)
         st.caption("Marker size = number of genomes sampled in that year.")
