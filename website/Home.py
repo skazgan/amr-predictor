@@ -17,7 +17,7 @@ P = Path(__file__).parent / "pages"
 pg = st.navigation(
     {
         "Home": [
-            st.Page(str(P / "0_Home.py"),                title="Home",                     icon="🏠", default=True),
+            st.Page(str(P / "0_Overview.py"),             title="Home",                     icon="🏠", default=True),
         ],
         "🔬 The Science": [
             st.Page(str(P / "1_The_Biology.py"),          title="The Biology",               icon="🦠"),

@@ -107,14 +107,16 @@ if not df_map.empty:
             bgcolor="#1e1e2e",
             showframe=False,
             showcoastlines=True,
-            coastlinecolor="#2d2d44",
-            landcolor="#2d2d44",
+            coastlinecolor="#4a4a6a",
+            landcolor="#5a5a7a",       # visible mid-tone for countries with no data
             showocean=True, oceancolor="#181825",
+            showlakes=True, lakecolor="#181825",
+            showcountries=True, countrycolor="#4a4a6a",
         ),
         coloraxis_colorbar=dict(title=map_title),
     )
     st.plotly_chart(fig_map, use_container_width=True)
-    st.caption(f"Only countries with ≥ {MIN_GENOMES} genomes are shown. Hover for details.")
+    st.caption(f"🔵 Blue-grey = no data (fewer than {MIN_GENOMES} genomes). Coloured = resistance rate. Hover for details.")
 else:
     st.info("No data available for this drug at the country level.")
 
