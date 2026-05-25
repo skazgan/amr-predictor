@@ -71,7 +71,7 @@ with col2:
 st.divider()
 
 # ── Section 2: Summary table ──────────────────────────────────────────────────
-st.header("2. Results across all 6 antibiotics")
+st.header("2. Results across all 10 antibiotics (Klebsiella pneumoniae)")
 
 st.dataframe(
     df_sum[["antibiotic", "drug_class", "n_genomes",
@@ -216,3 +216,67 @@ fig_prog.update_layout(
     font_color="#cdd6f4", yaxis_gridcolor="#2d2d44",
 )
 st.plotly_chart(fig_prog, use_container_width=True)
+
+st.divider()
+
+# ── Section 6: Multi-organism model summary ───────────────────────────────────
+st.header("6. Multi-organism model performance")
+st.markdown("*26 additional models across E. coli, S. aureus, and A. baumannii — gene presence/absence features only.*")
+
+multi_path = ART_DIR / "multi_org_summary.json"
+if multi_path.exists():
+    import numpy as np
+    multi = json.loads(multi_path.read_text())
+    df_multi = pd.DataFrame(multi)
+
+    org_display = {
+        "escherichia_coli":       "E. coli",
+        "staphylococcus_aureus":  "S. aureus",
+        "acinetobacter_baumannii": "A. baumannii",
+    }
+    org_color = {
+        "E. coli":       "#ffb86c",
+        "S. aureus":     "#f1fa8c",
+        "A. baumannii":  "#8be9fd",
+    }
+    df_multi["Organism"] = df_multi["organism"].map(org_display)
+    df_multi = df_multi.sort_values(["Organism", "test_auc"], ascending=[True, False])
+
+    import plotly.express as px
+    fig_mo = px.bar(
+        df_multi, x="test_auc", y="antibiotic", color="Organism",
+        orientation="h", barmode="group",
+        color_discrete_map=org_color,
+        labels={"test_auc": "ROC-AUC (20% holdout)", "antibiotic": "Antibiotic"},
+    )
+    fig_mo.add_vline(x=0.80, line_dash="dash", line_color="#50fa7b",
+                     annotation_text="Good (0.80)")
+    fig_mo.update_layout(
+        height=520, margin=dict(t=20, b=20, r=20),
+        plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
+        font_color="#cdd6f4", xaxis_gridcolor="#2d2d44",
+        xaxis=dict(range=[0.85, 1.01]),
+        legend=dict(orientation="h", yanchor="bottom", y=1.01),
+    )
+    st.plotly_chart(fig_mo, use_container_width=True)
+
+    # Stats per organism
+    cols = st.columns(3)
+    for i, (org_key, org_name) in enumerate(org_display.items()):
+        sub = df_multi[df_multi["Organism"] == org_name]
+        with cols[i]:
+            color = org_color[org_name]
+            st.markdown(f"""
+<div style='background:#1e1e2e; border-left:4px solid {color};
+     padding:0.8rem 1rem; border-radius:8px;'>
+  <b style='color:#cdd6f4;'>{org_name}</b><br>
+  <small style='color:#6272a4;'>{len(sub)} antibiotics modelled</small><br>
+  <span style='color:{color}; font-size:1.3rem; font-weight:bold;'>
+    AUC {sub["test_auc"].min():.3f}–{sub["test_auc"].max():.3f}
+  </span><br>
+  <small style='color:#6272a4;'>
+    {sub["n_total"].sum():,} total labeled genomes
+  </small>
+</div>""", unsafe_allow_html=True)
+else:
+    st.info("Run `python src/train_organisms.py` to generate multi-organism model results.")

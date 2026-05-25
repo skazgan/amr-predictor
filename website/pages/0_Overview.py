@@ -37,7 +37,8 @@ st.markdown("""
 st.markdown("""
 <div class="hero">
   <h1>🧬 AMR Predictor</h1>
-  <p>Predicting antibiotic resistance in <em>Klebsiella pneumoniae</em>
+  <p>Predicting antibiotic resistance across four critical pathogens —
+     <em>K. pneumoniae</em>, <em>E. coli</em>, <em>S. aureus</em> &amp; <em>A. baumannii</em> —
      from whole-genome sequences using machine learning.</p>
   <p style="color:#6272a4; font-size:0.95rem; margin-top:1rem;">
     A bioinformatics + ML project — from raw DNA to clinical resistance predictions.
@@ -46,19 +47,25 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ── Key metrics ───────────────────────────────────────────────────────────────
-summary = json.loads((ART_DIR / "summary.json").read_text())
-stats   = json.loads((ART_DIR / "dataset_stats.json").read_text())
+summary    = json.loads((ART_DIR / "summary.json").read_text())
+stats      = json.loads((ART_DIR / "dataset_stats.json").read_text())
+multi_path = ART_DIR / "multi_org_summary.json"
+multi_sum  = json.loads(multi_path.read_text()) if multi_path.exists() else []
 
-best_auc   = max(r["test_auc"]   for r in summary)
-mean_auc   = sum(r["test_auc"]   for r in summary) / len(summary)
+# Combined stats across all organisms
+all_aucs   = [r["test_auc"] for r in summary] + [r["test_auc"] for r in multi_sum]
+mean_auc   = sum(all_aucs) / len(all_aucs)
+best_auc   = max(all_aucs)
+n_models   = len(summary) + len(multi_sum)   # 10 KP + 26 multi-org = 36
 total_gen  = sum(r["n_resistant"] + r["n_susceptible"] for r in stats)
-n_antibiotics = len(summary)
+# Add multi-org genome counts
+total_gen += sum(r["n_total"] for r in multi_sum)
 
 col1, col2, col3, col4 = st.columns(4)
 with col1:
     st.markdown(f"""<div class="metric-card">
-        <div class="value">{n_antibiotics}</div>
-        <div class="label">Antibiotics modelled</div></div>""", unsafe_allow_html=True)
+        <div class="value">{n_models}</div>
+        <div class="label">ML models (4 organisms)</div></div>""", unsafe_allow_html=True)
 with col2:
     st.markdown(f"""<div class="metric-card">
         <div class="value">{total_gen:,}</div>
@@ -66,11 +73,11 @@ with col2:
 with col3:
     st.markdown(f"""<div class="metric-card">
         <div class="value">{mean_auc:.2f}</div>
-        <div class="label">Mean ROC-AUC</div></div>""", unsafe_allow_html=True)
+        <div class="label">Mean ROC-AUC (all models)</div></div>""", unsafe_allow_html=True)
 with col4:
     st.markdown(f"""<div class="metric-card">
         <div class="value">{best_auc:.2f}</div>
-        <div class="label">Best ROC-AUC (meropenem)</div></div>""", unsafe_allow_html=True)
+        <div class="label">Best ROC-AUC</div></div>""", unsafe_allow_html=True)
 
 st.markdown("<br>", unsafe_allow_html=True)
 
@@ -107,8 +114,8 @@ steps = [
     ("1 — The Biology",        "Bacteria develop resistance to antibiotics through DNA mutations and gene acquisition. We treat resistance prediction as a classification problem."),
     ("2 — The Data",           "26,000+ K. pneumoniae genomes from BV-BRC (74 countries, 2000–2024). Each genome has Resistant / Susceptible labels for up to 10 antibiotics."),
     ("3 — Feature Extraction", "Two feature types: (a) k-mer counts — all 6-letter DNA substrings; (b) resistance gene presence/absence from BV-BRC specialty genes database."),
-    ("4 — Model Training",     "XGBoost + Random Forest soft-voting ensemble with isotonic calibration, trained with 5-fold cross-validation. One model per antibiotic (10 total)."),
-    ("5 — Prediction",         "Three predictors: Live (BV-BRC genome ID), Offline (gene toggles), FASTA Upload (raw assembly). All output calibrated resistance probabilities + PDF report."),
+    ("4 — Model Training",     "Calibrated XGBoost ensembles trained per organism × antibiotic. 36 models total: 10 for K. pneumoniae (k-mer + gene features) and 26 for E. coli, S. aureus, A. baumannii (gene features). AUC 0.76–1.00."),
+    ("5 — Prediction",         "Four predictors: Live (BV-BRC genome ID), Offline (gene toggles), FASTA Upload (raw assembly), Multi-Organism (select any of 4 pathogens). All output calibrated resistance probabilities + PDF report."),
     ("6 — Explainability",     "SHAP values show which resistance genes and k-mer patterns drove each prediction. Co-resistance network reveals which drugs fail together."),
     ("7–13 — Epidemiology",    "Gene emergence curves, MDR trends over 24 years, country-level resistance maps, 5-year resistance forecasts, and MLST lineage tracking."),
 ]
