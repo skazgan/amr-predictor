@@ -1,0 +1,12 @@
+# ── Local training requirements ───────────────────────────────────────────────
+# Install these when retraining models or running analysis scripts.
+# pip install -r requirements-train.txt
+
+-r requirements.txt
+
+biopython==1.84
+scipy==1.13.1
+matplotlib==3.9.2
+seaborn==0.13.2
+tqdm==4.66.5
+jupyter==1.1.1

@@ -1,15 +1,14 @@
-biopython==1.84
-pandas==2.2.2
-numpy==1.26.4
-scikit-learn==1.5.1
-xgboost==2.1.1
-matplotlib==3.9.2
-seaborn==0.13.2
-jupyter==1.1.1
-tqdm==4.66.5
-requests==2.32.3
+# ── Streamlit Cloud deployment requirements ───────────────────────────────────
+# Only packages needed to RUN the website are listed here.
+# Training packages (biopython, scipy, matplotlib, seaborn, jupyter) are in
+# requirements-train.txt — install those locally when retraining models.
+
 streamlit==1.37.0
 plotly==5.23.0
-scipy==1.13.1
+pandas==2.2.2
+numpy==1.26.4
+requests==2.32.3
+scikit-learn==1.5.1
+xgboost==2.1.1
+fpdf2==2.8.1
 shap==0.46.0
-fpdf2==2.8.7
