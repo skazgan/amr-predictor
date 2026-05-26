@@ -29,6 +29,12 @@ pg = st.navigation(
             st.Page("pages/14_Offline_Predictor.py",   title="Offline Predictor",     icon="⚡"),
             st.Page("pages/15_FASTA_Upload.py",        title="FASTA Upload",          icon="📂"),
             st.Page("pages/17_Multi_Organism.py",      title="Multi-Organism",        icon="🦠"),
+            st.Page("pages/21_Strain_Comparison.py",   title="Strain Comparison",     icon="⚖️"),
+        ],
+        "🧫 Clinical Tools": [
+            st.Page("pages/18_Antibiogram.py",              title="Antibiogram Heatmap",       icon="🧫"),
+            st.Page("pages/19_Treatment_Recommendation.py", title="Treatment Recommendation",  icon="💊"),
+            st.Page("pages/20_Outbreak_Detection.py",       title="Outbreak Detection",        icon="🔬"),
         ],
         "🔍 Explainability": [
             st.Page("pages/6_Explainability.py",       title="Explainability (SHAP)", icon="🔍"),

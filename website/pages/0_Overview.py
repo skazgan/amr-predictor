@@ -187,9 +187,11 @@ steps = [
     ("2 — The Data",           "26,000+ K. pneumoniae + 130,000+ multi-organism genomes from BV-BRC (74 countries, 2000–2024), each with Resistant / Susceptible labels."),
     ("3 — Feature Extraction", "Two feature types: k-mer frequency counts (6-letter DNA substrings) and resistance gene presence/absence flags from CARD/NDARO databases."),
     ("4 — Model Training",     "Calibrated XGBoost ensembles per organism × antibiotic. 36 models total, AUC 0.76–1.00. Gene features alone are near-deterministic for many antibiotics."),
-    ("5 — Prediction",         "Four predictors: Live (BV-BRC ID), Offline (gene toggles), FASTA Upload (raw assembly), Multi-Organism (4 pathogens). All output probabilities + PDF report."),
+    ("5 — Prediction",         "Five predictors: Live (BV-BRC ID), Offline (gene toggles), FASTA Upload (raw assembly), Multi-Organism (4 pathogens), Strain Comparison (side-by-side). All output probabilities + PDF report."),
+    ("6 — Explainability",     "SHAP values reveal which genes and k-mer patterns drive each prediction. Co-resistance network shows which drug pairs fail together."),
     ("6 — Explainability",     "SHAP values reveal which genes and k-mer patterns drive each prediction. Co-resistance network shows which drug pairs fail together."),
     ("7–13 — Epidemiology",    "Gene emergence curves, MDR trends over 24 years, global resistance maps, 5-year forecasts, and MLST lineage-specific resistance profiles."),
+    ("14–16 — Clinical Tools", "Antibiogram heatmap (4 organisms × all antibiotics), treatment recommendation engine with tier-based drug guidance, and MLST outbreak detection via PCA clustering."),
 ]
 
 for title, desc in steps:
