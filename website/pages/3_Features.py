@@ -95,8 +95,8 @@ with col2:
     fig.update_layout(
         title="Example: 6-mer counts in one genome",
         xaxis_title="Count", height=280, margin=dict(t=40, b=10, l=10),
-        plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-        font_color="#1E293B", xaxis_gridcolor="#2d2d44",
+        plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+        font_color="#1E293B", xaxis_gridcolor="#E2E8F0",
     )
     st.plotly_chart(fig, use_container_width=True)
 
@@ -152,8 +152,8 @@ with col2:
                 title="Top resistance genes — Meropenem model",
                 xaxis_title="Importance", height=320,
                 margin=dict(t=40, b=10, l=10),
-                plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-                font_color="#1E293B", xaxis_gridcolor="#2d2d44",
+                plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+                font_color="#1E293B", xaxis_gridcolor="#E2E8F0",
             )
             st.plotly_chart(fig2, use_container_width=True)
 
@@ -226,8 +226,8 @@ if seq_input:
             title=f"Top 15 6-mers in your sequence ({len(seq)} bp, {len(kmers)} unique k-mers)",
             yaxis_title="Count", height=300,
             margin=dict(t=40, b=10),
-            plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-            font_color="#1E293B", yaxis_gridcolor="#2d2d44",
+            plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+            font_color="#1E293B", yaxis_gridcolor="#E2E8F0",
         )
         st.plotly_chart(fig3, use_container_width=True)
         st.caption(f"A full genome has ~5,500,000 bp → ~5,499,995 6-mers across 4,096 unique combinations.")

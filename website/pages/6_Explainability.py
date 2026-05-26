@@ -95,8 +95,8 @@ if fi_path.exists():
                 title=f"Top 20 features — {ab_choice}",
                 xaxis_title="Mean importance (across calibration folds)",
                 height=520, margin=dict(t=40, b=10, r=80),
-                plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-                font_color="#1E293B", xaxis_gridcolor="#2d2d44",
+                plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+                font_color="#1E293B", xaxis_gridcolor="#E2E8F0",
             )
             st.plotly_chart(fig, use_container_width=True)
             st.markdown("🟢 Resistance gene &nbsp;&nbsp; 🔵 k-mer")
@@ -127,7 +127,7 @@ catalogued in the CARD database.
             fig2.update_layout(
                 title="Feature type split (top 20)",
                 height=220, margin=dict(t=40, b=10),
-                plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
+                plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
                 font_color="#1E293B", showlegend=True,
             )
             st.plotly_chart(fig2, use_container_width=True)
@@ -237,8 +237,8 @@ if run_shap and shap_genome_id:
                     title=f"SHAP values — genome {gid} — {shap_ab}",
                     xaxis_title="SHAP value (+ = pushes toward Resistant)",
                     height=520, margin=dict(t=40, b=10),
-                    plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-                    font_color="#1E293B", xaxis_gridcolor="#2d2d44",
+                    plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+                    font_color="#1E293B", xaxis_gridcolor="#E2E8F0",
                 )
                 st.plotly_chart(fig_shap, use_container_width=True)
 
@@ -284,8 +284,8 @@ if rows:
     fig3.update_layout(
         barmode="stack", yaxis_title="Count in top 20 features",
         height=320, margin=dict(t=20, b=10),
-        plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-        font_color="#1E293B", yaxis_gridcolor="#2d2d44",
+        plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+        font_color="#1E293B", yaxis_gridcolor="#E2E8F0",
         legend=dict(orientation="h", yanchor="bottom", y=1.02),
     )
     st.plotly_chart(fig3, use_container_width=True)

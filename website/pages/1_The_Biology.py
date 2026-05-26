@@ -50,7 +50,7 @@ with col2:
     fig.update_layout(
         title="Typical K. pneumoniae base composition",
         height=280, margin=dict(t=40, b=10),
-        plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
+        plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
         font_color="#1E293B", showlegend=False,
     )
     st.plotly_chart(fig, use_container_width=True)

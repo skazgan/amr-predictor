@@ -164,8 +164,8 @@ fig_all.update_layout(
     yaxis_title="% Resistant strains",
     yaxis=dict(range=[0, 105]),
     height=450, margin=dict(t=20, b=20),
-    plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-    font_color="#1E293B", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
+    plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+    font_color="#1E293B", xaxis_gridcolor="#E2E8F0", yaxis_gridcolor="#E2E8F0",
     legend=dict(orientation="h", yanchor="bottom", y=1.02),
 )
 st.plotly_chart(fig_all, use_container_width=True)
@@ -235,8 +235,8 @@ if sel:
             xaxis_title="Year", yaxis_title="% Resistant",
             yaxis=dict(range=[0, 105]),
             height=380, margin=dict(t=50, b=20),
-            plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-            font_color="#1E293B", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
+            plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+            font_color="#1E293B", xaxis_gridcolor="#E2E8F0", yaxis_gridcolor="#E2E8F0",
             legend=dict(orientation="h", yanchor="bottom", y=1.02),
         )
         st.plotly_chart(fig_single, use_container_width=True)

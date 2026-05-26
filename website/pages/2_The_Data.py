@@ -86,8 +86,8 @@ fig.update_layout(
     barmode="stack",
     xaxis_title="Number of genomes",
     height=350, margin=dict(l=10, r=20, t=20, b=40),
-    plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-    font_color="#1E293B", xaxis_gridcolor="#2d2d44",
+    plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+    font_color="#1E293B", xaxis_gridcolor="#E2E8F0",
     legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
 )
 st.plotly_chart(fig, use_container_width=True)
@@ -129,8 +129,8 @@ with col2:
     fig2.update_layout(
         yaxis=dict(title="% Resistant", range=[0, 70]),
         height=280, margin=dict(t=20, b=10),
-        plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-        font_color="#1E293B", yaxis_gridcolor="#2d2d44",
+        plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+        font_color="#1E293B", yaxis_gridcolor="#E2E8F0",
     )
     st.plotly_chart(fig2, use_container_width=True)
 
@@ -188,11 +188,11 @@ with col2:
     colors_cv = ["#e94560", "#e94560", "#e94560", "#e94560", "#ffb86c"]
     labels_cv = ["Train", "Train", "Train", "Train", "Validate"]
     for i in range(5):
-        fold_colors = ["#ffb86c" if j == i else "#2d2d44" for j in range(5)]
+        fold_colors = ["#ffb86c" if j == i else "#E2E8F0" for j in range(5)]
         fold_labels = ["Validate" if j == i else "Train" for j in range(5)]
     fig3.add_trace(go.Heatmap(
         z=[[1 if j != i else 2 for j in range(5)] for i in range(5)],
-        colorscale=[[0, "#2d2d44"], [0.5, "#2d2d44"], [0.5, "#ffb86c"], [1, "#ffb86c"]],
+        colorscale=[[0, "#E2E8F0"], [0.5, "#E2E8F0"], [0.5, "#ffb86c"], [1, "#ffb86c"]],
         showscale=False,
         xgap=3, ygap=3,
     ))
@@ -201,7 +201,7 @@ with col2:
         xaxis=dict(tickvals=list(range(5)), ticktext=[f"Fold {i+1}" for i in range(5)]),
         yaxis=dict(tickvals=list(range(5)), ticktext=[f"Round {i+1}" for i in range(5)]),
         height=240, margin=dict(t=40, b=10),
-        plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
+        plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
         font_color="#1E293B",
     )
     st.plotly_chart(fig3, use_container_width=True)

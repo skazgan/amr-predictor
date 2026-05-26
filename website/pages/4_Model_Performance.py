@@ -59,8 +59,8 @@ with col2:
     fig.update_layout(
         xaxis_title="False Positive Rate", yaxis_title="True Positive Rate",
         height=260, margin=dict(t=10, b=40),
-        plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-        font_color="#1E293B", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
+        plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+        font_color="#1E293B", xaxis_gridcolor="#E2E8F0", yaxis_gridcolor="#E2E8F0",
         legend=dict(yanchor="bottom", y=0.02, xanchor="right", x=0.98),
     )
     fig.add_shape(type="line", x0=0, y0=0, x1=1, y1=1,
@@ -94,7 +94,7 @@ df_display = (
 )
 st.dataframe(
     df_display.style
-    .applymap(_color_auc, subset=["Test AUC"])
+    .map(_color_auc, subset=["Test AUC"])
     .format({"CV AUC": "{:.3f}", "Test AUC": "{:.3f}", "Accuracy": "{:.3f}",
              "Precision (R)": "{:.3f}", "Recall (R)": "{:.3f}", "F1 (R)": "{:.3f}"}),
     use_container_width=True, hide_index=True,
@@ -128,8 +128,8 @@ fig_roc.update_layout(
     xaxis_title="False Positive Rate (1 − Specificity)",
     yaxis_title="True Positive Rate (Sensitivity)",
     height=480, margin=dict(t=20, b=40),
-    plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-    font_color="#1E293B", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
+    plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+    font_color="#1E293B", xaxis_gridcolor="#E2E8F0", yaxis_gridcolor="#E2E8F0",
     legend=dict(yanchor="bottom", y=0.02, xanchor="right", x=0.98),
 )
 st.plotly_chart(fig_roc, use_container_width=True)
@@ -171,15 +171,15 @@ if cm_path.exists():
             z=[[tn, fp], [fn, tp]],
             x=["Predicted S", "Predicted R"],
             y=["Actual S", "Actual R"],
-            colorscale=[[0, "#1e1e2e"], [1, "#e94560"]],
+            colorscale=[[0, "#EEF2FF"], [1, "#e94560"]],
             showscale=False,
             text=[[str(tn), str(fp)], [str(fn), str(tp)]],
             texttemplate="%{text}",
-            textfont=dict(size=24, color="white"),
+            textfont=dict(size=24, color="#1E293B"),
         ))
         fig_cm.update_layout(
             height=280, margin=dict(t=20, b=10),
-            plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
+            plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
             font_color="#1E293B",
         )
         st.plotly_chart(fig_cm, use_container_width=True)
@@ -223,8 +223,8 @@ fig_prog.add_hline(y=0.80, line_dash="dash", line_color="#50fa7b",
 fig_prog.update_layout(
     yaxis=dict(range=[0.55, 0.92], title="Mean ROC-AUC"),
     height=300, margin=dict(t=20, b=10, r=120),
-    plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-    font_color="#1E293B", yaxis_gridcolor="#2d2d44",
+    plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+    font_color="#1E293B", yaxis_gridcolor="#E2E8F0",
 )
 st.plotly_chart(fig_prog, use_container_width=True)
 
@@ -264,8 +264,8 @@ if multi_path.exists():
                      annotation_text="Good (0.80)")
     fig_mo.update_layout(
         height=520, margin=dict(t=20, b=20, r=20),
-        plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-        font_color="#1E293B", xaxis_gridcolor="#2d2d44",
+        plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+        font_color="#1E293B", xaxis_gridcolor="#E2E8F0",
         xaxis=dict(range=[0.85, 1.01]),
         legend=dict(orientation="h", yanchor="bottom", y=1.01),
     )

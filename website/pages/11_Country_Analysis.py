@@ -101,16 +101,16 @@ if not df_map.empty:
     )
     fig_map.update_layout(
         height=440, margin=dict(t=20, b=0, l=0, r=0),
-        paper_bgcolor="#1e1e2e", font_color="#1E293B",
+        paper_bgcolor="#FFFFFF", font_color="#1E293B",
         geo=dict(
-            bgcolor="#1e1e2e",
+            bgcolor="#EEF2FF",
             showframe=False,
             showcoastlines=True,
-            coastlinecolor="#4a4a6a",
-            landcolor="#5a5a7a",       # visible mid-tone for countries with no data
-            showocean=True, oceancolor="#181825",
-            showlakes=True, lakecolor="#181825",
-            showcountries=True, countrycolor="#4a4a6a",
+            coastlinecolor="#C7D2FE",
+            landcolor="#E0E7FF",       # visible mid-tone for countries with no data
+            showocean=True, oceancolor="#DBEAFE",
+            showlakes=True, lakecolor="#DBEAFE",
+            showcountries=True, countrycolor="#A5B4FC",
         ),
         coloraxis_colorbar=dict(title=map_title),
     )
@@ -161,7 +161,7 @@ def color_resistance(val):
         return ""
 
 styled = (display_df.style
-          .applymap(color_resistance, subset=[c for c in display_df.columns if "% R" in c or "MDR" in c]))
+          .map(color_resistance, subset=[c for c in display_df.columns if "% R" in c or "MDR" in c]))
 st.dataframe(styled, use_container_width=True, hide_index=True)
 st.caption("🔴 ≥70% resistant  🟠 40–69%  🔵 20–39%  🟢 <20%")
 
@@ -198,8 +198,8 @@ if col_sel in df.columns:
         fig_top.update_layout(
             xaxis=dict(range=[0, 110], title="% Resistant"),
             height=260, margin=dict(t=10, b=10, r=60),
-            plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-            font_color="#1E293B", xaxis_gridcolor="#2d2d44",
+            plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+            font_color="#1E293B", xaxis_gridcolor="#E2E8F0",
         )
         st.plotly_chart(fig_top, use_container_width=True)
 
@@ -215,8 +215,8 @@ if col_sel in df.columns:
         fig_bot.update_layout(
             xaxis=dict(range=[0, 110], title="% Resistant"),
             height=260, margin=dict(t=10, b=10, r=60),
-            plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-            font_color="#1E293B", xaxis_gridcolor="#2d2d44",
+            plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+            font_color="#1E293B", xaxis_gridcolor="#E2E8F0",
         )
         st.plotly_chart(fig_bot, use_container_width=True)
 
@@ -271,9 +271,9 @@ if len(valid) >= 3:
     fig_radar.update_layout(
         polar=dict(
             radialaxis=dict(visible=True, range=[0, 100], color="#64748B"),
-            bgcolor="#1e1e2e",
+            bgcolor="#F5F3FF",
         ),
-        paper_bgcolor="#1e1e2e", font_color="#1E293B",
+        paper_bgcolor="#FFFFFF", font_color="#1E293B",
         height=380,
         legend=dict(orientation="h", yanchor="bottom", y=1.05),
     )
@@ -319,8 +319,8 @@ if trends:
             xaxis_title="Year", yaxis_title="% Resistant",
             yaxis=dict(range=[0, 100]),
             height=380, margin=dict(t=50, b=20),
-            plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-            font_color="#1E293B", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
+            plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+            font_color="#1E293B", xaxis_gridcolor="#E2E8F0", yaxis_gridcolor="#E2E8F0",
             legend=dict(orientation="h", yanchor="bottom", y=1.02),
         )
         st.plotly_chart(fig_tr, use_container_width=True)

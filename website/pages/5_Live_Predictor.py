@@ -247,7 +247,7 @@ if run and genome_id:
         fig_pie.update_layout(
             title="Summary",
             height=280, margin=dict(t=40, b=10),
-            plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
+            plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
             font_color="#1E293B", showlegend=False,
         )
         st.plotly_chart(fig_pie, use_container_width=True)

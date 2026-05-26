@@ -131,8 +131,8 @@ fig_overview.update_layout(
     yaxis_title="Spread rate (%/year)",
     height=400,
     margin=dict(t=20, b=120),
-    plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-    font_color="#1E293B", yaxis_gridcolor="#2d2d44",
+    plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+    font_color="#1E293B", yaxis_gridcolor="#E2E8F0",
     legend=dict(orientation="h", yanchor="bottom", y=1.02),
     xaxis=dict(tickangle=45),
 )
@@ -235,8 +235,8 @@ if selected:
         yaxis_title="% of genomes carrying this gene",
         yaxis=dict(range=[0, max(df_yr["frequency"]) * 1.4]),
         height=380, margin=dict(t=50, b=20),
-        plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-        font_color="#1E293B", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
+        plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+        font_color="#1E293B", xaxis_gridcolor="#E2E8F0", yaxis_gridcolor="#E2E8F0",
         legend=dict(orientation="h", yanchor="bottom", y=1.02),
     )
     st.plotly_chart(fig_gene, use_container_width=True)
@@ -295,8 +295,8 @@ else:
         xaxis_title="Year",
         yaxis_title="% of genomes carrying gene",
         height=440, margin=dict(t=20, b=10),
-        plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-        font_color="#1E293B", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
+        plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+        font_color="#1E293B", xaxis_gridcolor="#E2E8F0", yaxis_gridcolor="#E2E8F0",
         legend=dict(orientation="v", x=1.01, y=1),
     )
     st.plotly_chart(fig_multi, use_container_width=True)
@@ -322,7 +322,7 @@ if not df_timeline.empty:
         marker=dict(
             size=df_timeline["overall_prevalence"].clip(5, 30),
             color=colors_tl,
-            line=dict(width=1, color="#1e1e2e"),
+            line=dict(width=1, color="#CBD5E1"),
         ),
         hovertemplate=(
             "<b>%{text}</b><br>"
@@ -334,8 +334,8 @@ if not df_timeline.empty:
         xaxis_title="Year of emergence (first detected at ≥1%)",
         yaxis_title="Current frequency (%)",
         height=420, margin=dict(t=20, b=10),
-        plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-        font_color="#1E293B", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
+        plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+        font_color="#1E293B", xaxis_gridcolor="#E2E8F0", yaxis_gridcolor="#E2E8F0",
     )
     # Legend annotation
     for speed, color in speed_colors.items():

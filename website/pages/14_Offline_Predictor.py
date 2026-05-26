@@ -271,7 +271,7 @@ else:
         ))
         fig_donut.update_layout(
             height=260, margin=dict(t=10, b=10, l=10, r=10),
-            paper_bgcolor="#1e1e2e", font_color="#1E293B",
+            paper_bgcolor="#FFFFFF", font_color="#1E293B",
             showlegend=False,
             annotations=[dict(text=f"{n_r}/{len(preds)}<br>Resistant",
                               x=0.5, y=0.5, font_size=14,

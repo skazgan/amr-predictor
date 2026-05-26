@@ -528,8 +528,8 @@ if len(all_summary) > 1:
                            annotation_text="Random baseline")
         fig_comp.update_layout(
             height=400, margin=dict(t=20, b=20),
-            plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-            font_color="#1E293B", yaxis_gridcolor="#2d2d44",
+            plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+            font_color="#1E293B", yaxis_gridcolor="#E2E8F0",
             yaxis=dict(range=[0.4, 1.0]),
             legend=dict(orientation="h", yanchor="bottom", y=1.02),
         )

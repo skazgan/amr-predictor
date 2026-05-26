@@ -120,8 +120,8 @@ fig.update_layout(
     yaxis_title="% Resistant strains",
     yaxis=dict(range=[0, 100]),
     height=420, margin=dict(t=20, b=40),
-    plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-    font_color="#1E293B", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
+    plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+    font_color="#1E293B", xaxis_gridcolor="#E2E8F0", yaxis_gridcolor="#E2E8F0",
     legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
 )
 st.plotly_chart(fig, use_container_width=True)
@@ -186,8 +186,8 @@ if decay_data:
             barmode="group",
             yaxis=dict(title="ROC-AUC", range=[0.5, 1.0]),
             height=340, margin=dict(t=20, b=10),
-            plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-            font_color="#1E293B", yaxis_gridcolor="#2d2d44",
+            plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+            font_color="#1E293B", yaxis_gridcolor="#E2E8F0",
             legend=dict(orientation="h", yanchor="bottom", y=1.02),
         )
         st.plotly_chart(fig2, use_container_width=True)
@@ -274,8 +274,8 @@ if gene_trends:
             xaxis_title="Year", yaxis_title="% of genomes carrying this gene",
             yaxis=dict(range=[0, max(df_trend["frequency"])*1.3]),
             height=320, margin=dict(t=40, b=10),
-            plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-            font_color="#1E293B", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
+            plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+            font_color="#1E293B", xaxis_gridcolor="#E2E8F0", yaxis_gridcolor="#E2E8F0",
         )
         st.plotly_chart(fig3, use_container_width=True)
         st.caption("Marker size = number of genomes sampled in that year.")

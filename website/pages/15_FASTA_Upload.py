@@ -325,8 +325,8 @@ else:
         yaxis_title="P(Resistant) %",
         yaxis=dict(range=[0, 115]),
         height=340, margin=dict(t=20, b=20),
-        plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-        font_color="#1E293B", yaxis_gridcolor="#2d2d44",
+        plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+        font_color="#1E293B", yaxis_gridcolor="#E2E8F0",
     )
     st.plotly_chart(fig_bar, use_container_width=True)
     st.caption("🔴 Resistant  🟡 Uncertain (between thresholds)  🟢 Susceptible")

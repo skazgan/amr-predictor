@@ -96,7 +96,7 @@ for i, (st_id, desc) in enumerate(list(notable.items())[:8]):
 """, unsafe_allow_html=True)
         else:
             st.markdown(f"""
-<div style='background:#FFFFFF; border-left:3px solid #2d2d44;
+<div style='background:#FFFFFF; border-left:3px solid #CBD5E1;
      padding:0.6rem 0.8rem; border-radius:6px; margin-bottom:8px; opacity:0.5;'>
 <b style='color:#1E293B;'>ST{st_id}</b><br>
 <small style='color:#64748B;'>{desc.split("—")[1].strip() if "—" in desc else desc}</small><br>
@@ -139,7 +139,7 @@ if not df_plot.empty:
             colorscale="RdYlGn_r",
             colorbar=dict(title="MDR %"),
             showscale=True,
-            line=dict(width=1, color="#1e1e2e"),
+            line=dict(width=1, color="#CBD5E1"),
         ),
         customdata=df_plot[["st", "n_genomes", "pct_mdr"]].values,
         hovertemplate=(
@@ -154,8 +154,8 @@ if not df_plot.empty:
         xaxis_title=f"% resistant to {drug_x}",
         yaxis_title=f"% resistant to {drug_y}",
         height=460, margin=dict(t=20, b=20),
-        plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-        font_color="#1E293B", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
+        plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+        font_color="#1E293B", xaxis_gridcolor="#E2E8F0", yaxis_gridcolor="#E2E8F0",
     )
     st.plotly_chart(fig_bubble, use_container_width=True)
     st.caption("Bubble size = number of genomes. Colour = MDR rate (red = high MDR). Labelled = clinically notable STs.")
@@ -195,7 +195,7 @@ fig_heat = go.Figure(go.Heatmap(
 fig_heat.update_layout(
     height=max(350, top_n * 28),
     margin=dict(t=20, b=10),
-    plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
+    plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
     font_color="#1E293B",
     xaxis=dict(side="top"),
 )
@@ -243,8 +243,8 @@ if trends:
         xaxis_title="Year",
         yaxis_title="% of year's sequenced genomes",
         height=380, margin=dict(t=20, b=20),
-        plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-        font_color="#1E293B", xaxis_gridcolor="#2d2d44", yaxis_gridcolor="#2d2d44",
+        plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+        font_color="#1E293B", xaxis_gridcolor="#E2E8F0", yaxis_gridcolor="#E2E8F0",
         legend=dict(orientation="h", yanchor="bottom", y=1.02),
     )
     st.plotly_chart(fig_trend, use_container_width=True)
@@ -298,8 +298,8 @@ if enrichment:
             title=f"{st_sel} — enriched resistance genes vs all other STs",
             xaxis_title="Enrichment (rate in ST − rate in others)",
             height=380, margin=dict(t=50, b=10, r=80),
-            plot_bgcolor="#1e1e2e", paper_bgcolor="#1e1e2e",
-            font_color="#1E293B", xaxis_gridcolor="#2d2d44",
+            plot_bgcolor="#FFFFFF", paper_bgcolor="#FFFFFF",
+            font_color="#1E293B", xaxis_gridcolor="#E2E8F0",
         )
         st.plotly_chart(fig_genes, use_container_width=True)
 
