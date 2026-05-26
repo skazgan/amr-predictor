@@ -15,8 +15,21 @@ ART_DIR = ROOT / "artifacts"
 
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import inject_mobile_css
+from utils import inject_mobile_css, page_info_expander
 inject_mobile_css()
+page_info_expander("""
+**Co-resistance** — When a single bacterial isolate is resistant to two or more antibiotics simultaneously. This happens because resistance genes often travel together on the same plasmid, or because one resistance mechanism (e.g. an efflux pump) affects multiple drug classes.
+
+**Network node** — Each circle represents an antibiotic. Node size reflects the overall resistance prevalence of that antibiotic in our dataset.
+
+**Network edge** — A line connecting two antibiotics indicates their resistance status frequently co-occurs in the same isolate. Thicker lines = stronger statistical association.
+
+**Clinical implication** — Co-resistance patterns help clinicians anticipate which drugs are likely to fail together. For example, a fluoroquinolone-resistant *K. pneumoniae* is also very likely to be co-trimoxazole resistant.
+
+**Phi (φ) coefficient** — The statistical measure of association between two binary variables used to weight edges. φ = 1 means the two resistances always occur together; φ = 0 means no association; φ = −1 means they never co-occur.
+
+**Empiric therapy guidance** — If a patient's isolate is known to be resistant to Drug A, and Drug A has a strong co-resistance link to Drug B, empiric coverage with Drug B should also be reconsidered.
+""")
 st.title("🕸️ Co-Resistance Network")
 st.markdown("*Novel findings: which antibiotic resistances travel together — and why.*")
 st.info("💡 This page presents original analysis from this project, not reproduced from existing literature.")

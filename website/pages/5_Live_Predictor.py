@@ -21,8 +21,21 @@ sys.path.insert(0, str(ROOT / "src"))
 
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import inject_mobile_css
+from utils import inject_mobile_css, page_info_expander
 inject_mobile_css()
+page_info_expander("""
+**Genome ID** — A BV-BRC accession number for a sequenced bacterial isolate (e.g. *1280.10234*). You can find these on [bv-brc.org](https://www.bv-brc.org) by searching for an organism.
+
+**Resistance probability** — The model's estimated likelihood (0–100%) that the isolate is resistant to each antibiotic, based on its resistance gene profile.
+
+**Verdict** — Our call: **Resistant** (prob ≥ 50%) or **Susceptible** (prob < 50%). The threshold can be adjusted for clinical context.
+
+**Confidence** — How far the probability is from 50%: High (≥75% or ≤25%), Medium (60–75% or 25–40%), Low (50–60% or 40–50%). Low-confidence predictions should be treated with caution.
+
+**How it works** — The tool fetches the genome's resistance genes from BV-BRC's CARD/NDARO annotations, then feeds them into trained XGBoost models to generate per-antibiotic resistance probabilities.
+
+⚠️ **Clinical note** — These are research predictions based on genomic data. They do not replace laboratory susceptibility testing for patient care decisions.
+""")
 st.title("🔮 Live Predictor")
 st.markdown("*Enter a BV-BRC genome ID to get a full resistance profile across all 10 antibiotics.*")
 st.divider()

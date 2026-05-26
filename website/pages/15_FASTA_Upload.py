@@ -33,8 +33,23 @@ sys.path.insert(0, str(ROOT / "src"))
 
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import inject_mobile_css
+from utils import inject_mobile_css, page_info_expander
 inject_mobile_css()
+page_info_expander("""
+**FASTA format** — The standard text format for DNA sequences. Each entry has a header line starting with `>` (e.g. `>contig_1 length=450000`) followed by lines of DNA letters (A, T, G, C). A whole-genome assembly file typically contains 1–200 contigs.
+
+**Genome assembly** — The reconstructed genome sequence produced by assembling short sequencing reads (Illumina) or long reads (Oxford Nanopore / PacBio). This tool works with assembled FASTA files, not raw sequencing reads.
+
+**Contig** — A contiguous stretch of assembled DNA sequence. Most assemblies consist of multiple contigs that together cover the full genome (~5.5 Mb for *K. pneumoniae*).
+
+**k-mer extraction** — The tool scans the uploaded FASTA and counts all overlapping 31-letter DNA substrings to create the same numerical fingerprint used during model training.
+
+**Gene annotation** — The tool searches the assembled sequences for known resistance genes from the CARD/NDARO databases, producing the same gene presence/absence features used by the offline predictor.
+
+**Expected file** — A `.fasta` or `.fa` file from your WGS assembly pipeline (e.g. SPAdes, Unicycler, Flye). File size is typically 5–15 MB. Raw `.fastq` sequencing read files are **not** supported.
+
+⚠️ **Clinical note** — For patient care, always confirm genomic predictions with validated clinical laboratory susceptibility testing.
+""")
 st.title("📂 FASTA Upload Predictor")
 st.markdown("*Upload your own genome assembly → get an instant resistance prediction.*")
 st.info("💡 This page runs the complete prediction pipeline on any K. pneumoniae FASTA file you provide — no internet connection to BV-BRC needed for the prediction itself.")

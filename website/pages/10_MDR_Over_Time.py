@@ -15,8 +15,21 @@ ART_DIR = ROOT / "artifacts"
 
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import inject_mobile_css
+from utils import inject_mobile_css, page_info_expander
 inject_mobile_css()
+page_info_expander("""
+**MDR** — Multi-Drug Resistant. Resistant to ≥1 agent in ≥3 different antibiotic classes. WHO/ECDC definition using a standardised panel of 14 drug classes for *K. pneumoniae*.
+
+**XDR** — Extensively Drug Resistant. Susceptible to only 1 or 2 antibiotic classes — meaning almost all standard options have failed. Treatment is highly challenging and often requires combinations.
+
+**PDR** — Pan-Drug Resistant. Resistant to all agents in all antibiotic classes tested. Effectively untreatable with currently available antibiotics.
+
+**Antibiotic class** — A group of antibiotics with the same core chemical structure and mechanism of action: *e.g.* carbapenems (meropenem, imipenem), fluoroquinolones (ciprofloxacin, levofloxacin), aminoglycosides (gentamicin, amikacin).
+
+**ECDC** — European Centre for Disease Prevention and Control. Publishes the consensus MDR/XDR/PDR definitions used here.
+
+**Why this trend matters** — Rising MDR rates directly correlate with longer hospital stays, higher mortality, and exhausted treatment options. Tracking the trajectory helps identify whether infection control measures are working.
+""")
 st.title("📈 MDR Over Time")
 st.markdown("*Has multi-drug resistance been getting worse? We tracked 12,000+ strains across 24 years.*")
 st.info("💡 Original research: combining temporal collection years with multi-antibiotic resistance profiles to measure the 24-year MDR trajectory.")

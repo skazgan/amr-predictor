@@ -14,8 +14,23 @@ ART_DIR = ROOT / "artifacts"
 
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import inject_mobile_css
+from utils import inject_mobile_css, page_info_expander
 inject_mobile_css()
+page_info_expander("""
+**BV-BRC** — Bacterial and Viral Bioinformatics Resource Center (bv-brc.org). A US government-funded public database of >1 million bacterial genomes with associated metadata including antimicrobial susceptibility test results.
+
+**Genome ID** — A unique accession number assigned to each sequenced bacterial isolate in BV-BRC (e.g. *1280.10234*). One genome = one patient isolate at one point in time.
+
+**Phenotypic label (R/S)** — The Resistant/Susceptible classification assigned by a clinical microbiology laboratory using standardised methods (MIC testing or disc diffusion), interpreted against EUCAST or CLSI breakpoints.
+
+**Class imbalance** — When one outcome (e.g. Susceptible) is much more common than the other (Resistant) in the dataset. This can bias models toward predicting the majority class; we correct for it using class weighting.
+
+**EUCAST** — European Committee on Antimicrobial Susceptibility Testing. Sets the clinical breakpoints (MIC thresholds) used to define R/S in Europe.
+
+**CLSI** — Clinical and Laboratory Standards Institute. The US equivalent of EUCAST, used in North America.
+
+**Training / test split** — We hold back 20% of data as a "test set" the model never sees during training, so reported accuracy reflects true performance on unseen isolates.
+""")
 st.title("📊 The Data")
 st.markdown("*Where it comes from, how much there is, and how we prepared it.*")
 st.divider()

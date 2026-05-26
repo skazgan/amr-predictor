@@ -14,8 +14,21 @@ ART_DIR = ROOT / "artifacts"
 
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import inject_mobile_css
+from utils import inject_mobile_css, page_info_expander
 inject_mobile_css()
+page_info_expander("""
+**Antibiogram** — A summary table (or heatmap) showing the percentage of isolates resistant to each antibiotic, for one or more organisms. Hospitals publish local antibiograms annually to guide empiric prescribing.
+
+**Empiric therapy** — Antibiotic treatment started before lab susceptibility results are available (typically 48–72 hours), based on likely organism and local resistance patterns. The antibiogram is the key reference for empiric choices.
+
+**Resistance rate (%)** — The proportion of isolates in our dataset that were phenotypically resistant to that antibiotic. *Note: these are genomic-prediction-derived rates, not direct phenotypic test rates — they serve as estimates.*
+
+**Heatmap colour scale** — 🟢 Green (0–20% resistance) = good option for empiric use · 🟡 Yellow (20–50%) = use with caution · 🟠 Orange (50–70%) = avoid as empiric monotherapy · 🔴 Red (>70%) = unreliable for empiric use.
+
+**Last-resort antibiotics** — Drugs held in reserve because of high toxicity (e.g. colistin, polymyxin B) or because preserving their activity is critical (e.g. vancomycin for MRSA, linezolid). High resistance rates in the heatmap for these drugs signal a serious public health threat.
+
+**Antibiotic class** — Grouping of related antibiotics: carbapenems, cephalosporins, fluoroquinolones, aminoglycosides, etc. Resistance to one member often predicts resistance to others in the same class.
+""")
 
 st.title("🧫 Antibiogram Heatmap")
 st.markdown("*All 4 organisms × all antibiotics — resistance rates at a glance, computed from 160,000+ genomes.*")

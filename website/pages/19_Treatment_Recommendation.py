@@ -12,8 +12,26 @@ ART_DIR = ROOT / "artifacts"
 
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import inject_mobile_css
+from utils import inject_mobile_css, page_info_expander
 inject_mobile_css()
+page_info_expander("""
+**Treatment tiers** — Antibiotics are ranked by clinical preference, balancing efficacy, safety, and the need to preserve last-resort options:
+- 🟢 **First-line** — Preferred option when susceptibility is confirmed; good safety profile.
+- 🔵 **Second-line** — Used when first-line drugs fail or are contraindicated.
+- 🟣 **Adjunct** — Given alongside another antibiotic to broaden or enhance coverage.
+- 🟡 **Reserve** — Effective but with notable toxicity or used to preserve susceptibility (e.g. temocillin).
+- 🔴 **Last resort** — Used only when no other options remain (e.g. colistin, fosfomycin IV). Requires specialist input.
+
+**MDR / XDR / PDR** — Multi-Drug Resistant / Extensively Drug Resistant / Pan-Drug Resistant. Classifications based on the number of antibiotic classes to which the isolate is resistant (see MDR Over Time page for full definitions).
+
+**CRKP** — Carbapenem-Resistant *Klebsiella pneumoniae*. Resistance to meropenem/imipenem = loss of the most reliable Gram-negative cover. Triggers infection control alerts and specialist review.
+
+**VRE** — Vancomycin-Resistant *Enterococcus*. Loss of vancomycin in *E. faecium* leaves very few options (linezolid, daptomycin, tedizolid).
+
+**MRSA** — Methicillin-Resistant *Staphylococcus aureus*. Requires glycopeptides (vancomycin, teicoplanin) or newer agents (daptomycin, ceftaroline) instead of standard beta-lactams.
+
+⚠️ **Disclaimer** — Recommendations shown here are population-level defaults based on published guidelines. They do not account for patient-specific factors (renal function, allergies, drug interactions, infection site, PK/PD targets). Always consult local guidelines and a clinical pharmacist or infectious disease specialist.
+""")
 
 st.title("💊 Treatment Recommendation")
 st.markdown("*Given a resistance profile, which drugs are still active — and which are last resort?*")

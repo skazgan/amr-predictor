@@ -15,8 +15,21 @@ ART_DIR = ROOT / "artifacts"
 
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import inject_mobile_css
+from utils import inject_mobile_css, page_info_expander
 inject_mobile_css()
+page_info_expander("""
+**Resistance prevalence** — The percentage of isolates from a given country that are resistant to a specific antibiotic. High prevalence = that drug is likely to fail as empiric therapy in that region.
+
+**Choropleth map** — A map where countries are shaded according to a value (here: resistance %). Darker colour = higher resistance.
+
+**Radar chart (Spider plot)** — A circular chart showing resistance percentages across multiple antibiotics simultaneously for a selected country. Useful for spotting multi-drug resistance patterns at a glance.
+
+**Why geography matters** — Resistance prevalence varies dramatically by country, driven by antibiotic prescribing practices, agricultural use, healthcare infection control standards, and local clonal outbreaks. A drug effective in Scandinavia may fail in South Asia.
+
+**EARS-Net** — European Antimicrobial Resistance Surveillance Network. The ECDC-coordinated surveillance system; our data from BV-BRC captures many isolates reported through similar national networks.
+
+**Travel-related acquisition** — Patients returning from high-resistance countries may carry resistant strains. Geographic resistance data helps clinicians adjust empiric therapy based on recent travel history.
+""")
 st.title("🌍 Country-Level Resistance")
 st.markdown("*Where in the world is K. pneumoniae most dangerous? Geographic patterns in antibiotic resistance.*")
 st.info("💡 Original research: we fetched isolation country for 14,230 genomes and computed per-country resistance profiles across 6 antibiotics.")

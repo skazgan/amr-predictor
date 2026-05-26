@@ -11,9 +11,22 @@ import plotly.graph_objects as go
 ROOT    = Path(__file__).parent.parent.parent
 ART_DIR = ROOT / "artifacts"
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import inject_mobile_css
+from utils import inject_mobile_css, page_info_expander
 
 inject_mobile_css()
+page_info_expander("""
+**AMR** — Antimicrobial Resistance. When bacteria develop the ability to survive antibiotic treatment that would normally kill them.
+
+**WGS** — Whole Genome Sequencing. Reading the complete DNA code of a bacterial isolate (≈5 million letters for *K. pneumoniae*).
+
+**ML / Machine Learning** — Computer algorithms that learn patterns from labelled examples. Here: the model learns which genes predict resistance, then applies that to new genomes.
+
+**AUC** — Area Under the ROC Curve. A single number summarising model accuracy: 1.0 = perfect, 0.5 = no better than a coin flip. AUC 0.9+ is considered excellent.
+
+**R / S** — Resistant / Susceptible. The binary clinical label assigned to each genome by laboratory phenotypic testing.
+
+**ESKAPE pathogens** — *E. faecium*, *S. aureus*, *K. pneumoniae*, *A. baumannii*, *P. aeruginosa*, *Enterobacter* spp. — the six WHO critical-priority organisms driving hospital infections worldwide.
+""")
 
 # ── Custom CSS ────────────────────────────────────────────────────────────────
 st.markdown("""

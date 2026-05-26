@@ -25,8 +25,21 @@ PROC_DIR  = ROOT / "data" / "processed"
 
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import inject_mobile_css
+from utils import inject_mobile_css, page_info_expander
 inject_mobile_css()
+page_info_expander("""
+**Offline predictor** — No internet connection or genome ID needed. You manually tick which resistance genes are present in your isolate, and the model generates a resistance profile instantly.
+
+**When to use this** — Useful when you have a lab report listing detected resistance genes (e.g. from PCR, microarray, or WGS report) but don't have a BV-BRC genome ID. Also useful for teaching and exploring "what if" scenarios.
+
+**Resistance gene** — A gene encoding an antimicrobial resistance mechanism, detected by PCR, sequencing, or microarray in your isolate. Common examples: *blaKPC* (carbapenem resistance), *blaTEM* / *blaSHV* / *blaCTX-M* (extended-spectrum beta-lactamases), *aac* genes (aminoglycoside resistance), *qnr* genes (fluoroquinolone resistance).
+
+**ESBL** — Extended-Spectrum Beta-Lactamase. An enzyme that breaks down most penicillins and cephalosporins. ESBL-producing *K. pneumoniae* are typically resistant to 3rd-generation cephalosporins (e.g. ceftriaxone, ceftazidime).
+
+**Carbapenemase** — An enzyme that destroys carbapenems — the last-line beta-lactam antibiotics. *blaKPC*, *blaNDM*, *blaOXA-48* are the most common carbapenemases in *K. pneumoniae*.
+
+⚠️ **Clinical note** — Predictions are based on gene presence patterns learned from thousands of genomes. A gene being present does not always mean phenotypic resistance (expression matters), and absence of known genes does not guarantee susceptibility.
+""")
 st.title("⚡ Offline Predictor")
 st.markdown("*No genome ID required. Toggle which resistance genes are present → instant resistance profile.*")
 st.info("💡 This predictor works completely offline — just check the genes your lab or sequencing report identified, and the model predicts resistance to all 10 antibiotics instantly.")

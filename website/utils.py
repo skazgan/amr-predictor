@@ -164,3 +164,14 @@ code, pre { background: #F8F9FF !important; color: #4338CA !important;
 def inject_mobile_css():
     """Inject mobile-responsive and light-theme CSS into the current page."""
     st.markdown(MOBILE_CSS, unsafe_allow_html=True)
+
+
+def page_info_expander(content: str, label: str = "ℹ️ New to this topic? Click to expand"):
+    """
+    Render a collapsible info box at the top of a page with plain-English
+    explanations of abbreviations and concepts for healthcare workers.
+
+    `content` is a markdown string — use **Term** — explanation format.
+    """
+    with st.expander(label, expanded=False):
+        st.markdown(content)

@@ -13,8 +13,23 @@ ART_DIR = ROOT / "artifacts"
 
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import inject_mobile_css
+from utils import inject_mobile_css, page_info_expander
 inject_mobile_css()
+page_info_expander("""
+**AUC-ROC** — Area Under the Receiver Operating Characteristic curve. A single number summarising overall discriminative ability: **1.0 = perfect**, 0.5 = no better than a coin flip. Equivalent to the probability that the model ranks a truly resistant isolate higher than a truly susceptible one. Benchmarks: ≥0.90 excellent · 0.80–0.90 good · 0.70–0.80 fair.
+
+**ROC curve** — A plot of True Positive Rate (Sensitivity) vs. False Positive Rate (1 − Specificity) across all possible decision thresholds. A curve hugging the top-left corner = excellent model.
+
+**Sensitivity (Recall)** — Of all truly resistant isolates, what fraction did the model correctly flag? High sensitivity = few missed resistant isolates (few false negatives).
+
+**Specificity** — Of all truly susceptible isolates, what fraction did the model correctly clear? High specificity = few false alarms (few false positives).
+
+**Confusion matrix** — A 2×2 table: **TP** (correctly called Resistant), **TN** (correctly called Susceptible), **FP** (wrongly called Resistant — unnecessary spectrum cover), **FN** (missed resistance — clinical risk).
+
+**XGBoost** — eXtreme Gradient Boosting. An ensemble of many small decision trees trained sequentially, each correcting the errors of the previous. State-of-the-art for tabular data.
+
+**Calibration** — Adjusting the model's output probabilities so that, e.g., a predicted 70% probability of resistance actually corresponds to ~70% of isolates being resistant in practice.
+""")
 st.title("📈 Model Performance")
 st.markdown("*How well do the models actually work? Honest evaluation on held-out test data.*")
 st.divider()

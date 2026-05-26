@@ -14,8 +14,23 @@ ART_DIR = ROOT / "artifacts"
 
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import inject_mobile_css
+from utils import inject_mobile_css, page_info_expander
 inject_mobile_css()
+page_info_expander("""
+**Genomic epidemiology** — Using whole-genome sequence data to trace the spread of bacteria between patients, wards, or hospitals. More precise than traditional typing methods like MLST.
+
+**Cluster** — A group of genetically similar isolates that likely descend from a common source — suggesting person-to-person transmission or a shared environmental reservoir.
+
+**PCA** — Principal Component Analysis. A mathematical technique that compresses many variables (here: hundreds of resistance gene presence/absence flags) into 2–3 dimensions for visualisation, while preserving as much variation as possible. Each dot on the scatter plot is one MLST lineage; nearby dots = similar resistance gene profiles.
+
+**PC1 / PC2** — The first and second principal components. PC1 captures the most variation in the data, PC2 the second most. The % labels on the axes show how much of the total variation each component represents.
+
+**Outbreak candidate** — An MLST lineage (ST) flagged because it has: (1) high resistance rates across multiple drug classes AND (2) sufficient genomes to be statistically reliable. Requires clinical correlation — not every cluster is a true outbreak.
+
+**MDR threshold** — The minimum mean resistance rate (%) used to define a lineage as multi-drug resistant for outbreak flagging purposes. Adjustable via the slider.
+
+⚠️ **Important** — This tool uses population-level MLST data, not individual patient data. It identifies *high-risk lineages*, not specific transmission chains. Real outbreak investigation requires patient-level genomic data, ward movement records, and infection control expertise.
+""")
 
 st.title("🔬 Outbreak Detection")
 st.markdown("*Cluster K. pneumoniae strains by resistance-profile similarity to flag potential hospital outbreaks.*")

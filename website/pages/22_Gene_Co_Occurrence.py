@@ -15,8 +15,24 @@ PROC_DIR = ROOT / "data" / "processed"
 
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import inject_mobile_css
+from utils import inject_mobile_css, page_info_expander
 inject_mobile_css()
+page_info_expander("""
+**Gene co-occurrence** — Two resistance genes are "co-occurring" if they tend to be found together in the same isolate more often than expected by chance. This usually happens because they are physically linked on the same plasmid, transposon, or integron.
+
+**Why it matters** — Co-occurring genes spread and disappear together. If *blaKPC* and *blaOXA* co-occur strongly, detecting one in a patient's isolate should raise suspicion of the other even if not directly tested. It also explains why certain treatment combinations fail simultaneously.
+
+**φ (phi) coefficient** — A statistical measure of association between two binary variables (gene present/absent). Ranges from −1 to +1:
+- φ close to **+1** → genes almost always co-occur (strong positive link, shown in blue)
+- φ close to **0** → no association
+- φ close to **−1** → genes are mutually exclusive (shown in red — rare)
+
+**Network layout** — Nodes (circles) = resistance genes. Edges (lines) = strong co-occurrence links (|φ| above your threshold). Thicker lines = stronger association. The circular layout places all genes equidistantly; position has no biological meaning.
+
+**Prevalence filter** — Genes present in <5% or >95% of genomes are excluded by default (too rare to analyse reliably, or too universal to be informative).
+
+**Integron** — A mobile genetic element that can capture, stack, and co-express multiple resistance genes. A major reason why gene co-occurrence networks have dense clusters.
+""")
 
 st.title("🕸️ Gene Co-Occurrence Network")
 st.markdown("*Which resistance genes always appear together — and why?*")

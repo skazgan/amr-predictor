@@ -15,8 +15,23 @@ ART_DIR = ROOT / "artifacts"
 
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import inject_mobile_css
+from utils import inject_mobile_css, page_info_expander
 inject_mobile_css()
+page_info_expander("""
+**Gene emergence** — The first detection and subsequent increase in prevalence of a resistance gene across sequenced clinical isolates over time.
+
+**Prevalence (%)** — The proportion of isolates from a given year that carry the gene. A gene at 5% prevalence means 1 in 20 isolates carries it.
+
+***blaKPC*** — *Klebsiella pneumoniae* Carbapenemase. The most common carbapenem-resistance gene in *K. pneumoniae* globally; emerged in the US ~2001 and spread worldwide.
+
+***blaNDM*** — New Delhi Metallo-beta-lactamase. A carbapenem-resistance gene with very broad substrate range; emerged in India ~2008, now found globally.
+
+***blaOXA-48*** — Oxacillinase-48. A carbapenemase prevalent in Southern Europe and the Middle East.
+
+***mcr-1*** — Mobilised colistin resistance gene 1; the first plasmid-mediated colistin resistance gene identified (2015), raising concern about loss of the last-resort drug colistin.
+
+**Epidemic curve analogy** — Gene emergence curves often mirror infectious disease epidemic curves: slow initial spread → exponential growth → plateau as the lineage dominates or infection control intervenes.
+""")
 st.title("🧬 Gene Emergence Curves")
 st.markdown("*How do resistance genes spread through bacterial populations — like epidemic waves?*")
 st.info("💡 Original research: We fit epidemic-style growth curves to each gene's year-by-year prevalence, revealing which resistance mechanisms are accelerating vs declining.")

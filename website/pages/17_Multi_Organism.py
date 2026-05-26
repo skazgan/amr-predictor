@@ -23,9 +23,26 @@ MODEL_DIR = ROOT / "models"
 
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import inject_mobile_css
+from utils import inject_mobile_css, page_info_expander
 
 inject_mobile_css()
+page_info_expander("""
+**Multi-organism** — Separate ML models trained independently for each bacterial species, because resistance mechanisms and the clinically relevant antibiotics differ between species.
+
+**ESKAPE pathogens** — The six WHO critical/high-priority organisms driving drug-resistant hospital infections: *Enterococcus faecium*, *Staphylococcus aureus*, *Klebsiella pneumoniae*, *Acinetobacter baumannii*, *Pseudomonas aeruginosa*, *Enterobacter* spp.
+
+***K. pneumoniae*** — *Klebsiella pneumoniae*. Gram-negative gut bacterium; leading cause of hospital-acquired pneumonia, UTI, and bacteraemia. Known for acquiring carbapenem resistance (CRKP).
+
+***E. coli*** — *Escherichia coli*. The most common cause of community and hospital urinary tract infections and bloodstream infections. ESBL-producing and carbapenem-resistant strains are major concerns.
+
+***S. aureus*** — *Staphylococcus aureus*. Gram-positive skin/soft tissue pathogen. MRSA (methicillin-resistant *S. aureus*) requires vancomycin or daptomycin instead of standard beta-lactams.
+
+***A. baumannii*** — *Acinetobacter baumannii*. Environmental Gram-negative bacterium; extremely adept at acquiring resistance — CRAB (carbapenem-resistant *A. baumannii*) strains may have only colistin or cefiderocol as options.
+
+***P. aeruginosa*** — *Pseudomonas aeruginosa*. Gram-negative opportunistic pathogen common in ICU and cystic fibrosis patients. Intrinsically resistant to many antibiotics; carbapenem-resistant strains are WHO Priority 1.
+
+***E. faecium*** — *Enterococcus faecium*. Gram-positive gut bacterium. VRE (vancomycin-resistant *E. faecium*) is an increasing hospital problem with very few treatment options.
+""")
 st.title("🦠 Multi-Organism AMR Predictor")
 st.markdown("*Predict antibiotic resistance across four clinically important pathogens.*")
 st.divider()

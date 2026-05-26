@@ -18,8 +18,26 @@ PROC_DIR  = ROOT / "data" / "processed"
 
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import inject_mobile_css
+from utils import inject_mobile_css, page_info_expander
 inject_mobile_css()
+page_info_expander("""
+**MIC** — Minimum Inhibitory Concentration. The lowest concentration of an antibiotic (in mg/L) that visibly inhibits bacterial growth after 18–24 h incubation. The gold standard for quantifying resistance — more informative than a simple R/S call.
+
+**MIC categories (this tool)**:
+- 🟢 **Low** — MIC ≤ EUCAST susceptible breakpoint → likely to respond to standard dosing.
+- 🟡 **Intermediate (I)** — MIC between susceptible and resistant breakpoints → may respond to increased dose or prolonged infusion (EUCAST now calls this "Susceptible, Increased Exposure").
+- 🔴 **High** — MIC > EUCAST resistant breakpoint → standard doses will not achieve sufficient drug levels.
+
+**EUCAST** — European Committee on Antimicrobial Susceptibility Testing. Sets the clinical MIC breakpoints used to classify isolates as S/I/R across Europe.
+
+**Dilution series** — MICs are measured in doubling steps (0.016 → 0.031 → 0.063 → 0.125 → 0.25 → 0.5 → 1 → 2 → 4 → 8 → 16 → 32 … mg/L). Each step is one "dilution". A genome with an MIC of 4 mg/L has twice the resistance level of one at 2 mg/L.
+
+**Log₂ scale** — MIC distributions are plotted on a log₂ (base-2 logarithm) axis because the dilution series is geometric (doubling). Each tick mark represents one doubling of concentration.
+
+**MIC₅₀ / MIC₉₀** — The MIC below which 50% / 90% of isolates are inhibited. Standard epidemiological summary statistics for a population. MIC₉₀ is often used to select empiric therapy — the chosen drug should ideally achieve concentrations well above the MIC₉₀.
+
+**PK/PD** — Pharmacokinetics / Pharmacodynamics. The science of relating drug concentrations in the body (PK) to their effect on bacteria (PD). MIC is the key PD parameter: a drug must achieve concentrations many times the MIC at the site of infection to be effective.
+""")
 
 st.title("🔬 MIC Prediction")
 st.markdown("*Beyond Resistant / Susceptible — predicting the actual inhibitory concentration.*")
@@ -90,18 +108,23 @@ with col2:
         "#10B981" if m <= bp_s else "#F59E0B" if m <= bp_r else "#EF4444"
         for m in mics
     ]
+    mic_labels = [str(m) for m in mics]
+    # For categorical bar charts, add_vline x must be a numeric index (0-based)
+    # Find the index of the last bar at or below each breakpoint (0.5 offset centres the line)
+    idx_s = max((i for i, m in enumerate(mics) if m <= bp_s), default=0) + 0.5
+    idx_r = max((i for i, m in enumerate(mics) if m <= bp_r), default=0) + 0.5
     fig_ill = go.Figure(go.Bar(
-        x=[str(m) for m in mics],
+        x=mic_labels,
         y=[1] * len(mics),
         marker_color=colors,
         text=["S" if m <= bp_s else "I" if m <= bp_r else "R" for m in mics],
         textposition="inside",
         textfont=dict(color="white", size=11),
     ))
-    fig_ill.add_vline(x=str(bp_s), line_dash="dash", line_color="#065F46",
+    fig_ill.add_vline(x=idx_s, line_dash="dash", line_color="#065F46",
                       annotation_text=f"S≤{bp_s}", annotation_font_color="#065F46",
                       annotation_position="top")
-    fig_ill.add_vline(x=str(bp_r), line_dash="dash", line_color="#991B1B",
+    fig_ill.add_vline(x=idx_r, line_dash="dash", line_color="#991B1B",
                       annotation_text=f"R>{bp_r}", annotation_font_color="#991B1B",
                       annotation_position="top")
     fig_ill.update_layout(

@@ -15,8 +15,21 @@ ART_DIR = ROOT / "artifacts"
 
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import inject_mobile_css
+from utils import inject_mobile_css, page_info_expander
 inject_mobile_css()
+page_info_expander("""
+**MLST** — Multi-Locus Sequence Typing. A standardised typing method that sequences 7 conserved "housekeeping" genes to assign a numerical Sequence Type (ST). Two isolates with the same ST are considered the same clonal lineage.
+
+**ST (Sequence Type)** — The number assigned by MLST. Think of it as a lineage ID. *e.g.* ST258 is a globally dominant *K. pneumoniae* clone known for carrying carbapenem resistance genes; ST131 is the pandemic *E. coli* clone.
+
+**High-risk lineage** — An ST that has documented capacity to (1) spread internationally, (2) accumulate multiple resistance genes, and (3) cause nosocomial outbreaks. Priority targets for surveillance.
+
+**Clonal complex (CC)** — A group of related STs that share ≥6 of 7 MLST alleles — descended from a recent common ancestor. *e.g.* CC258 includes ST258 and closely related types.
+
+**Bubble chart** — Each bubble is one ST. X-axis = prevalence (how common it is), Y-axis = mean resistance rate, bubble size = number of genomes. Top-right bubbles (common AND resistant) are the highest clinical concern.
+
+**cgMLST / wgMLST** — Core/Whole Genome MLST. Extensions of MLST using hundreds or thousands of genes — used for outbreak investigations requiring finer resolution than 7-gene MLST.
+""")
 st.title("🧬 MLST Lineages — Tracking Dangerous Clones")
 st.markdown("*Which bacterial lineages carry the most resistance? How are they spreading?*")
 st.info("💡 Original research: we typed 22,673 genomes by Multi-Locus Sequence Type (MLST) and linked lineages to resistance profiles.")

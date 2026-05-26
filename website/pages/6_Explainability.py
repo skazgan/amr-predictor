@@ -20,8 +20,22 @@ sys.path.insert(0, str(ROOT / "src"))
 
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import inject_mobile_css
+from utils import inject_mobile_css, page_info_expander
 inject_mobile_css()
+page_info_expander("""
+**SHAP** — SHapley Additive exPlanations. A mathematical method that fairly distributes credit for a prediction among all input features. Named after Lloyd Shapley's game-theory concept. Lets us say: *"this isolate was predicted Resistant mainly because of blaKPC (SHAP +0.8) and blaTEM (SHAP +0.3)"*.
+
+**Feature importance** — A global ranking of which resistance genes most strongly influence predictions across all isolates. High importance = the gene frequently shifts predictions toward Resistant.
+
+**Positive SHAP value** → pushes the prediction toward **Resistant**.
+**Negative SHAP value** → pushes the prediction toward **Susceptible**.
+
+**Waterfall plot** — Shows one isolate's prediction broken down step-by-step: which genes pushed toward R, which pushed toward S, and by how much.
+
+**XGBoost** — eXtreme Gradient Boosting. An algorithm that builds many small decision trees sequentially, each correcting the mistakes of the previous one. One of the best-performing ML methods for genomic tabular data.
+
+**Why explainability matters** — In clinical and regulatory settings, a "black-box" result is not actionable. SHAP allows clinicians to see *which specific genes* drove the prediction, enabling sanity checks and building trust.
+""")
 st.title("💡 Explainability")
 st.markdown("*Which genes and k-mers actually drive the predictions?*")
 st.divider()

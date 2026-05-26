@@ -18,8 +18,23 @@ ART_DIR   = ROOT / "artifacts"
 MODEL_DIR = ROOT / "models"
 PROC_DIR  = ROOT / "data" / "processed"
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import inject_mobile_css
+from utils import inject_mobile_css, page_info_expander
 inject_mobile_css()
+page_info_expander("""
+**Strain** — A specific bacterial isolate. Two strains of the same species can have very different resistance profiles depending on the genes they carry.
+
+**Genome ID** — The BV-BRC accession number for each sequenced isolate (e.g. *573.45678*). Enter two IDs to compare them side-by-side.
+
+**Resistance profile** — The full set of antibiotic resistance predictions for an isolate: which antibiotics it is predicted resistant or susceptible to, and with what probability.
+
+**Concordance** — Agreement between the two strains' resistance verdicts for each antibiotic. ✅ = both predicted the same way; ⚠️ = discordant (one resistant, one susceptible) — clinically the most interesting rows.
+
+**Gene diff** — Which resistance genes are unique to Strain A, unique to Strain B, or shared by both. Unique genes explain why two strains may differ in their resistance profiles despite being the same species.
+
+**Genetic similarity** — Estimated from shared resistance gene content: ≥90% shared = likely the same outbreak clone; 70–90% = related strains; <70% = unrelated strains with independent acquisition of resistance.
+
+**Clinical use cases** — (1) Compare a patient's isolate to a known outbreak strain to assess epidemiological link. (2) Compare two isolates from the same patient over time to detect resistance acquisition. (3) Compare hospital vs. community isolates to understand transmission direction.
+""")
 
 st.title("⚖️ Strain Comparison")
 st.markdown("*Compare two K. pneumoniae genomes side-by-side: resistance profile, gene differences, and clinical implications.*")

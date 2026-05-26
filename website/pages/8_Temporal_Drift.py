@@ -13,8 +13,19 @@ ART_DIR = ROOT / "artifacts"
 
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import inject_mobile_css
+from utils import inject_mobile_css, page_info_expander
 inject_mobile_css()
+page_info_expander("""
+**Temporal drift** — The gradual change in a model's predictive accuracy over time, caused by shifts in the underlying bacterial population. As new resistant clones emerge and old ones disappear, a model trained on historical data may become less accurate.
+
+**Training cutoff** — The latest year of genome data included when training the model. Data collected after this date are "unseen" to the model and represent real-world drift.
+
+**Why it matters clinically** — Resistance prevalence in hospitals changes year-to-year. A model trained in 2018 may under-predict the carbapenem resistance rates seen in 2024, because resistant lineages like ST258 have expanded since then.
+
+**AUC over time** — We evaluate how model accuracy (AUC) changes when applied to genomes from progressively later time periods. A flat line = stable model; a declining line = drift is occurring.
+
+**Retraining** — The practical response to drift: periodically retraining the model on more recent data to keep it aligned with current resistance epidemiology, analogous to updating local antibiograms annually.
+""")
 st.title("📅 Temporal Drift")
 st.markdown("*How do resistance patterns — and model accuracy — change over time?*")
 st.info("💡 Original analysis: we split our dataset by collection year to reveal resistance trends and model decay.")

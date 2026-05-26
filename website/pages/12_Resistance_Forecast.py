@@ -14,8 +14,21 @@ ART_DIR = ROOT / "artifacts"
 
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import inject_mobile_css
+from utils import inject_mobile_css, page_info_expander
 inject_mobile_css()
+page_info_expander("""
+**Resistance forecast** — A statistical projection of future resistance rates based on historical trends in our genome database.
+
+**ARIMA** — AutoRegressive Integrated Moving Average. A classical time-series model that captures trends and seasonality. Used here to project resistance % into 2025–2030. Not a causal model — it extrapolates existing trends and cannot predict sudden outbreaks or new interventions.
+
+**Confidence interval (CI)** — The shaded band around a forecast line. A 95% CI means: if we ran this forecast 100 times with slightly different data, the true value would fall within the band ~95 of those times. Wider bands = more uncertainty.
+
+**Trend vs. noise** — Short-term fluctuations (noise) in resistance rates are expected due to sampling variation. ARIMA separates underlying trends from noise to produce smoother projections.
+
+**Limitations** — Forecasts assume current trends continue. They cannot account for new resistance genes emerging, new antibiotics being introduced, or major infection control policy changes. Treat projections as planning scenarios, not firm predictions.
+
+**Clinical use case** — If ciprofloxacin resistance is forecast to reach 80% by 2027, local formulary committees may need to reconsider its role in empiric protocols now.
+""")
 
 # Load data first so FORECAST_START / FORECAST_END are defined before use
 path = ART_DIR / "resistance_forecast.json"

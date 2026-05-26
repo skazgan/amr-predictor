@@ -8,8 +8,23 @@ import plotly.graph_objects as go
 import sys
 from pathlib import Path as _Path
 sys.path.insert(0, str(_Path(__file__).parent.parent))
-from utils import inject_mobile_css
+from utils import inject_mobile_css, page_info_expander
 inject_mobile_css()
+page_info_expander("""
+**AMR mechanism** — The biological way a bacterium resists an antibiotic. Four main types:
+- **Enzymatic inactivation** — the bacterium produces an enzyme that destroys the drug (*e.g.* beta-lactamases break the ring structure of penicillins and carbapenems).
+- **Efflux pumps** — molecular pumps that actively eject the antibiotic out of the cell before it can act.
+- **Target modification** — a mutation changes the drug's binding site so the antibiotic no longer fits.
+- **Reduced permeability** — the cell wall becomes less porous, limiting drug entry.
+
+**Resistance gene** — A segment of DNA encoding an AMR mechanism. Named by convention: *bla* genes encode beta-lactamases (*e.g.* *blaKPC*, *blaNDM*); *van* genes confer vancomycin resistance; *mcr* genes confer colistin resistance.
+
+**Plasmid** — A small, circular DNA molecule separate from the main chromosome. Bacteria can transfer plasmids directly to neighbouring cells — even across species — enabling rapid spread of resistance in a hospital ward.
+
+**HGT** — Horizontal Gene Transfer. Bacteria sharing genes between living cells (not parent-to-offspring). The primary driver of multi-drug resistance spread in clinical settings.
+
+**Integron** — A genetic assembly platform that can capture, stack, and express multiple resistance genes simultaneously — often found on plasmids.
+""")
 
 st.title("🦠 The Biology")
 st.markdown("*Everything you need to understand before the code makes sense.*")

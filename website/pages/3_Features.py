@@ -13,8 +13,23 @@ ART_DIR = ROOT / "artifacts"
 
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from utils import inject_mobile_css
+from utils import inject_mobile_css, page_info_expander
 inject_mobile_css()
+page_info_expander("""
+**Feature** — A single measurable input variable that a model uses to make a prediction. Here, each feature is either a k-mer count or a gene presence/absence flag.
+
+**k-mer** — A short DNA subsequence of exactly *k* letters. For example, the sequence "ATGCATG" contains the 4-mers ATGC, TGCA, GCAT, CATG. By counting all 31-mers across a genome (~5 million possible), we create a numerical fingerprint of the strain without needing to align it to a reference — useful when resistance is encoded in many different genomic locations.
+
+**Gene presence/absence** — A binary (0/1) flag indicating whether a specific resistance gene was detected in the genome. More interpretable than k-mers and directly maps to known AMR mechanisms.
+
+**CARD** — Comprehensive Antibiotic Resistance Database. A curated catalogue of resistance genes and their mechanisms, used to annotate genomes.
+
+**NDARO** — National Database of Antibiotic Resistant Organisms (CDC). Another resistance gene reference database used alongside CARD.
+
+**Feature importance** — A score indicating how much each feature (k-mer or gene) contributes to the model's predictions. High importance = strong predictor of resistance.
+
+**Dimensionality** — The number of features. k-mer features produce ~millions of dimensions; gene features produce ~hundreds, making gene-based models faster and more interpretable.
+""")
 st.title("🔬 Feature Engineering")
 st.markdown("*How we turn 5.5 million DNA letters into numbers a model can learn from.*")
 st.divider()

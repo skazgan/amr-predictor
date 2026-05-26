@@ -14,8 +14,23 @@ import streamlit as st
 import sys
 from pathlib import Path as _Path
 sys.path.insert(0, str(_Path(__file__).parent.parent))
-from utils import inject_mobile_css
+from utils import inject_mobile_css, page_info_expander
 inject_mobile_css()
+page_info_expander("""
+**Pipeline overview** — Raw genome sequences → resistance gene annotation → feature matrix → XGBoost training → calibrated probability outputs. Each step is documented below with the specific tools and parameters used.
+
+**XGBoost** — eXtreme Gradient Boosting. An ensemble method that combines many weak decision trees into a strong predictor. Chosen for its strong performance on sparse binary feature matrices (gene presence/absence).
+
+**Isotonic calibration** — A post-processing step that maps raw model scores to well-calibrated probabilities, so a predicted 70% resistance probability actually corresponds to ~70% of isolates being resistant in practice.
+
+**Cross-validation (CV)** — Training on multiple different subsets of data and testing on the remaining portion each time. Gives a more robust estimate of real-world accuracy than a single train/test split.
+
+**AUC-ROC** — Area Under the Receiver Operating Characteristic curve. Our primary accuracy metric: 1.0 = perfect, 0.5 = chance. Reports the probability that a model ranks a resistant isolate higher than a susceptible one.
+
+**CARD** — Comprehensive Antibiotic Resistance Database. The curated gene database used to annotate resistance genes in BV-BRC and our uploaded FASTA files.
+
+**BV-BRC API** — The programmatic interface to BV-BRC data. All genome, AMR label, and gene annotation data were fetched via REST API calls to `bv-brc.org/api`.
+""")
 st.title("📖 Methods & Citations")
 st.markdown("*Detailed methodology, model architecture, and academic references.*")
 st.divider()
