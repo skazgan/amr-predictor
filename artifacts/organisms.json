@@ -58,5 +58,33 @@
       "piperacillin/tazobactam",
       "levofloxacin"
     ]
+  },
+  "pseudomonas_aeruginosa": {
+    "display": "Pseudomonas aeruginosa",
+    "taxon_id": 287,
+    "antibiotics": [
+      "ciprofloxacin",
+      "meropenem",
+      "piperacillin/tazobactam",
+      "ceftazidime",
+      "imipenem",
+      "gentamicin",
+      "amikacin",
+      "colistin"
+    ]
+  },
+  "enterococcus_faecium": {
+    "display": "Enterococcus faecium",
+    "taxon_id": 1352,
+    "antibiotics": [
+      "vancomycin",
+      "ampicillin",
+      "tetracycline",
+      "ciprofloxacin",
+      "gentamicin",
+      "erythromycin",
+      "linezolid",
+      "daptomycin"
+    ]
   }
 }

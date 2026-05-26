@@ -180,5 +180,173 @@
     "test_auc": 0.981,
     "n_total": 10474,
     "n_resistant": 7736
+  },
+  {
+    "organism": "klebsiella_pneumoniae",
+    "antibiotic": "amikacin",
+    "test_auc": 0.841,
+    "n_total": 5649,
+    "n_resistant": 1127
+  },
+  {
+    "organism": "klebsiella_pneumoniae",
+    "antibiotic": "cefepime",
+    "test_auc": 0.846,
+    "n_total": 3644,
+    "n_resistant": 1826
+  },
+  {
+    "organism": "klebsiella_pneumoniae",
+    "antibiotic": "ciprofloxacin",
+    "test_auc": 0.854,
+    "n_total": 3668,
+    "n_resistant": 1824
+  },
+  {
+    "organism": "klebsiella_pneumoniae",
+    "antibiotic": "gentamicin",
+    "test_auc": 0.862,
+    "n_total": 3664,
+    "n_resistant": 1843
+  },
+  {
+    "organism": "klebsiella_pneumoniae",
+    "antibiotic": "imipenem",
+    "test_auc": 0.873,
+    "n_total": 5646,
+    "n_resistant": 1876
+  },
+  {
+    "organism": "klebsiella_pneumoniae",
+    "antibiotic": "levofloxacin",
+    "test_auc": 0.808,
+    "n_total": 5715,
+    "n_resistant": 2554
+  },
+  {
+    "organism": "klebsiella_pneumoniae",
+    "antibiotic": "meropenem",
+    "test_auc": 0.86,
+    "n_total": 3678,
+    "n_resistant": 1849
+  },
+  {
+    "organism": "klebsiella_pneumoniae",
+    "antibiotic": "piperacillin/tazobactam",
+    "test_auc": 0.838,
+    "n_total": 5728,
+    "n_resistant": 2725
+  },
+  {
+    "organism": "klebsiella_pneumoniae",
+    "antibiotic": "tetracycline",
+    "test_auc": 0.813,
+    "n_total": 3680,
+    "n_resistant": 1829
+  },
+  {
+    "organism": "klebsiella_pneumoniae",
+    "antibiotic": "trimethoprim/sulfamethoxazole",
+    "test_auc": 0.873,
+    "n_total": 3639,
+    "n_resistant": 1829
+  },
+  {
+    "organism": "pseudomonas_aeruginosa",
+    "antibiotic": "ciprofloxacin",
+    "test_auc": 0.894,
+    "n_total": 12019,
+    "n_resistant": 4502
+  },
+  {
+    "organism": "pseudomonas_aeruginosa",
+    "antibiotic": "meropenem",
+    "test_auc": 0.908,
+    "n_total": 12075,
+    "n_resistant": 5046
+  },
+  {
+    "organism": "pseudomonas_aeruginosa",
+    "antibiotic": "piperacillin/tazobactam",
+    "test_auc": 0.919,
+    "n_total": 9685,
+    "n_resistant": 2769
+  },
+  {
+    "organism": "pseudomonas_aeruginosa",
+    "antibiotic": "ceftazidime",
+    "test_auc": 0.901,
+    "n_total": 12036,
+    "n_resistant": 4806
+  },
+  {
+    "organism": "pseudomonas_aeruginosa",
+    "antibiotic": "imipenem",
+    "test_auc": 0.865,
+    "n_total": 11956,
+    "n_resistant": 7142
+  },
+  {
+    "organism": "pseudomonas_aeruginosa",
+    "antibiotic": "gentamicin",
+    "test_auc": 0.983,
+    "n_total": 9714,
+    "n_resistant": 2675
+  },
+  {
+    "organism": "pseudomonas_aeruginosa",
+    "antibiotic": "amikacin",
+    "test_auc": 0.956,
+    "n_total": 12038,
+    "n_resistant": 2248
+  },
+  {
+    "organism": "enterococcus_faecium",
+    "antibiotic": "vancomycin",
+    "test_auc": 0.997,
+    "n_total": 7260,
+    "n_resistant": 4053
+  },
+  {
+    "organism": "enterococcus_faecium",
+    "antibiotic": "ampicillin",
+    "test_auc": 0.989,
+    "n_total": 7147,
+    "n_resistant": 5240
+  },
+  {
+    "organism": "enterococcus_faecium",
+    "antibiotic": "tetracycline",
+    "test_auc": 0.973,
+    "n_total": 702,
+    "n_resistant": 505
+  },
+  {
+    "organism": "enterococcus_faecium",
+    "antibiotic": "gentamicin",
+    "test_auc": 0.938,
+    "n_total": 5392,
+    "n_resistant": 783
+  },
+  {
+    "organism": "enterococcus_faecium",
+    "antibiotic": "erythromycin",
+    "test_auc": 0.976,
+    "n_total": 894,
+    "n_resistant": 822
+  },
+  {
+    "organism": "enterococcus_faecium",
+    "antibiotic": "linezolid",
+    "test_auc": 0.952,
+    "n_total": 6711,
+    "n_resistant": 1027
+  },
+  {
+    "organism": "enterococcus_faecium",
+    "antibiotic": "daptomycin",
+    "test_auc": 0.943,
+    "n_total": 333,
+    "n_resistant": 55
   }
 ]

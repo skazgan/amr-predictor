@@ -36,6 +36,10 @@ pg = st.navigation(
             st.Page("pages/19_Treatment_Recommendation.py", title="Treatment Recommendation",  icon="💊"),
             st.Page("pages/20_Outbreak_Detection.py",       title="Outbreak Detection",        icon="🔬"),
         ],
+        "🧬 Genomics": [
+            st.Page("pages/22_Gene_Co_Occurrence.py",  title="Gene Co-Occurrence",    icon="🕸️"),
+            st.Page("pages/23_MIC_Prediction.py",      title="MIC Prediction",        icon="🔬"),
+        ],
         "🔍 Explainability": [
             st.Page("pages/6_Explainability.py",       title="Explainability (SHAP)", icon="🔍"),
             st.Page("pages/7_Co_Resistance_Network.py",title="Co-Resistance Network", icon="🕸️"),

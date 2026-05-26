@@ -1,0 +1,50 @@
+{
+  "meropenem": {
+    "eucast_s": 2.0,
+    "eucast_r": 8.0
+  },
+  "imipenem": {
+    "eucast_s": 2.0,
+    "eucast_r": 8.0
+  },
+  "ciprofloxacin": {
+    "eucast_s": 0.25,
+    "eucast_r": 1.0
+  },
+  "gentamicin": {
+    "eucast_s": 2.0,
+    "eucast_r": 4.0
+  },
+  "amikacin": {
+    "eucast_s": 8.0,
+    "eucast_r": 16.0
+  },
+  "piperacillin/tazobactam": {
+    "eucast_s": 8.0,
+    "eucast_r": 16.0
+  },
+  "trimethoprim/sulfamethoxazole": {
+    "eucast_s": 2.0,
+    "eucast_r": 4.0
+  },
+  "ceftazidime": {
+    "eucast_s": 1.0,
+    "eucast_r": 4.0
+  },
+  "ceftriaxone": {
+    "eucast_s": 1.0,
+    "eucast_r": 2.0
+  },
+  "tetracycline": {
+    "eucast_s": 1.0,
+    "eucast_r": 8.0
+  },
+  "levofloxacin": {
+    "eucast_s": 1.0,
+    "eucast_r": 2.0
+  },
+  "cefepime": {
+    "eucast_s": 1.0,
+    "eucast_r": 4.0
+  }
+}

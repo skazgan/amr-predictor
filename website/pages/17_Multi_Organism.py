@@ -32,6 +32,46 @@ st.divider()
 
 # ── Organism config ───────────────────────────────────────────────────────────
 ORGANISM_META = {
+    "pseudomonas_aeruginosa": {
+        "display":  "Pseudomonas aeruginosa",
+        "emoji":    "🟣",
+        "desc":     "Intrinsically resistant Gram-negative. Major cause of ICU/ventilator infections, particularly in CF patients.",
+        "gram":     "Gram-negative",
+        "concern":  "Critical priority (WHO)",
+        "color":    "#7C3AED",
+        "drug_class": {
+            "ciprofloxacin": "Fluoroquinolone", "meropenem": "Carbapenem",
+            "piperacillin/tazobactam": "Beta-lactam/inh.", "ceftazidime": "Cephalosporin",
+            "imipenem": "Carbapenem", "gentamicin": "Aminoglycoside",
+            "amikacin": "Aminoglycoside", "colistin": "Polymyxin (last resort)",
+        },
+        "short": {
+            "ciprofloxacin": "Cipro", "meropenem": "Mero",
+            "piperacillin/tazobactam": "Pip/Taz", "ceftazidime": "Ceftaz",
+            "imipenem": "Imi", "gentamicin": "Gent",
+            "amikacin": "Amik", "colistin": "Colist",
+        },
+    },
+    "enterococcus_faecium": {
+        "display":  "Enterococcus faecium",
+        "emoji":    "🩷",
+        "desc":     "Gram-positive gut commensal. VRE (vancomycin-resistant) strains are a major hospital threat.",
+        "gram":     "Gram-positive",
+        "concern":  "High priority (WHO)",
+        "color":    "#DB2777",
+        "drug_class": {
+            "vancomycin": "Glycopeptide", "ampicillin": "Penicillin",
+            "tetracycline": "Tetracycline", "ciprofloxacin": "Fluoroquinolone",
+            "gentamicin": "Aminoglycoside", "erythromycin": "Macrolide",
+            "linezolid": "Oxazolidinone", "daptomycin": "Lipopeptide",
+        },
+        "short": {
+            "vancomycin": "Vanc", "ampicillin": "Amp",
+            "tetracycline": "Tet", "ciprofloxacin": "Cipro",
+            "gentamicin": "Gent", "erythromycin": "Ery",
+            "linezolid": "LZD", "daptomycin": "Dapto",
+        },
+    },
     "klebsiella_pneumoniae": {
         "display":  "Klebsiella pneumoniae",
         "emoji":    "🔴",
@@ -171,7 +211,7 @@ def predict_from_genes_multi(gene_presence: dict, models: dict,
 # ── Section 1: Organism cards ─────────────────────────────────────────────────
 st.header("1. The four pathogens")
 
-cols = st.columns(4)
+cols = st.columns(3)
 for i, (org_key, meta) in enumerate(ORGANISM_META.items()):
     models_available = (MODEL_DIR / org_key).exists() and any((MODEL_DIR / org_key).glob("*.pkl"))
     status = "✅ Models ready" if models_available else "⏳ Training pending"
@@ -198,7 +238,7 @@ st.header("2. Why these four pathogens?")
 col1, col2 = st.columns(2)
 with col1:
     st.markdown("""
-These four species represent the **ESKAPE pathogens** most amenable to genomic AMR prediction:
+These six species are the **ESKAPE pathogens** — the most critical targets for AMR surveillance:
 
 | Organism | Clinical role | Key resistance |
 |---|---|---|
@@ -206,8 +246,10 @@ These four species represent the **ESKAPE pathogens** most amenable to genomic A
 | *E. coli* | UTI, sepsis, neonatal meningitis | ESBL (CTX-M), PMQR |
 | *S. aureus* | Skin, surgical site, endocarditis | MRSA (mecA), VRSA |
 | *A. baumannii* | ICU pneumonia, wound infections | OXA carbapenemases |
+| *P. aeruginosa* | Ventilator-associated pneumonia, CF lung | MexAB-OprM efflux, VIM/IMP |
+| *E. faecium* | Hospital bacteraemia, endocarditis | VRE (vanA/vanB) |
 
-Together they account for **>60% of hospital-acquired infections** globally.
+Together they account for **>70% of hospital-acquired infections** globally.
 """)
 
 with col2:
@@ -221,9 +263,9 @@ with col2:
 - *A. baumannii* — resistance accumulates via **integrons** (gene cassette arrays):
   co-resistance patterns are extreme; nearly pan-resistant strains exist
 
-**Feature note:** New organism models use gene presence/absence only
-(k-mer features require downloading FASTA sequences per genome — coming in a future update).
-Gene-only models achieve AUC 0.97–1.00 for most antibiotics — resistance genes are near-perfect predictors.
+**Feature note:** All models use gene presence/absence features.
+Gene-only models achieve AUC 0.80–1.00 for most antibiotics — resistance genes are near-deterministic predictors.
+K. pneumoniae also has dedicated predictors (k-mer + gene) with higher accuracy for some antibiotics.
 """)
 
 st.divider()
@@ -240,29 +282,25 @@ selected_display = st.selectbox(
 selected_org = org_options[selected_display]
 meta = ORGANISM_META[selected_org]
 
-# K. pneumoniae has dedicated predictors (uses k-mer + gene features, not gene-only)
+# K. pneumoniae now has gene-only models here too; show info + link to full predictors
 if selected_org == "klebsiella_pneumoniae":
     st.info("""
-**K. pneumoniae has dedicated predictors** that use the full feature set
-(k-mer frequencies + gene presence) for higher accuracy (AUC 0.76–0.89).
-
-The multi-organism predictor uses gene-only features designed for the three
-new organisms. For K. pneumoniae, use one of the dedicated pages instead:
+**K. pneumoniae gene-only models** are available here (AUC 0.808–0.873, trained on 3,600–5,700 genomes).
+For the highest accuracy, the **dedicated predictors** use k-mer + gene features (AUC 0.76–0.89).
 """)
     col_a, col_b, col_c = st.columns(3)
     with col_a:
         st.page_link("pages/5_Live_Predictor.py",
-                     label="🔮 Live Predictor  (BV-BRC genome ID)",
+                     label="🔮 Full Live Predictor (k-mer + gene)",
                      use_container_width=True)
     with col_b:
         st.page_link("pages/14_Offline_Predictor.py",
-                     label="⚡ Offline Predictor  (gene toggles)",
+                     label="⚡ Offline Predictor (gene toggles)",
                      use_container_width=True)
     with col_c:
         st.page_link("pages/15_FASTA_Upload.py",
-                     label="📂 FASTA Upload  (raw assembly)",
+                     label="📂 FASTA Upload (raw assembly)",
                      use_container_width=True)
-    st.stop()
 
 with st.spinner(f"Loading {meta['display']} models..."):
     org_models = load_org_models(selected_org)
